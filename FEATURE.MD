@@ -28,7 +28,7 @@ Bagian ini menampilkan kalender secara mingguan, dan akan memberi tahu pengguna 
 (Fitur ini belum ada APInya, dan tampilan dibuat secara statis)
 e. Progress
 Bagian ini menampilkan kepada pengguna module mana yang telah diselesaikan dan belum diselesaikan
-(Fitur ini sudah ada APInya, namun belum dibuatkan fungsinya karena tampilan berbeda)
+(Fitur ini sudah ada APInya dan sudah dihubungkan)
 
 5. Chatroom
 Fitur ini memungkinkan pengguna untuk berkomunikasi satu sama lain
