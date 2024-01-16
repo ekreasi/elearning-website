@@ -1,0 +1,69 @@
+.material-page {
+  margin: 20px 38px 34px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: hidden;
+}
+
+.material-page p {
+  margin-bottom: 0;
+}
+
+.material-image {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.5s;
+  border-radius: 8px;
+  background: url("../ModuleBackground.svg") no-repeat center;
+  background-size: cover;
+}
+
+.cancel-material {
+  font-size: 18px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.page-material {
+  text-align: center;
+}
+
+.prev-page {
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.next-page {
+  margin-left: 80px;
+  cursor: pointer;
+
+}
+
+.chapter-list-btn {
+  width: 116px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #fff;
+  color: #e82827;
+  border-radius: 6px;
+  border: 1px solid #e82827;
+  align-items: center;
+  margin: 12px 50px;
+}
+
+.learning-includes {
+  width: 801px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 27px 45px 27px 60px;
+  border-radius: 0 10px 0 0;
+  position: absolute;
+  bottom: 78px;
+  left: 47.7px;
+}

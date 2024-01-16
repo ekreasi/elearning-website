@@ -1,0 +1,39 @@
+.progCard {
+  width: 718px;
+  height: 360px;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-left: 39px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 4px #c7c7c7;
+}
+
+.invCard {
+  width: 326px;
+  height: 170px;
+  border-radius: 8px;
+  margin-left: -20px;
+  background: #fff;
+  padding: 15px;
+}
+
+.progress-content {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.progressHeader {
+  margin-right: 55%;
+}
+
+.progress-row .progressTxt {
+  padding
+}
+
+.scroll-container {
+  width: 666px;
+  height: 280px;
+  
+}

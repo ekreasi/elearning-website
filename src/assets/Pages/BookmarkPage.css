@@ -1,0 +1,95 @@
+.bookmark-page {
+  margin: 20px 38px 34px 38px;
+  padding: 0px 0px 88px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: auto;
+}
+
+.bookmark-page::-webkit-scrollbar {
+  display: none;
+}
+
+.header-row {
+  padding: 24px 60px 0;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+}
+
+.left-bookmark-header {
+  width: 250px;
+  margin-bottom: 24px;
+}
+
+.input-bookmark-header {
+  margin-bottom: 24px;
+}
+
+.left-bookmark-header p {
+  color: #c12121;
+  margin-bottom: 0px;
+}
+
+.bookmark-search-form {
+  width: 541px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #d4d8dd;
+  background: url("SearchIcon.svg") no-repeat 16px center;
+  padding-left: 45px;
+  background-color: #fff;
+}
+
+.bookmark-search-form::placeholder {
+  color: #000;
+}
+
+.right-bookmark-header {
+  margin-left: 115px;
+  margin-bottom: 24px;
+}
+
+.all-libraries-btn {
+  color: #e82827;
+  border: 1px solid #e82827;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 96px;
+  height: 36px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.bookmark-card-row .card {
+  padding: 0px 0 20px 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.bookmark-card-row .card .card-body {
+  padding: 0px 0 20px 0px;
+}
+
+.bookmark-card-row .card .card-body .card-text {
+  padding: 0px 11px 13px 11px;
+  margin-bottom: 0px;
+}
+
+.bookmark-card-row .card .card-body .bookmark-card-link {
+  padding: 0px 11px 0px 11px;
+}
+
+.bookmark-view {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #e82827;
+}

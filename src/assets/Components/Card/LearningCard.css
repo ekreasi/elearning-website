@@ -1,0 +1,42 @@
+.passwordChng {
+  text-align: center;
+}
+
+
+
+.settingInput {
+  margin-left: 14%;
+}
+
+.saveBtn {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.learnRow {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.learning-text {
+  font-size: 25px;
+  display: inline;
+  font-weight: bold;
+  color: #E82827;
+}
+
+.learn-image {
+    height: 110px;
+    margin-left: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.image-text {
+    margin-left: 70px;
+}
+
+.quiz {
+    margin-left: 85px;
+}
+

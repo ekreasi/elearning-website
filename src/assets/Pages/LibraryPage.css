@@ -1,0 +1,190 @@
+.library-page-header {
+  margin-top: 40px;
+}
+
+.left-library-header p {
+  font-weight: bold;
+  color: #fff;
+}
+
+.right-library-header {
+  width: 645px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#library-page-dropdown {
+  width: 135px;
+  height: 36px;
+  display: inline;
+}
+
+.right-library-header .btn-primary {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: rgba(212, 216, 221, 1);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: rgba(212, 216, 221, 1);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: rgba(212, 216, 221, 1);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.library-dropdown-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #231f20;
+}
+
+.library-search-form {
+  width: 351px;
+  height: 37px;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+
+.library-search-form::placeholder {
+  color: #7f8a9a;
+}
+
+.savedIcon {
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sortbylib {
+  width: 43px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 12px;
+  margin: auto 0;
+}
+
+.library-content-header {
+  margin-top: 54px;
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #231f20;
+}
+
+.library-name-col {
+  width: 650px;
+  margin-right: 90px;
+}
+
+.library-filter-col {
+  width: 156px;
+  margin-right: 135px;
+  margin: auto 135px auto 0;
+}
+
+.library-event-col {
+  width: 93px;
+  margin: auto 0;
+}
+
+.library-icon {
+  margin-right: 13px;
+}
+
+.library-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #231f20;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.library-grey {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7f8a9a;
+}
+
+.library-page-content {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.library-page-content:hover {
+  background-color: rgba(232, 40, 39, 0.1);
+}
+
+.library-page-content:hover .library-name {
+  text-decoration: underline;
+}
+
+.library-page-pagination {
+  margin-top: 40px;   
+}
+
+.library-page-pagination .pagination {
+  --bs-pagination-padding-x: 10px;
+  --bs-pagination-padding-y: 5px;
+  --bs-pagination-font-size: 10px;
+  --bs-pagination-color: #000;
+  --bs-pagination-bg: rgba(127, 138, 154, 0.2);
+  font-weight: 600;
+  --bs-pagination-border-width: var(--bs-border-width);
+  --bs-pagination-border-color: var(--bs-border-color);
+  --bs-pagination-border-radius: 14px;
+  --bs-pagination-hover-color: #000;
+  --bs-pagination-hover-bg: var(--bs-tertiary-bg);
+  --bs-pagination-hover-border-color: var(--bs-border-color);
+  --bs-pagination-focus-color: #000;
+  --bs-pagination-focus-bg: rgba(127, 138, 154, 0.2);
+  --bs-pagination-focus-box-shadow: 0 0px 0px rgba(232, 40, 39, 0.25);
+  --bs-pagination-active-color: #fff;
+  --bs-pagination-active-bg: #e82827;
+  --bs-pagination-active-border-color: #e82827;
+  --bs-pagination-active-box-shadow: 0 4px 4px rgba(232, 40, 39, 0.25);
+  --bs-pagination-disabled-color: var(--bs-secondary-color);
+  --bs-pagination-disabled-bg: var(--bs-secondary-bg);
+  --bs-pagination-disabled-border-color: var(--bs-border-color);
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.library-page-pagination .page-item .page-link{
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.library-page-pagination .page-item:first-child .page-link {
+  border-radius: 4px;
+}
+
+.library-page-pagination .page-item:last-child .page-link {
+  border-radius: 4px;
+}
+
+.library-page-dropdown .dropdown-menu {
+  width: 320px;
+  height: 90px;
+  padding: 10px 20px 20px;
+  margin-top: 10px;
+}

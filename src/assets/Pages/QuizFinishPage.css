@@ -1,0 +1,66 @@
+.quiz-finish-page {
+  margin: 20px 38px 34px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: hidden;
+}
+
+.finish-quiz-content {
+    margin-top: 56px;
+
+}
+
+.finish-success-desc {
+    margin-top: 8px;
+    color: #c12121;
+}
+
+.amazing {
+    font-weight: 600;
+    font-size: 29px;
+    margin-bottom: 8px;
+}
+
+.successfully {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.finish-button-container button{
+    width: 183px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.white-quiz-btn {
+    color: #e82827;
+    background-color: #fff;
+    box-shadow: 0 8px 18px rgba(196, 196, 196, 0.3);
+    margin-right: 24px;
+}
+
+.red-quiz-btn {
+    color: #fff;
+    background-color: #e82827;
+    box-shadow: 0 8px 18px rgba(232, 40, 39, 0.5);
+}
+
+.certificate-text-bottom {
+    margin-top: 8px;
+    color: #7f8a9a;
+    font-size: 14px;
+}
+
+.finish-score {
+    font-weight: bold;
+    font-size: 16px;
+    color: #231f20;
+}

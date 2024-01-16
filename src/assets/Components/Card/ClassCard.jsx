@@ -1,0 +1,211 @@
+import { ProgressBar } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import "./ClassCard.css";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+const ClassCard = () => {
+  const navigate = useNavigate();
+
+  const goHistory = () => {
+    navigate("/history");
+  };
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (token) {
+      fetch("http://130.211.243.37/api/elearning/module", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.metaData && data.metaData.code === 200) {
+            setData(data.data);
+            console.log(data.data);
+          } else {
+            console.error("API error,", data.metaData.message);
+          }
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    }
+  }, []);
+
+  const accumulateProgress = (submodules) => {
+    let totalProgress = 0;
+
+    if (submodules && submodules.length > 0) {
+      submodules.forEach((submodule) => {
+        if (submodule.progress) {
+          totalProgress += submodule.progress;
+        }
+      });
+    }
+
+    return totalProgress;
+  };
+
+  const progressStatus = (accumulateProgress) => {
+    let status = "";
+
+    if (accumulateProgress === 100) {
+      status = "completed";
+    } else if (accumulateProgress > 0 && accumulateProgress < 100) {
+      status = "In Progress";
+    } else {
+      status = "Not Started";
+    }
+
+    return status;
+  };
+
+  return (
+    <Container className="class-bar-row">
+      {data.length > 0 ? (
+        data.map((item, index) => (
+          <React.Fragment key={index}>
+            <Row>
+              <Col sm={1} className="progress-bar-row progressImg">
+                <img
+                  className="progress-image"
+                  src={
+                    progressStatus(accumulateProgress(item.subModule)) ===
+                    "Not Started"
+                      ? "NotStartedIconModule.svg"
+                      : "Icon Module.svg"
+                  }
+                  style={{ width: "39px" }}
+                  alt=""
+                />
+              </Col>
+              <Col sm={3} className="progress-bar-row progressTxt">
+                <span>{item.name}</span>
+              </Col>
+              <Col sm={8} className="progress-bar-row ">
+                {item.subModule && item.subModule.length > 0 ? (
+                  <div>
+                    {progressStatus(accumulateProgress(item.subModule)) ===
+                    "completed" ? (
+                      <div className="d-flex justify-content-between justify-content-center">
+                        <img
+                          src="CompletedIconModule.svg"
+                          alt=""
+                          className="flex-grow-1"
+                          style={{
+                            width: "343px",
+                            height: "39px",
+                            marginRight: "-13%",
+                            marginTop: "10px",
+                          }}
+                        />
+                        <img
+                          src="RightArrowIcon.svg"
+                          alt=""
+                          className="mx-2"
+                          onClick={goHistory}
+                          style={{ cursor: "pointer" }}
+                        />
+                      </div>
+                    ) : (
+                      <div className="d-flex justify-content-between align-items-center">
+                        <ProgressBar
+                          variant="danger"
+                          now={accumulateProgress(item.subModule)}
+                          className="flex-grow-1"
+                          style={{
+                            width: "343px",
+                            height: "39px",
+                            marginRight: "-10%",
+                            marginTop: "10px",
+                          }}
+                        />
+                        <img
+                          src="RightArrowIcon.svg"
+                          alt=""
+                          className="mx-2"
+                          onClick={goHistory}
+                          style={{ cursor: "pointer" }}
+                        />
+                        <div className="d-flex">
+                          <span className="complete">
+                            <p
+                              style={{
+                                display: "inline",
+                                fontSize: "12px",
+                                fontWeight: "400",
+                              }}
+                            >
+                              Your progress is{" "}
+                            </p>
+                            {progressStatus(accumulateProgress(item.subModule))}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div>
+                    <div
+                      className="d-flex justify-content-between align-items-center"
+                      style={{ marginTop: "10px" }}
+                    >
+                      <ProgressBar
+                        variant="danger"
+                        now={accumulateProgress(item.subModule)}
+                        className="flex-grow-1"
+                        style={{
+                          maxWidth: "343px",
+                          height: "6px",
+                          marginLeft: "13%",
+                        }}
+                      />
+                      <img
+                        src="RightArrowIcon.svg"
+                        alt=""
+                        className="mx-2"
+                        onClick={goHistory}
+                        style={{ cursor: "pointer" }}
+                      />
+                    </div>
+                    <div className="d-flex">
+                      <span className="complete"></span>
+                    </div>
+                    <p
+                      style={{
+                        maxWidth: "343px",
+                        height: "6px",
+                        marginLeft: "13%",
+                        fontSize: "12px",
+                        fontWeight: "500",
+                        color: "rgba(127, 138, 154, 0.5)",
+                      }}
+                    >
+                      Not started
+                    </p>
+                  </div>
+                )}
+              </Col>
+            </Row>
+            {index !== data.length - 1 && <hr />}
+          </React.Fragment>
+        ))
+      ) : (
+        <p
+          className="d-flex text-center justify-content-center"
+          style={{ color: "#828282", fontSize: "14px" }}
+        >
+          No data available.
+        </p>
+      )}
+    </Container>
+  );
+};
+
+export default ClassCard;

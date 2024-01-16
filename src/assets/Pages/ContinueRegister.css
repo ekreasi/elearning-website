@@ -1,0 +1,7 @@
+.registerBtnContainer {
+    margin-top: -10px;
+}
+
+::placeholder {
+    color: #7F8A9A;
+}

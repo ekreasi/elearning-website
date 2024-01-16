@@ -1,0 +1,105 @@
+.changeCard {
+  width: 460px;
+  height: 100%;
+  margin-top: 20px;
+  margin: 0 auto;
+  padding: 10px 0 5px;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.changeBtn {
+  background: rgba(232, 40, 39, 0.3);
+  width: 184px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid #e82827;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.changeSubmitBtn {
+  background: rgba(232, 40, 39, 0.3);
+  width: 184px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.passwordChnge img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100px;
+  margin: 5px ;
+  display: inline;
+}
+
+.passwordChng {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.settingInput {
+  margin-left: 14%;
+}
+
+.saveBtn {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.changeRow {
+  justify-content: center;
+  align-items: center;
+}
+
+.changeTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #C12121;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+
+.change-form {
+  display: block;
+  width: 395px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 14px 23px;
+  margin: 5px 0 16px 0;
+  font-size: 16px;
+}
+.change-form:hover {
+  border: 1.5px solid #e82827 !important;
+}
+
+.change-form:focus {
+  outline: none !important;
+  border: 1.5px solid #e82827 !important;
+}
+
+.changeRow .change-card-col {
+  padding: 0px;
+}
+
+.password-terms {
+  padding: 0 20px 0 50px;
+}
+
+.changeBtnContainer {
+  padding-top: 20px;
+}
+

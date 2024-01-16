@@ -1,0 +1,8 @@
+  .lib-text {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .cert-row > * {
+    width: auto;
+  }

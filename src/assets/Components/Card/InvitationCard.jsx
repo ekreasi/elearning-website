@@ -1,0 +1,131 @@
+import "./InvitationCard.css";
+import { useEffect, useState } from "react";
+import { Col, Container, ProgressBar, Row } from "react-bootstrap";
+
+const InvitationCard = () => {
+  const [name, setName] = useState("");
+  const [position, setPosition] = useState("");
+  const [totalBelajar, setTotalBelajar] = useState("");
+  const [bergabungSejak, setBergabungSejak] = useState("");
+  const [idPhoto, setIdPhoto] = useState("");
+  const poin = localStorage.getItem("poin");
+
+  const [loadedData, setLoadedData] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (token) {
+      fetch("http://130.211.243.37/api/profile", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          // console.log(data);
+          if (data.metaData && data.metaData.code === 200) {
+            // Data retrieval was successful
+            setName(data.data.name);
+            setPosition(data.data.posisi);
+            setTotalBelajar(data.data.totalSesiBelajar);
+            setBergabungSejak(data.data.bergabungSejak);
+            setIdPhoto(data.data.idPhoto);
+            setLoadedData(true);
+          } else {
+            console.error("API returned an error:", data.metaData.message);
+            setLoadedData(false);
+          }
+        })
+        .catch((err) => {
+          console.error(err);
+          setLoadedData(false);
+        });
+    }
+  }, []);
+
+  return (
+    <div className="invCard shadow">
+      <div className="profile-content">
+        <Container>
+          <Row>
+            <div
+              className=""
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <div style={{ fontSize: "16px", display: "inline" }}>
+                <img
+                  src="InvitationLogo.svg"
+                  alt=""
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    marginRight: "10px",
+                    marginLeft: "-10px",
+                  }}
+                />
+                New Invitation
+              </div>
+              <a
+                style={{
+                  color: "#E82827",
+                  fontWeight: "600",
+                  fontSize: "12px",
+                  textDecoration: "none",
+                  display: "inline-block",
+                  cursor: "pointer",
+                }}
+              >
+                All Training
+              </a>
+            </div>
+          </Row>
+          <Row
+            className="my-1 mt-2 pt-3"
+            style={{
+              background: "rgba(127, 138, 154, 0.08)",
+              border: "1px solid rgba(127, 138, 154, 0.4)",
+              borderRadius: "4px",
+              minHeight: "112px",
+            }}
+          >
+            {loadedData ? (
+              <>
+                <Col xs={3}>
+                  <img src="TrainingIcon.svg" alt="" />
+                </Col>
+                <Col xs={8} style={{ marginLeft: "20px" }}>
+                  {" "}
+                  <p style={{ fontSize: "14px", fontWeight: "500" }}>
+                    {" "}
+                    Training: Product Introduction
+                  </p>
+                  <p style={{ fontSize: "14px", fontWeight: "600" }}>
+                    Detail{" "}
+                    <a href="">
+                      <img src="ArrowRight.svg" alt="" />
+                    </a>
+                  </p>
+                </Col>
+              </>
+            ) : (
+              <p
+                className="d-flex justify-content-center align-items-center"
+                style={{ color: "#828282", fontSize: "14px" }}
+              >
+                No Invitation
+              </p>
+            )}
+          </Row>
+        </Container>
+      </div>
+    </div>
+  );
+};
+
+export default InvitationCard;

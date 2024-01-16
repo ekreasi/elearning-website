@@ -1,0 +1,93 @@
+.zoom-training-page {
+  margin: 20px 38px 34px 38px;
+  padding: 0px 0px 88px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: hidden;
+}
+
+.zoom-training-card {
+  padding-left: 67px;
+  background: url("ZoomTrainingBg.svg") no-repeat center;
+  margin-left: 12px;
+  width: 100%;
+  height: 338px;
+}
+
+.zoom-training-card img.zoom-icon {
+  width: 182px;
+  height: 182px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  left: 2.3rem;
+  top: 2.5rem;
+}
+
+.zoom-card-txt {
+  width: 512px;
+  height: 82px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  top: -5rem;
+  left: 18rem;
+}
+
+.zoom-card-link {
+  position: relative;
+  top: 0.6rem;
+  left: 3.2rem;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+}
+
+.zoom-card-link textarea {  
+  top: 0.1rem;
+}
+
+.zoom-card-link:focus {
+  outline: none;
+}
+
+.zoom-link {
+  position: relative;
+  top: -1rem;
+  left: 10.5rem;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.zoom-card-btn-container {
+  position: relative;
+  top: -2.5rem;
+  left: 45.5rem;
+  background: none;
+}
+
+.zoom-copy-btn {
+  cursor: pointer;
+}
+
+.back-train-btn {
+  background: #fff;
+  outline: none;
+  border: none;
+  width: 157px;
+  height: 53px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #e82827;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 8px 18px rgba(196, 196, 196, 0.4);
+  border-radius: 8px;
+}

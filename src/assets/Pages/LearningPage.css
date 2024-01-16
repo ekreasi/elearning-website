@@ -1,0 +1,141 @@
+.learning-page {
+  margin: 20px 38px 34px 38px;
+  padding: 0px 0px 88px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: auto;
+}
+
+.learning-page::-webkit-scrollbar {
+  display: none;
+}
+
+.learning-page-header {
+  padding: 28px 0 12px 65px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  color: #bb2027;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.learning-module-card {
+  width: 252px;
+  height: 126px;
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 12px;
+  margin-bottom: 22px;
+}
+
+.learning-module-text-container {
+  margin-left: 18px;
+}
+
+.notready-module-text-container {
+  margin-left: 18px;
+}
+
+.learning-module-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #231f20;
+}
+
+.learning-module-status {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.search-form {
+  display: inline-block;
+  width: 296px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 14px 23px;
+  margin: 5px 0 16px 24px;
+  font-size: 16px;
+  background-color: rgba(127, 138, 154, 0.1);
+}
+
+.search-form:focus {
+  outline: none !important;
+}
+
+.learning-page-modal .modal-dialog .modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 488px;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}
+
+.learning-page-modal .modal-dialog .modal-content .modal-header .btn-close {
+  padding: calc(var(--bs-modal-header-padding-y) * 0.5)
+    calc(var(--bs-modal-header-padding-x) * 0.9);
+  margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+    calc(-0.5 * var(--bs-modal-header-padding-x))
+    calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+}
+
+.learning-page-modal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  padding-top: 15px;
+}
+
+.learning-page-row .row .col-4 {
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+.learning-page-row .row .col-4 p {
+  color: #b6b4b5;
+}
+
+.p-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  max-width: 130px;
+}
+
+.ready-p-title {
+  color: #231f20 !important;
+  font-weight: 600 !important;
+}
+
+.p-arrow {
+  font-size: 24px;
+}
+
+.module-img {
+  height: 80px;
+}
+
+.learning-page-row .row .col-4:hover {
+  background: #f4f5f7;
+}
+
+.module-choices-card {
+  cursor: pointer;
+}

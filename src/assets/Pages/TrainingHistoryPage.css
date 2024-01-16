@@ -1,0 +1,22 @@
+.training-history-page {
+  margin: 20px 38px 20px 38px;
+  padding: 0px 0px 88px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: hidden;
+}
+
+.training-page-history-btn {
+  width: 109px;
+  height: 46px;
+  background: #fff;
+  border: 1px solid #e82827;
+  border-radius: 8px;
+  color: #e82827;
+  font-weight: 600;
+  font-size: 12px;
+  margin-right: 68px;
+}

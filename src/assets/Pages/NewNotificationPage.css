@@ -1,0 +1,37 @@
+.full-notification-page {
+  margin: 20px 38px 34px 38px;
+  padding: 0px 0px 88px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: auto;
+}
+
+.full-notification-page::-webkit-scrollbar {
+  display: none;
+}
+
+.full-notif-title {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  color: #c12121;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 28px 0 20px 67px;
+}
+
+.full-notification-item {
+  padding: 5px 67px 0px 67px;
+  cursor: pointer;
+}
+
+.full-notification-item:hover {
+  background: rgba(232, 40, 39, 0.1);
+}
+
+.left-full-item {
+  margin-bottom: 10px;
+}

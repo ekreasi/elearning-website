@@ -1,0 +1,35 @@
+.progress-image {
+  height: 60px;
+  border-radius: 100px;
+  margin: 0px
+  padding: 5px;
+}
+
+.progress-bar-row {
+  min-width: 665px
+  min-height: 43px
+  padding: 0 14px 14px 14px;
+  align-items: center;
+  justify-content: end;
+}
+
+.complete {
+  color: #2f523c;
+  display: block;
+}
+
+.progressTxt {
+  font-size: 14px;
+  font-weight: 500;
+  margin: auto 0;
+}
+
+.class-row {
+  width: 665px;
+  max-height: 43px;
+}
+
+.classBar {
+  height: 6px;
+  width: 100px;
+}

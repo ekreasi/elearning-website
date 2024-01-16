@@ -1,0 +1,52 @@
+.cert-header {
+  width: 1088px;
+  height: 120px;
+  background: #fff;
+  margin: 72px auto 36px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-col {
+  width: 149px;
+  height: 100%;
+}
+
+.cert-header-title {
+  color: #c12121;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.cert-header-desc {
+  font-weight: 500;
+  font-size: 14px;
+  color: #231f20;
+}
+
+.cert-card-container {
+  margin-left: 18px;
+}
+
+.certificate-card-title {
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: #231f20;
+}
+
+.certificate-download {
+  text-decoration: none;
+  cursor: pointer;
+  color: #e82827;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.certificate-disabled-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #b6b4b5;
+  margin-left: 18px;
+}

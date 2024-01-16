@@ -1,0 +1,33 @@
+.zoom-training {
+  margin: 20px 38px 34px 38px;
+  padding: 0px 0px 88px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+  overflow: auto;
+}
+
+.zoom-training::-webkit-scrollbar {
+    display: none;
+  }
+
+.zoom-training-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0 12px 67px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
+.zoom-content-row {
+    border: 1.5px solid #D4D8DD;
+    padding: 20px;
+    margin-left: 25px;
+    width: 1086px;
+    height: 246px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}

@@ -1,0 +1,104 @@
+.history-page {
+  margin: 20px 38px 34px 38px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  height: 84vh;
+  box-shadow: 0 4px 4px #c7c7c7;
+}
+
+.content-text {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.history-page .history-title {
+  padding: 28px 0 0 55px;
+}
+
+.history-content {
+  padding-left: 55px;
+}
+
+.history-page .history-title .main-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #c12121;
+  margin-bottom: 0;
+}
+
+.history-page .history-title .second-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8a9a;
+  margin-bottom: 0;
+}
+
+.history-content .content-text .main-content-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #e82827;
+  margin-bottom: 0;
+}
+
+.history-content .content-text .second-content-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #231f20;
+}
+
+.content-button {
+  display: flex;
+  gap: 8px;
+  margin-right: 58px;
+  margin-top: 15px;
+}
+
+.history-progress-btn {
+  background: #fff;
+  border: 1px solid #e82827;
+  color: #e82827;
+  width: 110px;
+  height: 36px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.start-progress-btn {
+  background: #e82827;
+  width: 82px;
+  height: 36px;
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.chapter-name {
+    padding-left: 67px !important;
+}
+
+.history-table {
+  color: #231f20;
+  font-size: 14px;
+}
+
+.history-table th {
+  font-weight: 700;
+}
+
+.history-table td {
+  font-weight: 500;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-bg-type: rgba(232, 40, 39, 0.1);
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: none;
+    border-width: 0;
+}

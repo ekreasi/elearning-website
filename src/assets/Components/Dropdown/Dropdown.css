@@ -1,0 +1,48 @@
+.learnDropdown {
+    width: 210px;
+    user-selecet: none;
+    position: relative;
+}
+
+.learnDropdown .dropdown-btn {
+    padding: 10px 20px;
+    background: #fafafa;
+    color: #8E8F91;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.learnDropdown .dropdown-content {
+    position: absolute;
+    top: 110%
+    left: 0;
+    padding: 10px;
+    background: #fafafa;
+    color: #333;
+    font-weight: 500;
+    width: 100%;
+}
+
+.learnDropdown .dropdown-content .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.learnDropdown .dropdown-content .dropdown-item:hover {
+    background-color: #fcfcfc;
+}
+
+.dropIcon {
+    margin-right: 10px;
+}
+
+.input-option {
+    border: none;
+    background: none;
+}

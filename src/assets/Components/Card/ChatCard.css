@@ -1,0 +1,44 @@
+.chat-card {
+  padding: 12px 30px 12px 58px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.chat-card.active {
+  border-left: 6px solid #e82827;
+}
+
+.name-last-seen {
+  margin: 0 16px;
+  width: 139px;
+  height: 42px;
+}
+
+.name-last-seen p {
+  margin-bottom: 0;
+}
+
+.name-chat {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.last-seen-chat {
+  font-weight: 400;
+  font-size: 12px;
+  color: #7f8a9a;
+}
+
+.chat-count {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #e82827;
+}

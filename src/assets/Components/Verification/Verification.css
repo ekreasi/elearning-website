@@ -1,0 +1,21 @@
+.verif-timer {
+  background: rgba(232, 40, 39, 0.1);
+  font-weight: 700;
+  color: #e82827;
+  border-radius: 6px;
+  border: none;
+  width: 85px;
+  height: 38px;
+  margin-left: 10px;
+}
+
+.otp-verif-text {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center!important;
+    align-items: center;
+}
+
+.otp-timer-container {
+    margin: 24px 0;
+}
