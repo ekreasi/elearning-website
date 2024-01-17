@@ -22,7 +22,7 @@ const HomePage = () => {
     boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.2)",
     cursor: "not-allowed",
   });
-  const [loadingLogin, setLoadingLogin] = useState(false)
+  const [loadingLogin, setLoadingLogin] = useState(false);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -32,12 +32,12 @@ const HomePage = () => {
   }, [isAuthenticated, navigate]);
 
   async function login(e) {
-    setLoadingLogin(true)
+    setLoadingLogin(true);
     setButtonStyle({
       background: "rgba(232, 40, 39, 0.3)",
       boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.2)",
       cursor: "not-allowed",
-    })
+    });
 
     e.preventDefault();
 
@@ -84,19 +84,19 @@ const HomePage = () => {
         console.log("Username atau password salah");
       }
 
-      setLoadingLogin(false)
+      setLoadingLogin(false);
       setButtonStyle({
         background: "rgba(232, 40, 39, 1)",
         boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.4)",
         cursor: "pointer",
-      })
+      });
     } catch (err) {
-      setLoadingLogin(false)
+      setLoadingLogin(false);
       setButtonStyle({
         background: "rgba(232, 40, 39, 1)",
         boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.4)",
         cursor: "pointer",
-      })
+      });
 
       console.error("Error during login:", err);
     }
@@ -123,7 +123,11 @@ const HomePage = () => {
   return (
     <div className="home overflow-hidden">
       <Row>
-        <Col md={6} className="d-none d-md-block" style={{ backgroundColor: "#E828271A", height: "100vh" }}>
+        <Col
+          md={6}
+          className="d-none d-md-block"
+          style={{ backgroundColor: "#E828271A", height: "100vh" }}
+        >
           <div className="justify-content-between h-100 ">
             <img
               src="./assets/image/svg/logo-elearning 1.svg"
@@ -177,7 +181,6 @@ const HomePage = () => {
                     onInput={checkForm}
                   />
 
-
                   <div className="login-form-group">
                     <input
                       className="login-form"
@@ -194,25 +197,34 @@ const HomePage = () => {
                       }}
                       onInput={checkForm}
                     />
-                    <div className="btn-form-group" onClick={() => setShowPassword(!showPassword)}>
-                      {
-                        showPassword === true ?
-                          <span>Hide</span>
-                          :
-                          <img src="/assets/image/svg/ShowPassIcon.svg" alt="" />
-                      }
+                    <div
+                      className="btn-form-group"
+                      onClick={() => setShowPassword(!showPassword)}
+                    >
+                      {showPassword === true ? (
+                        <img src="/assets/image/svg/HidePassIcon.svg" alt="" width="28px" height="28px"/>
+                      ) : (
+                        <img src="/assets/image/svg/ShowPassIcon.svg" alt="" />
+                      )}
                     </div>
                   </div>
 
                   <a onClick={handleForgot} className="forgotTxt">
                     Forgot Password?
                   </a>
-                  <button className="loginBtn" disabled={loadingLogin === true} style={{ ...buttonStyle, display: "flex", gap: "0.5rem", justifyContent: 'center', alignItems: 'center' }}>
+                  <button
+                    className="loginBtn"
+                    disabled={loadingLogin === true}
+                    style={{
+                      ...buttonStyle,
+                      display: "flex",
+                      gap: "0.5rem",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
                     Login
-                    {
-                      loadingLogin === true &&
-                      <Spinner size="sm" />
-                    }
+                    {loadingLogin === true && <Spinner size="sm" />}
                   </button>
                 </form>
               </div>

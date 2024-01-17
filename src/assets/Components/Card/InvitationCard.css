@@ -7,6 +7,6 @@
   padding: 1rem;
 }
 
-.invitation-header {
-  margin-bottom: 1rem;
+.invite-card .container {
+  padding: 0;
 }

@@ -47,28 +47,28 @@ const ChatroomPage = () => {
           <div className={isSearchActive ? "active-chatroom-header" : "left-chatroom-header"}>
             {isSearchActive ? (
               <>
-                <img src="BackChatIcon.svg" alt="" onClick={handleSearchIconClicked}/>
+                <img src="./assets/image/svg/BackChatIcon.svg" alt="" onClick={handleSearchIconClicked}/>
                 <div className="left-chatroom-img">
                   <input
                     className="chat-name-input"
                     type="text"
                     placeholder="Search name."
                     style={{
-                      background: `url('SearchIcon.svg') no-repeat 12px center`,
+                      background: `url('./assets/image/svg/SearchIcon.svg') no-repeat 12px center`,
                       backgroundColor: "rgba(127, 138, 154, 0.1)",
                       paddingLeft: "45px",
                       border: "none",
                     }}
                   />
-                  <img src="NewChat.svg" alt="" style={{ marginLeft: "8px" }} />
+                  <img src="./assets/image/svg/NewChat.svg" alt="" style={{ marginLeft: "8px" }} />
                 </div>
               </>
             ) : (
               <>
                 <p>Chatroom</p>
                 <div className="left-chatroom-img">
-                  <img src="SearchIcon.svg" alt="" onClick={handleSearchIconClicked}/>
-                  <img src="NewChat.svg" alt="" style={{ marginLeft: "8px" }} />
+                  <img src="./assets/image/svg/SearchIcon.svg" alt="" onClick={handleSearchIconClicked}/>
+                  <img src="./assets/image/svg/NewChat.svg" alt="" style={{ marginLeft: "8px" }} />
                 </div>
               </>
             )}
@@ -79,7 +79,7 @@ const ChatroomPage = () => {
           <Col xs={8} className="right-chat-room">
             <div className="right-chatroom-header d-flex justify-content-between align-items-center">
               <div className="chat-profile  d-flex align-items-center">
-                <img src="Avatar.svg" alt="" />
+                <img src="./assets/image/svg/Avatar.svg" alt="" />
                 <div className="chat-name-seen">
                   <p className="chat-name-p">Annete Black</p>
                   <p className="chat-status-p">Online</p>
@@ -91,7 +91,7 @@ const ChatroomPage = () => {
                   type="text"
                   placeholder="Search message."
                   style={{
-                    background: `url('SearchIcon.svg') no-repeat 12px center`,
+                    background: `url('./assets/image/svg/SearchIcon.svg') no-repeat 12px center`,
                     backgroundColor: "rgba(127, 138, 154, 0.1)",
                     paddingLeft: "45px",
                     border: "none",
@@ -147,8 +147,8 @@ const ChatroomPage = () => {
             <div className="footer-row">
               <div className="right-chatroom-footer mx-auto">
                 <div className="footer-image d-flex">
-                  <img src="EmoticonIcon.svg" alt="" className="emot-icon" />
-                  <img src="ClipperIcon.svg" alt="" />
+                  <img src="./assets/image/svg/EmoticonIcon.svg" alt="" className="emot-icon" />
+                  <img src="./assets/image/svg/ClipperIcon.svg" alt="" />
                 </div>
                 <input
                   type="text"
@@ -156,7 +156,7 @@ const ChatroomPage = () => {
                   className="message-input-box"
                 />
                 <div className="send-message">
-                  <img src="ChatSendIcon.svg" alt="" />
+                  <img src="./assets/image/svg/ChatSendIcon.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@ const ChatroomPage = () => {
         ) : (
           <Col xs={8} className="right-nochat-room ">
             <div className="right-chat-content ">
-              <img src="DiscussionIcon.svg" alt="" />
+              <img src="./assets/image/svg/DiscussionIcon.svg" alt="" />
               <div className="">
                 <p
                   style={{

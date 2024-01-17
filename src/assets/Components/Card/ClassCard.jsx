@@ -71,8 +71,8 @@ const ClassCard = () => {
       {data.length > 0 ? (
         data.map((item, index) => (
           <React.Fragment key={index}>
-            <Row>
-              <Col sm={1} className="progress-bar-row progressImg">
+            <Row className="progress-card-row">
+              <Col sm={1} className="progressImg">
                 <img
                   className="progress-image"
                   src={
@@ -88,7 +88,7 @@ const ClassCard = () => {
               <Col sm={3} className="progressTxt">
                 <span>{item.name}</span>
               </Col>
-              <Col sm={8} className="progress-bar-row ">
+              <Col sm={8} className="progress-bar-row justify-content-end">
                 {item.subModule && item.subModule.length > 0 ? (
                   <div>
                     {progressStatus(accumulateProgress(item.subModule)) ===
@@ -99,7 +99,7 @@ const ClassCard = () => {
                           alt=""
                           className="flex-grow-1"
                           style={{
-                            width: "343px",
+                            width: "323px",
                             height: "39px",
                             marginTop: "10px",
                           }}
@@ -119,7 +119,7 @@ const ClassCard = () => {
                             now={accumulateProgress(item.subModule)}
                             className="flex-grow-1"
                             style={{
-                              width: "343px",
+                              width: "323px",
                               height: "6px",
                               marginTop: "10px",
                             }}

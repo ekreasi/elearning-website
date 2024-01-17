@@ -5,12 +5,21 @@
   padding: 5px;
 }
 
+.progressImg {
+  padding: 0;
+}
+
 .progress-bar-row {
   min-height: 43px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
+}
+
+.progress-card-row {
+  padding: 10px;
 }
 
 .complete {
@@ -20,22 +29,13 @@
   color: rgba(127, 138, 154, 0.5);
   }
 
-  .complete p {
-    display: inline;
-  }
+.complete p {
+  display: inline;
+}
 
 .progressTxt {
   font-size: 14px;
   font-weight: 500;
   margin: auto 0;
-}
-
-.class-row {
-  width: 665px;
-  max-height: 43px;
-}
-
-.classBar {
-  height: 6px;
-  width: 100px;
+  padding: 0;
 }
