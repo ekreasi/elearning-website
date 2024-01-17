@@ -16,6 +16,7 @@ const HomePage = () => {
   const { isAuthenticated } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [buttonStyle, setButtonStyle] = useState({
     background: "rgba(232, 40, 39, 0.3)",
     boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.2)",
@@ -100,7 +101,7 @@ const HomePage = () => {
   return (
     <div className="home overflow-hidden">
       <Row>
-        <Col xs={6} style={{ backgroundColor: "#E828271A", height: "100vh" }}>
+        <Col md={6} className="d-none d-md-block" style={{ backgroundColor: "#E828271A", height: "100vh" }}>
           <div className="justify-content-between h-100 ">
             <img
               src="./assets/image/svg/logo-elearning 1.svg"
@@ -115,7 +116,7 @@ const HomePage = () => {
             />
           </div>
         </Col>
-        <Col xs={6} style={{ backgroundColor: "white" }}>
+        <Col md={6} style={{ backgroundColor: "white" }}>
           <div className="login">
             <div
               className="d-flex flex-column justify-content-between"
@@ -154,21 +155,33 @@ const HomePage = () => {
                     onInput={checkForm}
                   />
 
-                  <input
-                    className="login-form"
-                    type="password"
-                    placeholder="Password"
-                    style={{
-                      background: `url('./assets/image/svg/ic-login-password.svg') no-repeat 12px center, url('ShowPassIcon.svg') no-repeat right 12px center`,
-                      backgroundColor: "#F5F6F8",
-                      paddingLeft: "45px",
-                      border: "none",
-                    }}
-                    onChange={(e) => {
-                      setPassword(e.target.value);
-                    }}
-                    onInput={checkForm}
-                  />
+ 
+                  <div className="login-form-group">
+                    <input
+                      className="login-form"
+                      type={showPassword === true ? "text" : "password"}
+                      placeholder="Password"
+                      style={{
+                        background: `url('./assets/image/svg/ic-login-password.svg') no-repeat 12px center`,
+                        backgroundColor: "#F5F6F8",
+                        paddingLeft: "45px",
+                        border: "none",
+                      }}
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                      }}
+                      onInput={checkForm}
+                    />
+                    <div className="btn-form-group" onClick={() => setShowPassword(!showPassword)}>
+                      {
+                        showPassword === true ?
+                          <span>Hide</span>
+                          :
+                          <img src="/ShowPassIcon.svg" alt="" />
+                      }
+                    </div>
+                  </div>
+
                   <a onClick={handleForgot} className="forgotTxt">
                     Forgot Password?
                   </a>

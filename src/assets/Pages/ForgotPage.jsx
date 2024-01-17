@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../Auth/AuthWrapper";
 import Swal from "sweetalert2";
 
@@ -74,7 +74,7 @@ const RegisterPage = () => {
   return (
     <div className="home">
       <Row>
-        <Col xs={6} style={{ backgroundColor: "#E828271A", height: "100vh" }}>
+        <Col md={6} className="d-none d-md-block" style={{ backgroundColor: "#E828271A", height: "100vh" }}>
           <div className="justify-content-between h-100">
             <img
               src="./assets/image/svg/logo-elearning 1.svg"
@@ -142,34 +142,25 @@ const RegisterPage = () => {
           </div>
         </Col> */}
 
-        <Col xs={6} style={{ backgroundColor: "white", height: "96.8vh" }}>
+
+        <Col md={6} style={{ backgroundColor: "white", height: "96.8vh" }}>
           <div className="login">
             <div className="d-flex flex-column justify-content-between h-100">
               <div className="signContainer">
-                <p
-                  style={{
-                    display: "inline",
-                    fontSize: "14px",
-                    fontWeight: "400",
-                  }}
-                >
-                  Don&apos;t have an account ?{" "}
-                </p>
+                <p style={{ display: "inline", fontSize: "14px", fontWeight: "400", }}>Don&apos;t have an account ? </p>
                 <button className="signBtn" onClick={handleSignUp}>
                   Sign Up
                 </button>
               </div>
-              <div
-                className=""
-                style={{ marginBottom: "196.5px", marginTop: "100px" }}
-              >
+
+              <div className="" style={{ marginBottom: "196.5px", marginTop: "100px" }}>
                 <h3 className="registerTxt">Forgot Password</h3>
                 <p className="signTxt mb-5">
                   Please input field below for reset the password
                 </p>
                 <form action="#" onSubmit={handleConfirm}>
                   <input
-                    className="login-form mb-4"
+                    className="login-form mb-3"
                     type="text"
                     placeholder="email or phone number"
                     style={{
@@ -182,6 +173,11 @@ const RegisterPage = () => {
                     }}
                     onInput={checkForm}
                   />
+
+                  <Link to={"/"} className="forgotTxt">
+                    Back to Login?
+                  </Link>
+
                   <button className="loginBtn" style={buttonStyle}>
                     Send
                   </button>
