@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Auth/AuthWrapper";
 import Swal from "sweetalert2";
@@ -22,6 +22,7 @@ const HomePage = () => {
     boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.2)",
     cursor: "not-allowed",
   });
+  const [loadingLogin, setLoadingLogin] = useState(false)
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -31,6 +32,13 @@ const HomePage = () => {
   }, [isAuthenticated, navigate]);
 
   async function login(e) {
+    setLoadingLogin(true)
+    setButtonStyle({
+      background: "rgba(232, 40, 39, 0.3)",
+      boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.2)",
+      cursor: "not-allowed",
+    })
+
     e.preventDefault();
 
     try {
@@ -75,7 +83,21 @@ const HomePage = () => {
       } else {
         console.log("Username atau password salah");
       }
+
+      setLoadingLogin(false)
+      setButtonStyle({
+        background: "rgba(232, 40, 39, 1)",
+        boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.4)",
+        cursor: "pointer",
+      })
     } catch (err) {
+      setLoadingLogin(false)
+      setButtonStyle({
+        background: "rgba(232, 40, 39, 1)",
+        boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.4)",
+        cursor: "pointer",
+      })
+
       console.error("Error during login:", err);
     }
   }
@@ -155,7 +177,7 @@ const HomePage = () => {
                     onInput={checkForm}
                   />
 
- 
+
                   <div className="login-form-group">
                     <input
                       className="login-form"
@@ -177,7 +199,7 @@ const HomePage = () => {
                         showPassword === true ?
                           <span>Hide</span>
                           :
-                          <img src="/ShowPassIcon.svg" alt="" />
+                          <img src="/assets/image/svg/ShowPassIcon.svg" alt="" />
                       }
                     </div>
                   </div>
@@ -185,8 +207,12 @@ const HomePage = () => {
                   <a onClick={handleForgot} className="forgotTxt">
                     Forgot Password?
                   </a>
-                  <button className="loginBtn" style={buttonStyle}>
+                  <button className="loginBtn" disabled={loadingLogin === true} style={{ ...buttonStyle, display: "flex", gap: "0.5rem", justifyContent: 'center', alignItems: 'center' }}>
                     Login
+                    {
+                      loadingLogin === true &&
+                      <Spinner size="sm" />
+                    }
                   </button>
                 </form>
               </div>
