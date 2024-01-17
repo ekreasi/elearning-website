@@ -4,6 +4,7 @@ import { Col, Modal, Row } from "react-bootstrap";
 import "./SchedulePage.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ScheduleModal = (props) => {
   var someDate = new Date();
@@ -97,10 +98,14 @@ const SchedulePage = () => {
     setActiveButton(buttonName);
   };
   const navigate = useNavigate();
-  const goZoom = () => navigate("/zoom-webinar")
+  const goZoom = () => navigate("/zoom-webinar");
 
   return (
     <div style={{ height: "100vh", overflow: "hidden", background: "#eaeaea" }}>
+      <Helmet>
+        <title>Schedule | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <NewNav />
       <div className="schedule-page">
         <Row>

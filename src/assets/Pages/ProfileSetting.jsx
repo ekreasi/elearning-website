@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import WhiteNav from "../Components/Navbar/WhiteNav/WhiteNav";
 import { useNavigate } from "react-router-dom";
 import "../Components/Card/SettingCard.css";
+import { Helmet } from "react-helmet";
 
 const ProfileSetting = () => {
   const navigate = useNavigate();
@@ -169,6 +170,10 @@ const ProfileSetting = () => {
         backgroundSize: "100% 156px",
       }}
     >
+      <Helmet>
+        <title>Profile | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <WhiteNav />
 
       <div className="settCard">
@@ -199,7 +204,7 @@ const ProfileSetting = () => {
                     fontSize: "24px",
                     fontWeight: "700",
                     color: "#fff",
-                    marginBotoom: "0"
+                    marginBotoom: "0",
                   }}
                 >
                   {name}

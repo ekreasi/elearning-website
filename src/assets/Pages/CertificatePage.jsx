@@ -1,9 +1,9 @@
 import { Col, Row } from "react-bootstrap";
 import WhiteNav from "../Components/Navbar/WhiteNav/WhiteNav";
 import "./CertificatePage.css";
+import { Helmet } from "react-helmet";
 
 const CertificatePage = () => {
-
   return (
     <div
       className="certificate-page"
@@ -15,6 +15,10 @@ const CertificatePage = () => {
         backgroundSize: "100% 156px",
       }}
     >
+      <Helmet>
+        <title>Certificate | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <WhiteNav />
 
       <div className="cert-header">
@@ -23,7 +27,11 @@ const CertificatePage = () => {
             <img
               src="CertificatePageIcon.svg"
               alt=""
-              style={{ width: "110px", height: "110px", margin: "5px 10px 5px 20px" }}
+              style={{
+                width: "110px",
+                height: "110px",
+                margin: "5px 10px 5px 20px",
+              }}
             />
           </Col>
           <Col xs={10}>

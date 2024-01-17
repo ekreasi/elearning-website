@@ -69,7 +69,7 @@ function NewNav() {
         expand="lg"
         className="bg-custom w-100"
         style={{
-          background: `url('bg-logo.svg') no-repeat`,
+          background: `url('./assets/image/svg/bg-logo.svg') no-repeat`,
           backgroundColor: "#E82827",
           height: "62px",
         }}
@@ -77,11 +77,11 @@ function NewNav() {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="E-LearningLogo.svg"
+              src="./assets/image/svg/E-LearningLogo.svg"
               alt=""
               style={{ marginLeft: "15px", marginRight: "60px" }}
             />
-            <img src="JISLogo.svg" alt="" style={{ marginRight: "50px" }} />
+            <img src="./assets/image/svg/JISLogo.svg" alt="" style={{ marginRight: "50px" }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
@@ -129,7 +129,7 @@ function NewNav() {
               <NavDropdown
                 title={
                   <span>
-                    Event <img src="DropdownIcon.svg" />
+                    Event <img src="./assets/image/svg/DropdownIcon.svg" />
                   </span>
                 }
                 id="basic-nav-dropdown"
@@ -142,7 +142,7 @@ function NewNav() {
               >
                 <NavDropdown.Item href="#action/3.1" onClick={goTraining}>
                   <img
-                    src="TrainingEventIcon.svg"
+                    src="./assets/image/svg/TrainingEventIcon.svg"
                     alt=""
                     style={{ marginRight: "5px" }}
                   />
@@ -150,7 +150,7 @@ function NewNav() {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2" onClick={goZoom}>
                   <img
-                    src="ZoomIcon.svg"
+                    src="./assets/image/svg/ZoomIcon.svg"
                     alt=""
                     style={{ marginRight: "5px" }}
                   />
@@ -161,7 +161,7 @@ function NewNav() {
             <Nav.Link>
               <DropdownButton
                 id="dropdown-basic-button"
-                title={<img src="BelNotif.svg" alt="" />}
+                title={<img src="./assets/image/svg/BelNotif.svg" alt="" />}
                 className="notification-button"
                 onClick={() => {
                   setIsNotificationClicked(!isNotificationClicked);
@@ -185,7 +185,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -211,7 +211,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -237,7 +237,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -276,10 +276,10 @@ function NewNav() {
               </DropdownButton>
             </Nav.Link>
             <Nav.Link>
-              <img src="SettingProfile.svg" alt="" onClick={goProfile} />
+              <img src="./assets/image/svg/SettingProfile.svg" alt="" onClick={goProfile} />
             </Nav.Link>
             <Nav.Link className="mx-2">
-              <img src="Line 9.svg" alt="" />
+              <img src="./assets/image/svg/Line 9.svg" alt="" />
             </Nav.Link>
             <Nav.Link>
               <div
@@ -293,7 +293,7 @@ function NewNav() {
                 }}
               >
                 <img
-                  src="IconKeluar.svg"
+                  src="./assets/image/svg/IconKeluar.svg"
                   alt=""
                   style={{
                     objectFit: "contain",

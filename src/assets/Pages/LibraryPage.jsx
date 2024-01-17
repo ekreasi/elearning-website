@@ -9,6 +9,7 @@ import {
 import WhiteNav from "../Components/Navbar/WhiteNav/WhiteNav";
 import "./LibraryPage.css";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const LibraryPage = () => {
   const navigate = useNavigate();
@@ -26,6 +27,10 @@ const LibraryPage = () => {
         backgroundSize: "100% 156px",
       }}
     >
+      <Helmet>
+        <title>Library | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <WhiteNav />
       <Container className="library-page">
         <Row className="library-page-header">

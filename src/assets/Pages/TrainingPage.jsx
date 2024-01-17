@@ -9,6 +9,7 @@ import {
 import NewNav from "../Components/Navbar/RedNav/NewNav";
 import "./TrainingPage.css";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const TrainingPage = () => {
   const navigate = useNavigate();
@@ -22,6 +23,10 @@ const TrainingPage = () => {
 
   return (
     <div style={{ background: "#E5E5E5", height: "100vh" }}>
+      <Helmet>
+        <title>Event | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <NewNav />
       <div className="training-page">
         <div className="training-page-header">
@@ -68,9 +73,7 @@ const TrainingPage = () => {
                   lines.
                 </Row>
                 <Row className="mt-2">
-                  <span
-                  className="training-img-container"
-                  >
+                  <span className="training-img-container">
                     <img
                       src="TrainingDateIcon.svg"
                       alt=""
@@ -113,7 +116,10 @@ const TrainingPage = () => {
                   and Young People
                 </Row>
                 <Row className="mt-2">
-                  <span className="training-img-container"style={{ paddingLeft: "0" }}>
+                  <span
+                    className="training-img-container"
+                    style={{ paddingLeft: "0" }}
+                  >
                     <img
                       src="TrainingDateIcon.svg"
                       alt=""
@@ -152,9 +158,14 @@ const TrainingPage = () => {
                 <img src="Training-Main-Icon.svg" alt="" />
               </Col>
               <Col xs={9} style={{ marginLeft: "20px" }}>
-                <Row className="training-page-title">Training: Product Introduction</Row>
+                <Row className="training-page-title">
+                  Training: Product Introduction
+                </Row>
                 <Row className="mt-2">
-                  <span className="training-img-container"style={{ paddingLeft: "0" }}>
+                  <span
+                    className="training-img-container"
+                    style={{ paddingLeft: "0" }}
+                  >
                     <img
                       src="TrainingDateIcon.svg"
                       alt=""
@@ -194,9 +205,14 @@ const TrainingPage = () => {
                 <img src="Training-Main-Icon.svg" alt="" />
               </Col>
               <Col xs={9} style={{ marginLeft: "20px" }}>
-                <Row className="training-page-title">Training: How to manage Your Time</Row>
+                <Row className="training-page-title">
+                  Training: How to manage Your Time
+                </Row>
                 <Row className="mt-2">
-                  <span className="training-img-container"style={{ paddingLeft: "0" }}>
+                  <span
+                    className="training-img-container"
+                    style={{ paddingLeft: "0" }}
+                  >
                     <img
                       src="TrainingDateIcon.svg"
                       alt=""

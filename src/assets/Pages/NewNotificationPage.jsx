@@ -1,11 +1,14 @@
+import { Helmet } from "react-helmet";
 import NewNav from "../Components/Navbar/RedNav/NewNav";
 import "./NewNotificationPage.css";
 
 const NewNotificationPage = () => {
-  
-
   return (
     <div style={{ background: "#E5E5E5", height: "100vh" }}>
+      <Helmet>
+        <title>Notification | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <NewNav />
       <div className="full-notification-page ">
         <div className="training-page-header">

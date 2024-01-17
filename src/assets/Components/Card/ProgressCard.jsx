@@ -44,7 +44,7 @@ const ProgressCard = () => {
           className="progressHeader"
         >
           <img
-            src="ProgressIcon.svg"
+            src="./assets/image/svg/ProgressIcon.svg"
             alt=""
             style={{
               width: "28px",

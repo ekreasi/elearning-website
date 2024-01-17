@@ -78,8 +78,8 @@ const ClassCard = () => {
                   src={
                     progressStatus(accumulateProgress(item.subModule)) ===
                     "Not Started"
-                      ? "NotStartedIconModule.svg"
-                      : "Icon Module.svg"
+                      ? "./assets/image/svg/NotStartedIconModule.svg"
+                      : "./assets/image/svg/Icon Module.svg"
                   }
                   style={{ width: "39px" }}
                   alt=""
@@ -95,7 +95,7 @@ const ClassCard = () => {
                     "completed" ? (
                       <div className="d-flex justify-content-between justify-content-center">
                         <img
-                          src="CompletedIconModule.svg"
+                          src="./assets/image/svg/CompletedIconModule.svg"
                           alt=""
                           className="flex-grow-1"
                           style={{
@@ -106,7 +106,7 @@ const ClassCard = () => {
                           }}
                         />
                         <img
-                          src="RightArrowIcon.svg"
+                          src="./assets/image/svg/RightArrowIcon.svg"
                           alt=""
                           className="mx-2"
                           onClick={goHistory}
@@ -115,7 +115,7 @@ const ClassCard = () => {
                       </div>
                     ) : (
                       <div className="d-flex justify-content-between align-items-center">
-                        <ProgressBar
+                        {/* <ProgressBar
                           variant="danger"
                           now={accumulateProgress(item.subModule)}
                           className="flex-grow-1"
@@ -127,7 +127,7 @@ const ClassCard = () => {
                           }}
                         />
                         <img
-                          src="RightArrowIcon.svg"
+                          src="./assets/image/svg/RightArrowIcon.svg"
                           alt=""
                           className="mx-2"
                           onClick={goHistory}
@@ -146,7 +146,7 @@ const ClassCard = () => {
                             </p>
                             {progressStatus(accumulateProgress(item.subModule))}
                           </span>
-                        </div>
+                        </div> */}
                       </div>
                     )}
                   </div>
@@ -162,12 +162,12 @@ const ClassCard = () => {
                         className="flex-grow-1"
                         style={{
                           maxWidth: "343px",
-                          height: "6px",
+                          maxheight: "6px",
                           marginLeft: "13%",
                         }}
                       />
                       <img
-                        src="RightArrowIcon.svg"
+                        src="./assets/image/svg/RightArrowIcon.svg"
                         alt=""
                         className="mx-2"
                         onClick={goHistory}

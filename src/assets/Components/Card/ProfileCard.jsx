@@ -54,7 +54,7 @@ const ProfileCard = () => {
             <Col xs={3}>
               <img
                 className="profile-image"
-                src=/*{idPhoto}*/ "./dum.svg"
+                src=/*{idPhoto}*/"./assets/image/svg/dum.svg"
                 alt=""
                 onError={replaceAltImg}
               />
@@ -69,7 +69,7 @@ const ProfileCard = () => {
               <div style={{ fontSize: "12px" }}>
                 <img
                   className="profile-image"
-                  src="mingcute_certificate-fill.svg"
+                  src="./assets/image/svg/mingcute_certificate-fill.svg"
                   alt=""
                   style={{ width: "30px", height: "30px", marginLeft: "-12px" }}
                 />
