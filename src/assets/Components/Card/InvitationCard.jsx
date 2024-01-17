@@ -86,8 +86,8 @@ const InvitationCard = () => {
               </a>
             </div>
           </Row>
-          <Row
-            className="d-flex justify-content-between align-items-center"
+          <div
+            className="d-flex gap-3 align-items-center"
             style={{
               background: "rgba(127, 138, 154, 0.08)",
               border: "1px solid rgba(127, 138, 154, 0.4)",
@@ -97,11 +97,10 @@ const InvitationCard = () => {
           >
             {loadedData ? (
               <>
-                <Col xs={3}>
+                <div className="ps-3">
                   <img src="./assets/image/svg/TrainingIcon.svg" alt="" />
-                </Col>
-                <Col xs={8} >
-                  {" "}
+                </div>
+                <div>
                   <p style={{ fontSize: "14px", fontWeight: "500", marginTop: "10px" }}>
                     {" "}
                     Training: Product Introduction
@@ -112,7 +111,7 @@ const InvitationCard = () => {
                       <img src="./assets/image/svg/ArrowRight.svg" alt="" />
                     </a>
                   </p>
-                </Col>
+                </div>
               </>
             ) : (
               <p
@@ -122,7 +121,7 @@ const InvitationCard = () => {
                 No Invitation
               </p>
             )}
-          </Row>
+          </div>
         </Container>
       </div>
     </div>
