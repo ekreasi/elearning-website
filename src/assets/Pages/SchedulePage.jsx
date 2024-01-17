@@ -136,11 +136,11 @@ const SchedulePage = () => {
                   </p>
                   <div className="schedule-image-container">
                     <div className="schedule-event-time d-flex ">
-                      <img src="JamTrainingIcon.svg" alt="" />
+                      <img src="./assets/image/svg/JamTrainingIcon.svg" alt="" />
                       <p>10:00 AM - 12:00 PM</p>
                     </div>
                     <div className="schedule-event-location d-flex">
-                      <img src="LocationTrainingIcon.svg" alt="" />
+                      <img src="./assets/image/svg/LocationTrainingIcon.svg" alt="" />
                       <p className="link">https://zoom.us/j/5551112222</p>
                     </div>
                   </div>
@@ -151,15 +151,15 @@ const SchedulePage = () => {
                   </p>
                   <div className="schedule-image-container">
                     <div className="schedule-event-time d-flex ">
-                      <img src="JamTrainingIcon.svg" alt="" />
+                      <img src="./assets/image/svg/JamTrainingIcon.svg" alt="" />
                       <p>14:00 PM</p>
                     </div>
                     <div className="schedule-event-location d-flex">
-                      <img src="LocationTrainingIcon.svg" alt="" />
+                      <img src="./assets/image/svg/LocationTrainingIcon.svg" alt="" />
                       <p>Lt.3 Meeting Room</p>
                     </div>
                     <div className="schedule-event-person d-flex">
-                      <img src="FileIcon.svg" alt="" />
+                      <img src="./assets/image/svg/FileIcon.svg" alt="" />
                       <p>With Mrs.Rianti and Mr.Surya.Lorem ipsum dolor</p>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ const SchedulePage = () => {
             )}
             {activeButton === "Agenda" && (
               <div className="agenda-schedule-content">
-                <img src="October.svg" alt="" />
+                <img src="./assets/image/svg/October.svg" alt="" />
                 <div className="agenda-schedule-container ">
                   <div className="agenda-date d-flex flex-column align-items-center">
                     <p className="schedule-day">Tue</p>
@@ -211,7 +211,7 @@ const SchedulePage = () => {
                     </div>
                   </div>
                 </div>
-                <img src="November.svg" alt="" />
+                <img src="./assets/image/svg/November.svg" alt="" />
                 <div className="agenda-schedule-container ">
                   <div className="agenda-date d-flex flex-column align-items-center">
                     <p className="schedule-day">Wed</p>

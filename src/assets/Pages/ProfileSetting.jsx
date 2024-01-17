@@ -91,7 +91,7 @@ const ProfileSetting = () => {
   }, [token]);
 
   const replaceAltImg = (e) => {
-    e.currentTarget.src = "./dum.jpg";
+    e.currentTarget.src = "./assets/image/svg/dum.jpg";
   };
 
   const handleChange = () => {
@@ -165,7 +165,7 @@ const ProfileSetting = () => {
       style={{
         backgroundColor: "#FFFFFF",
         height: "100vh",
-        background: `url('bg_red_1 1.svg') no-repeat `,
+        background: `url('./assets/image/svg/bg_red_1 1.svg') no-repeat `,
         backgroundPosition: "center top 60px",
         backgroundSize: "100% 156px",
       }}
@@ -182,7 +182,7 @@ const ProfileSetting = () => {
             <div onClick={handlePhotoClick}>
               <a href=".">
                 <img
-                  src=/*{idPhoto}/>*/ "./dum.svg"
+                  src=/*{idPhoto}/>*/ "./assets/image/svg/dum.svg"
                   alt=""
                   onError={replaceAltImg}
                 />

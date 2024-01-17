@@ -114,39 +114,26 @@ const ClassCard = () => {
                         />
                       </div>
                     ) : (
-                      <div className="d-flex justify-content-between align-items-center">
-                        {/* <ProgressBar
+                      <div className="d-flex justify-content-end align-items-center">
+                        <ProgressBar
                           variant="danger"
                           now={accumulateProgress(item.subModule)}
                           className="flex-grow-1"
                           style={{
-                            width: "343px",
-                            height: "39px",
-                            marginRight: "-10%",
+                            maxWidth: "343px",
+                            height: "6px",
                             marginTop: "10px",
                           }}
                         />
                         <img
                           src="./assets/image/svg/RightArrowIcon.svg"
                           alt=""
-                          className="mx-2"
                           onClick={goHistory}
-                          style={{ cursor: "pointer" }}
+                          style={{ cursor: "pointer", marginRight: "10px" }}
                         />
                         <div className="d-flex">
-                          <span className="complete">
-                            <p
-                              style={{
-                                display: "inline",
-                                fontSize: "12px",
-                                fontWeight: "400",
-                              }}
-                            >
-                              Your progress is{" "}
-                            </p>
-                            {progressStatus(accumulateProgress(item.subModule))}
-                          </span>
-                        </div> */}
+                          
+                        </div>
                       </div>
                     )}
                   </div>

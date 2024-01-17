@@ -37,7 +37,7 @@ function MyVerticallyCenteredModal(props) {
             type="text"
             placeholder="Search message."
             style={{
-              background: `url('SearchIcon.svg') no-repeat 16px center`,
+              background: `url('./assets/image/svg/SearchIcon.svg') no-repeat 16px center`,
               paddingLeft: "45px",
               backgroundColor: "#F5F6F8",
             }}
@@ -54,7 +54,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center ">
-              <img src="ColoredCoaching.svg" alt="" />
+              <img src="./assets/image/svg/ColoredCoaching.svg" alt="" />
               <p
                 className="mb-0 p-title ready-p-title"
                 style={{ marginLeft: "12px" }}
@@ -70,7 +70,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="ColoredImprovement.svg" alt="" />
+              <img src="./assets/image/svg/ColoredImprovement.svg" alt="" />
               <p
                 className="mb-0 p-title ready-p-title"
                 style={{ marginLeft: "12px" }}
@@ -86,7 +86,7 @@ function MyVerticallyCenteredModal(props) {
             onClick={goStartChapter}
           >
             <div className="d-flex align-items-center">
-              <img src="ColoredSkill.svg" alt="" />
+              <img src="./assets/image/svg/ColoredSkill.svg" alt="" />
               <p
                 className="mb-0 p-title ready-p-title"
                 style={{ marginLeft: "12px" }}
@@ -103,7 +103,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title " style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -115,7 +115,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -127,45 +127,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
-              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
-                Coaching
-              </p>
-            </div>
-            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            xs={4}
-            className="d-flex justify-content-between align-items-center module-choices-card"
-          >
-            <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
-              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
-                Coaching
-              </p>
-            </div>
-            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
-          </Col>
-          <Col
-            xs={4}
-            className="d-flex justify-content-between align-items-center module-choices-card"
-          >
-            <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
-              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
-                Coaching
-              </p>
-            </div>
-            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
-          </Col>
-          <Col
-            xs={4}
-            className="d-flex justify-content-between align-items-center module-choices-card"
-          >
-            <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -179,7 +141,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -191,7 +153,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -203,7 +165,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -217,7 +179,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -229,7 +191,7 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -241,7 +203,45 @@ function MyVerticallyCenteredModal(props) {
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
-              <img src="TimeManagementIcon.svg" alt="" />
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
+              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
+                Coaching
+              </p>
+            </div>
+            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            xs={4}
+            className="d-flex justify-content-between align-items-center module-choices-card"
+          >
+            <div className="d-flex align-items-center">
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
+              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
+                Coaching
+              </p>
+            </div>
+            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
+          </Col>
+          <Col
+            xs={4}
+            className="d-flex justify-content-between align-items-center module-choices-card"
+          >
+            <div className="d-flex align-items-center">
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
+              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
+                Coaching
+              </p>
+            </div>
+            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
+          </Col>
+          <Col
+            xs={4}
+            className="d-flex justify-content-between align-items-center module-choices-card"
+          >
+            <div className="d-flex align-items-center">
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
               <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
                 Coaching
               </p>
@@ -270,7 +270,7 @@ const LearningPage = () => {
         <div className="learning-page-content d-flex flex-column justify-content-center align-items-center">
           <Row>
             <Col xs={3} className="learning-module-card">
-              <img src="ReadyModuleIcon.svg" alt="" className="module-img" />
+              <img src="./assets/image/svg/ReadyModuleIcon.svg" alt="" className="module-img" />
               <div className="learning-module-text-container my-auto">
                 <p className="learning-module-title">Module 1</p>
                 <p
@@ -281,7 +281,7 @@ const LearningPage = () => {
               </div>
             </Col>
             <Col xs={3} className="learning-module-card">
-              <img src="ReadyModuleIcon.svg" alt="" className="module-img" />
+              <img src="./assets/image/svg/ReadyModuleIcon.svg" alt="" className="module-img" />
               <div className="learning-module-text-container my-auto">
                 <p className="learning-module-title">Module 2</p>
                 <p

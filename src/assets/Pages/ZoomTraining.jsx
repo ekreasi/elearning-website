@@ -28,7 +28,7 @@ const ZoomTraining = () => {
           <Container>
             <Row className="zoom-content-row">
               <Col xs={3} className="p-0" style={{ width: "230px" }}>
-                <img src="ZoomContentRowImage.svg" alt="" />
+                <img src="./assets/image/svg/ZoomContentRowImage.svg" alt="" />
               </Col>
               <Col xs={7} className="p-0">
                 <Row>
@@ -59,21 +59,21 @@ const ZoomTraining = () => {
                 <Row className="mt-2">
                   <span style={{ paddingLeft: "8px" }}>
                     <img
-                      src="TrainingDateIcon.svg"
+                      src="./assets/image/svg/TrainingDateIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
                     23 Oct{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
+                    <img src="./assets/image/svg/Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="JamTrainingIcon.svg"
+                      src="./assets/image/svg/JamTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />
                     09:10 - 10:10{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
+                    <img src="./assets/image/svg/Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="LocationTrainingIcon.svg"
+                      src="./assets/image/svg/LocationTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
@@ -92,7 +92,7 @@ const ZoomTraining = () => {
             </Row>
             <Row className="zoom-content-row">
               <Col xs={3} className="p-0" style={{ width: "230px" }}>
-                <img src="ZoomContentRowImage.svg" alt="" />
+                <img src="./assets/image/svg/ZoomContentRowImage.svg" alt="" />
               </Col>
               <Col xs={7} className="p-0">
                 <Row>
@@ -123,21 +123,21 @@ const ZoomTraining = () => {
                 <Row className="mt-2">
                   <span style={{ paddingLeft: "8px" }}>
                     <img
-                      src="TrainingDateIcon.svg"
+                      src="./assets/image/svg/TrainingDateIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
                     23 Oct{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
+                    <img src="./assets/image/svg/Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="JamTrainingIcon.svg"
+                      src="./assets/image/svg/JamTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />
                     09:10 - 10:10{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
+                    <img src="./assets/image/svg/Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="LocationTrainingIcon.svg"
+                      src="./assets/image/svg/LocationTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
