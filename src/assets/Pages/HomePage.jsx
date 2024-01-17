@@ -104,12 +104,12 @@ const HomePage = () => {
         <Col md={6} className="d-none d-md-block" style={{ backgroundColor: "#E828271A", height: "100vh" }}>
           <div className="justify-content-between h-100 ">
             <img
-              src="logo-elearning 1.svg"
+              src="./assets/image/svg/logo-elearning 1.svg"
               alt=""
               style={{ marginTop: "2rem", marginLeft: "6rem" }}
             />
             <img
-              src="img_login_rev 1.svg"
+              src="./assets/image/svg/img_login_rev 1.svg"
               alt=""
               className="mx-auto d-flex mt-3"
               style={{ display: "inline" }}
@@ -145,7 +145,7 @@ const HomePage = () => {
                     type="text"
                     placeholder="Email or Phone Number"
                     style={{
-                      background: `url('ic-login-user.svg') no-repeat 16px center`,
+                      background: `url('./assets/image/svg/ic-login-user.svg') no-repeat 16px center`,
                       paddingLeft: "45px",
                       backgroundColor: "#F5F6F8",
                     }}
@@ -155,14 +155,14 @@ const HomePage = () => {
                     onInput={checkForm}
                   />
 
-
+ 
                   <div className="login-form-group">
                     <input
                       className="login-form"
                       type={showPassword === true ? "text" : "password"}
                       placeholder="Password"
                       style={{
-                        background: `url('ic-login-password.svg') no-repeat 12px center`,
+                        background: `url('./assets/image/svg/ic-login-password.svg') no-repeat 12px center`,
                         backgroundColor: "#F5F6F8",
                         paddingLeft: "45px",
                         border: "none",

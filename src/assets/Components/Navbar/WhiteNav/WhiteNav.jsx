@@ -302,7 +302,7 @@ function WhiteNav() {
                 }}
               >
                 <img
-                  src="RedKeluarIcon.svg"
+                  src="./assets/image/svg/RedKeluarIcon.svg"
                   alt=""
                   style={{
                     objectFit: "contain",

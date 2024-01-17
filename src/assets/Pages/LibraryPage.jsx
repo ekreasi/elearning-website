@@ -22,7 +22,7 @@ const LibraryPage = () => {
       style={{
         backgroundColor: "#FFF",
         height: "100vh",
-        background: `url('bg_red_1 1.svg') no-repeat `,
+        background: `url('./assets/image/svg/bg_red_1 1.svg') no-repeat `,
         backgroundPosition: "center top 60px",
         backgroundSize: "100% 156px",
       }}
@@ -48,7 +48,7 @@ const LibraryPage = () => {
               id="library-page-dropdown"
               title={
                 <span className="library-dropdown-txt">
-                  All <img src="BlackDropdown.svg" alt="Dropdown Icon" />
+                  All <img src="./assets/image/svg/BlackDropdown.svg" alt="Dropdown Icon" />
                 </span>
               }
             >
@@ -63,13 +63,13 @@ const LibraryPage = () => {
               type="text"
               placeholder="Search with title or event."
               style={{
-                background: `url('SearchIcon.svg') no-repeat 16px center`,
+                background: `url('./assets/image/svg/SearchIcon.svg') no-repeat 16px center`,
                 paddingLeft: "45px",
                 backgroundColor: "#F5F6F8",
               }}
             />
             <div className="savedIcon" onClick={goBookmark}>
-              <img src="SaveLibraryIcon.svg" alt="" />
+              <img src="./assets/image/svg/SaveLibraryIcon.svg" alt="" />
             </div>
           </Col>
         </Row>
@@ -78,7 +78,7 @@ const LibraryPage = () => {
             Name
           </Col>
           <Col xs={2} className="library-filter-col">
-            Last Modified <img src="LibrarySortIcon.svg" alt="" />
+            Last Modified <img src="./assets/image/svg/LibrarySortIcon.svg" alt="" />
           </Col>
           <Col xs={2} className="library-event-col">
             Event
@@ -86,7 +86,7 @@ const LibraryPage = () => {
         </Row>
         <Row className="library-page-content" onClick={goSelectedLib}>
           <Col xs={8} className="library-name-col library-name">
-            <img src="LibraryFolderIcon.svg" alt="" className="library-icon" />
+            <img src="./assets/image/svg/LibraryFolderIcon.svg" alt="" className="library-icon" />
             Active Learning Methodologies
           </Col>
           <Col xs={2} className="library-filter-col library-grey ">
@@ -98,7 +98,7 @@ const LibraryPage = () => {
         </Row>
         <Row className="library-page-content" onClick={goSelectedLib}>
           <Col xs={8} className="library-name-col library-name">
-            <img src="LibraryFolderIcon.svg" alt="" className="library-icon" />
+            <img src="./assets/image/svg/LibraryFolderIcon.svg" alt="" className="library-icon" />
             Communicating Effectively with Vulnerable Children and Young People
           </Col>
           <Col xs={2} className="library-filter-col library-grey">
@@ -110,7 +110,7 @@ const LibraryPage = () => {
         </Row>
         <Row className="library-page-content" onClick={goSelectedLib}>
           <Col xs={8} className="library-name-col library-name">
-            <img src="LibraryFolderIcon.svg" alt="" className="library-icon" />
+            <img src="./assets/image/svg/LibraryFolderIcon.svg" alt="" className="library-icon" />
             What it means to be a professional teacher
           </Col>
           <Col xs={2} className="library-filter-col library-grey">
@@ -122,7 +122,7 @@ const LibraryPage = () => {
         </Row>
         <Row className="library-page-content" onClick={goSelectedLib}>
           <Col xs={8} className="library-name-col library-name">
-            <img src="LibraryFolderIcon.svg" alt="" className="library-icon" />
+            <img src="./assets/image/svg/LibraryFolderIcon.svg" alt="" className="library-icon" />
             Rethinking multilingualism and the use of the L1 in English as a
             medium of instrcuction and the use of the
           </Col>
@@ -135,7 +135,7 @@ const LibraryPage = () => {
         </Row>
         <Row className="library-page-content" onClick={goSelectedLib}>
           <Col xs={8} className="library-name-col library-name">
-            <img src="LibraryFolderIcon.svg" alt="" className="library-icon" />
+            <img src="./assets/image/svg/LibraryFolderIcon.svg" alt="" className="library-icon" />
             Active Learning Methodologies
           </Col>
           <Col xs={2} className="library-filter-col library-grey">
@@ -147,7 +147,7 @@ const LibraryPage = () => {
         </Row>
         <Row className="library-page-content" onClick={goSelectedLib}>
           <Col xs={8} className="library-name-col library-name">
-            <img src="LibraryFolderIcon.svg" alt="" className="library-icon" />
+            <img src="./assets/image/svg/LibraryFolderIcon.svg" alt="" className="library-icon" />
             Active Learning Methodologies
           </Col>
           <Col xs={2} className="library-filter-col library-grey">

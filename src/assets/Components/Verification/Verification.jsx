@@ -162,7 +162,7 @@ const Verification = (props) => {
 
   return (
     <div className="container mt-3">
-      <img src="logo-elearning 1.svg" alt="" />
+      <img src="./assets/image/svg/logo-elearning 1.svg" alt="" />
       <div
         className="container shadow"
         style={{

@@ -137,12 +137,12 @@ const RegisterPage = () => {
         <Col xs={6} style={{ backgroundColor: "#E828271A", height: "100vh" }}>
           <div className="justify-content-between h-100">
             <img
-              src="logo-elearning 1.svg"
+              src="./assets/image/svg/logo-elearning 1.svg"
               alt=""
               style={{ marginTop: "2rem", marginLeft: "6rem" }}
             />
             <img
-              src="img_sign up 3.svg"
+              src="./assets/image/svg/img_sign up 3.svg"
               alt=""
               className="mx-auto d-flex mt-3"
             />
@@ -160,7 +160,7 @@ const RegisterPage = () => {
                     type="text"
                     placeholder="Full name"
                     style={{
-                      background: `url('ic-login-user.svg') no-repeat 16px center`,
+                      background: `url('./assets/image/svg/ic-login-user.svg') no-repeat 16px center`,
                       paddingLeft: "45px",
                       backgroundColor: "#F5F6F8",
                     }}
@@ -174,7 +174,7 @@ const RegisterPage = () => {
                     type="email"
                     placeholder="email or phone number"
                     style={{
-                      background: `url('akeong.svg') no-repeat 16px center`,
+                      background: `url('./assets/image/svg/akeong.svg') no-repeat 16px center`,
                       paddingLeft: "45px",
                       backgroundColor: "#F5F6F8",
                     }}
@@ -188,7 +188,7 @@ const RegisterPage = () => {
                     type="password"
                     placeholder="password"
                     style={{
-                      background: `url('ic-login-password.svg') no-repeat 12px center, url('ShowPassIcon.svg') no-repeat right 12px center`,
+                      background: `url('./assets/image/svg/ic-login-password.svg') no-repeat 12px center, url('ShowPassIcon.svg') no-repeat right 12px center`,
                       paddingLeft: "45px",
                       backgroundColor: "#F5F6F8",
                     }}
@@ -218,8 +218,8 @@ const RegisterPage = () => {
                           <img
                             src={
                               isPasswordLengthValid
-                                ? "ic-register-checklist-ijo.svg"
-                                : "ic-register-checklist.svg"
+                                ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                                : "./assets/image/svg/ic-register-checklist.svg"
                             }
                             alt=""
                             style={{ marginRight: "8px" }}
@@ -232,8 +232,8 @@ const RegisterPage = () => {
                           <img
                             src={
                               isPasswordContainNumber
-                                ? "ic-register-checklist-ijo.svg"
-                                : "ic-register-checklist.svg"
+                                ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                                : "./assets/image/svg/ic-register-checklist.svg"
                             }
                             style={{ marginRight: "8px" }}
                             alt=""
@@ -246,8 +246,8 @@ const RegisterPage = () => {
                           <img
                             src={
                               isPasswordHaveCapital
-                                ? "ic-register-checklist-ijo.svg"
-                                : "ic-register-checklist.svg"
+                                ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                                : "./assets/image/svg/ic-register-checklist.svg"
                             }
                             style={{ marginRight: "8px" }}
                             alt=""
@@ -260,8 +260,8 @@ const RegisterPage = () => {
                           <img
                             src={
                               isPasswordHaveSpecial
-                                ? "ic-register-checklist-ijo.svg"
-                                : "ic-register-checklist.svg"
+                                ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                                : "./assets/image/svg/ic-register-checklist.svg"
                             }
                             style={{ marginRight: "8px" }}
                             alt=""

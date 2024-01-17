@@ -20,7 +20,7 @@ const NewNotificationPage = () => {
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img
-                src="notification-event-icon.svg"
+                src="./assets/image/svg/notification-event-icon.svg"
                 alt=""
                 style={{ marginRight: "5px" }}
               />
@@ -66,7 +66,7 @@ const NewNotificationPage = () => {
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img
-                src="notification-event-icon.svg"
+                src="./assets/image/svg/notification-event-icon.svg"
                 alt=""
                 style={{ marginRight: "5px" }}
               />
@@ -112,7 +112,7 @@ const NewNotificationPage = () => {
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img
-                src="notification-event-icon.svg"
+                src="./assets/image/svg/notification-event-icon.svg"
                 alt=""
                 style={{ marginRight: "5px" }}
               />
@@ -158,7 +158,7 @@ const NewNotificationPage = () => {
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img
-                src="notification-event-icon.svg"
+                src="./assets/image/svg/notification-event-icon.svg"
                 alt=""
                 style={{ marginRight: "5px" }}
               />

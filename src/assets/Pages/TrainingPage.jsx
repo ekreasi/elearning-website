@@ -41,7 +41,11 @@ const TrainingPage = () => {
               className="training-page-button"
               title={
                 <span className="training-dropdown-txt training-dropdown-p">
-                  All <img src="BlackDropdown.svg" alt="Dropdown Icon" />
+                  All{" "}
+                  <img
+                    src="./assets/image/svg/BlackDropdown.svg"
+                    alt="Dropdown Icon"
+                  />
                 </span>
               }
             >
@@ -55,7 +59,7 @@ const TrainingPage = () => {
               className="training-page-history"
               onClick={goTrainingHistory}
             >
-              <img src="HistoryTimeIcon.svg" alt="" />
+              <img src="./assets/image/svg/HistoryTimeIcon.svg" alt="" />
               History
             </button>
           </div>
@@ -64,7 +68,7 @@ const TrainingPage = () => {
           <Container>
             <Row className="training-item-row">
               <Col xs={1}>
-                <img src="Training-Main-Icon.svg" alt="" />
+                <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
               <Col xs={9} style={{ marginLeft: "20px" }}>
                 <Row className="training-page-title">
@@ -75,21 +79,25 @@ const TrainingPage = () => {
                 <Row className="mt-2">
                   <span className="training-img-container">
                     <img
-                      src="TrainingDateIcon.svg"
+                      src="./assets/image/svg/TrainingDateIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
                     23 Oct{" "}
                     <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="JamTrainingIcon.svg"
+                      src="./assets/image/svg/JamTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />
                     09:10 - 10:10{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="LocationTrainingIcon.svg"
+                      src="./assets/image/svg/Line 112.svg"
+                      alt=""
+                      className="garis-abu"
+                    />
+                    <img
+                      src="./assets/image/svg/LocationTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
@@ -108,7 +116,7 @@ const TrainingPage = () => {
             </Row>
             <Row className="training-item-row">
               <Col xs={1}>
-                <img src="Training-Main-Icon.svg" alt="" />
+                <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
               <Col xs={9} style={{ marginLeft: "20px" }}>
                 <Row className="training-page-title">
@@ -121,21 +129,29 @@ const TrainingPage = () => {
                     style={{ paddingLeft: "0" }}
                   >
                     <img
-                      src="TrainingDateIcon.svg"
+                      src="./assets/image/svg/TrainingDateIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
                     23 Oct{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="JamTrainingIcon.svg"
+                      src="./assets/image/svg/Line 112.svg"
+                      alt=""
+                      className="garis-abu"
+                    />
+                    <img
+                      src="./assets/image/svg/JamTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />
                     09:10 - 10:10{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="LocationTrainingIcon.svg"
+                      src="./assets/image/svg/Line 112.svg"
+                      alt=""
+                      className="garis-abu"
+                    />
+                    <img
+                      src="./assets/image/svg/LocationTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
@@ -155,7 +171,7 @@ const TrainingPage = () => {
             </Row>
             <Row className="training-item-row">
               <Col xs={1}>
-                <img src="Training-Main-Icon.svg" alt="" />
+                <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
               <Col xs={9} style={{ marginLeft: "20px" }}>
                 <Row className="training-page-title">
@@ -167,21 +183,29 @@ const TrainingPage = () => {
                     style={{ paddingLeft: "0" }}
                   >
                     <img
-                      src="TrainingDateIcon.svg"
+                      src="./assets/image/svg/TrainingDateIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
                     23 Oct{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="JamTrainingIcon.svg"
+                      src="./assets/image/svg/Line 112.svg"
+                      alt=""
+                      className="garis-abu"
+                    />
+                    <img
+                      src="./assets/image/svg/JamTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />
                     09:10 - 10:10{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="LocationTrainingIcon.svg"
+                      src="./assets/image/svg/Line 112.svg"
+                      alt=""
+                      className="garis-abu"
+                    />
+                    <img
+                      src="./assets/image/svg/LocationTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
@@ -192,7 +216,7 @@ const TrainingPage = () => {
               <Col xs={2} style={{ padding: "0", width: "13%" }}>
                 <div className="AcceptedTraining text-center">
                   <img
-                    src="TrainingAccIcon.svg"
+                    src="./assets/image/svg/TrainingAccIcon.svg"
                     alt=""
                     style={{ marginRight: "5px" }}
                   />
@@ -202,7 +226,7 @@ const TrainingPage = () => {
             </Row>
             <Row className="training-item-row">
               <Col xs={1}>
-                <img src="Training-Main-Icon.svg" alt="" />
+                <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
               <Col xs={9} style={{ marginLeft: "20px" }}>
                 <Row className="training-page-title">
@@ -214,21 +238,29 @@ const TrainingPage = () => {
                     style={{ paddingLeft: "0" }}
                   >
                     <img
-                      src="TrainingDateIcon.svg"
+                      src="./assets/image/svg/TrainingDateIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
                     23 Oct{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="JamTrainingIcon.svg"
+                      src="./assets/image/svg/Line 112.svg"
+                      alt=""
+                      className="garis-abu"
+                    />
+                    <img
+                      src="./assets/image/svg/JamTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />
                     09:10 - 10:10{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
                     <img
-                      src="LocationTrainingIcon.svg"
+                      src="./assets/image/svg/Line 112.svg"
+                      alt=""
+                      className="garis-abu"
+                    />
+                    <img
+                      src="./assets/image/svg/LocationTrainingIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
@@ -239,7 +271,7 @@ const TrainingPage = () => {
               <Col xs={2} style={{ padding: "0", width: "13%" }}>
                 <div className="AcceptedTraining text-center">
                   <img
-                    src="TrainingAccIcon.svg"
+                    src="./assets/image/svg/TrainingAccIcon.svg"
                     alt=""
                     style={{ marginRight: "5px" }}
                   />
