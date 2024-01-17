@@ -12,7 +12,7 @@ const HistoryPage = () => {
           <p className="second-title">Module 2 - Basic</p>
         </div>
         <div className="history-content d-flex align-align-items-center mt-3">
-          <img src="HistoryIcon.svg" alt="" className="d-flex" />
+          <img src="./assets/image/svg/HistoryIcon.svg" alt="" className="d-flex" />
           <div className="content-text flex-grow-1">
             <p className="main-content-title">NEW CHAPTER</p>
             <p className="second-content-title">Product Marketing</p>
@@ -23,7 +23,7 @@ const HistoryPage = () => {
             </button>
             <button className="start-progress-btn d-inline">
               Start{" "}
-              <img src="StartIcon.svg" alt="" style={{ marginLeft: "4px" }} />
+              <img src="./assets/image/svg/StartIcon.svg" alt="" style={{ marginLeft: "4px" }} />
             </button>
           </div>
         </div>
@@ -45,7 +45,7 @@ const HistoryPage = () => {
                 <td>15-07-2021 11:49</td>
                 <td>07-09-2021 12:09</td>
                 <td>
-                  <img src="GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
+                  <img src="./assets/image/svg/GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
                   Finished
                 </td>
                 <td>100</td>
@@ -55,7 +55,7 @@ const HistoryPage = () => {
                 <td>15-07-2021 13:40</td>
                 <td>07-09-2021 14:20</td>
                 <td>
-                  <img src="GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
+                  <img src="./assets/image/svg/GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
                   Finished
                 </td>
                 <td>90</td>
@@ -65,7 +65,7 @@ const HistoryPage = () => {
                 <td>15-07-2021 15:30</td>
                 <td>07-09-2021 15:45</td>
                 <td>
-                  <img src="GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
+                  <img src="./assets/image/svg/GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
                   Finished
                 </td>
                 <td>95</td>
@@ -75,7 +75,7 @@ const HistoryPage = () => {
                 <td>18-07-2021 09:00</td>
                 <td>18-07-2021 09:40</td>
                 <td>
-                  <img src="GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
+                  <img src="./assets/image/svg/GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
                   Finished
                 </td>
                 <td>75</td>
@@ -85,7 +85,7 @@ const HistoryPage = () => {
                 <td>18-07-2021 11:00</td>
                 <td>18-07-2021 11:45</td>
                 <td>
-                  <img src="GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
+                  <img src="./assets/image/svg/GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
                   Finished
                 </td>
                 <td>80</td>
@@ -95,7 +95,7 @@ const HistoryPage = () => {
                 <td>18-07-2021 11:00</td>
                 <td>18-07-2021 11:45</td>
                 <td>
-                  <img src="GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
+                  <img src="./assets/image/svg/GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
                   Finished
                 </td>
                 <td>80</td>
@@ -105,7 +105,7 @@ const HistoryPage = () => {
                 <td>18-07-2021 11:00</td>
                 <td>18-07-2021 11:45</td>
                 <td>
-                  <img src="GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
+                  <img src="./assets/image/svg/GreenCheckIcon.svg" alt=""  style={{ marginRight:"6px"}}/>
                   Finished
                 </td>
                 <td>80</td>
@@ -115,17 +115,17 @@ const HistoryPage = () => {
         </div>
         <div className="pagination justify-content-end mx-5" style={{ marginTop: "24px"}}>
           <img
-            src="left-history-page.svg"
+            src="./assets/image/svg/left-history-page.svg"
             alt=""
             style={{ width: "16px", height: "16px", margin: "-2px 0 0 0", cursor: "pointer" }}
           />
           <img
-            src="page-frame.svg"
+            src="./assets/image/svg/page-frame.svg"
             alt=""
             style={{ width: "20px", height: "20px", margin: "-5px 8px" }}
           />
           <img
-            src="right-history-page.svg"
+            src="./assets/image/svg/right-history-page.svg"
             alt=""
             style={{ width: "16px", height: "16px", margin: "-2px 0 0 0", cursor: "pointer" }}
           />

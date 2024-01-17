@@ -6,17 +6,23 @@
 }
 
 .progress-bar-row {
-  min-width: 665px
-  min-height: 43px
-  padding: 0 14px 14px 14px;
+  min-height: 43px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .complete {
-  color: #2f523c;
-  display: block;
-}
+  display: inline;
+  fontSize: 12px;
+  fontWeight: 400;
+  color: rgba(127, 138, 154, 0.5);
+  }
+
+  .complete p {
+    display: inline;
+  }
 
 .progressTxt {
   font-size: 14px;

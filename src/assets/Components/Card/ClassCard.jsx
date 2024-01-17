@@ -58,9 +58,9 @@ const ClassCard = () => {
     if (accumulateProgress === 100) {
       status = "completed";
     } else if (accumulateProgress > 0 && accumulateProgress < 100) {
-      status = "In Progress";
+      status = "in progress";
     } else {
-      status = "Not Started";
+      status = "not started";
     }
 
     return status;
@@ -77,7 +77,7 @@ const ClassCard = () => {
                   className="progress-image"
                   src={
                     progressStatus(accumulateProgress(item.subModule)) ===
-                    "Not Started"
+                    "not started"
                       ? "./assets/image/svg/NotStartedIconModule.svg"
                       : "./assets/image/svg/Icon Module.svg"
                   }
@@ -85,7 +85,7 @@ const ClassCard = () => {
                   alt=""
                 />
               </Col>
-              <Col sm={3} className="progress-bar-row progressTxt">
+              <Col sm={3} className="progressTxt">
                 <span>{item.name}</span>
               </Col>
               <Col sm={8} className="progress-bar-row ">
@@ -101,39 +101,46 @@ const ClassCard = () => {
                           style={{
                             width: "343px",
                             height: "39px",
-                            marginRight: "-13%",
                             marginTop: "10px",
                           }}
                         />
                         <img
                           src="./assets/image/svg/RightArrowIcon.svg"
                           alt=""
-                          className="mx-2"
                           onClick={goHistory}
                           style={{ cursor: "pointer" }}
                         />
                       </div>
                     ) : (
-                      <div className="d-flex justify-content-end align-items-center">
-                        <ProgressBar
-                          variant="danger"
-                          now={accumulateProgress(item.subModule)}
-                          className="flex-grow-1"
-                          style={{
-                            maxWidth: "343px",
-                            height: "6px",
-                            marginTop: "10px",
-                          }}
-                        />
+                      <div className="d-flex justify-content-between align-items-center">
+                        <div>
+                          <ProgressBar
+                            variant="danger"
+                            now={accumulateProgress(item.subModule)}
+                            className="flex-grow-1"
+                            style={{
+                              width: "343px",
+                              height: "6px",
+                              marginTop: "10px",
+                            }}
+                          />
+                          <div className="d-flex">
+                            <span className="complete">
+                              <p>
+                                Your progress is{" "}
+                              </p>
+                              {progressStatus(
+                                accumulateProgress(item.subModule)
+                              )}
+                            </span>
+                          </div>
+                        </div>
                         <img
                           src="./assets/image/svg/RightArrowIcon.svg"
                           alt=""
                           onClick={goHistory}
-                          style={{ cursor: "pointer", marginRight: "10px" }}
+                          style={{ cursor: "pointer" }}
                         />
-                        <div className="d-flex">
-                          
-                        </div>
                       </div>
                     )}
                   </div>
@@ -156,7 +163,6 @@ const ClassCard = () => {
                       <img
                         src="./assets/image/svg/RightArrowIcon.svg"
                         alt=""
-                        className="mx-2"
                         onClick={goHistory}
                         style={{ cursor: "pointer" }}
                       />

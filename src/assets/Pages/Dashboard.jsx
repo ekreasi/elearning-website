@@ -30,21 +30,21 @@ const Dashboard = () => {
       <NewNav />
       <Container>
         <Row className="justify-content-between">
-          <Col xs={4}>
+          <Col md={6} lg={5}>
             <ProfileCard />
           </Col>
-          <Col xs={4}>
+          <Col md={6} lg={4}>
             <AchievementCard />
           </Col>
-          <Col xs={3}>
+          <Col md ={12} lg={3}>
             <InvitationCard />
           </Col>
         </Row>
         <Row>
-          <Col xs={4}>
+          <Col md={12} lg={5}>
             <ScheduleCard />
           </Col>
-          <Col xs={8}>
+          <Col md={12} lg={7}>
             <ProgressCard />
           </Col>
         </Row>

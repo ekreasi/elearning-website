@@ -46,16 +46,18 @@ const InvitationCard = () => {
   }, []);
 
   return (
-    <div className="invCard shadow">
+    <div className="invite-card shadow">
       <div className="profile-content">
         <Container>
           <Row>
             <div
-              className=""
+              className="invitation-header"
               style={{
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
+                gap: "0.5rem",
+                padding: "0"
               }}
             >
               <div style={{ fontSize: "16px", display: "inline" }}>
@@ -65,8 +67,7 @@ const InvitationCard = () => {
                   style={{
                     width: "20px",
                     height: "20px",
-                    marginRight: "10px",
-                    marginLeft: "-10px",
+                    marginRight: "5px",
                   }}
                 />
                 New Invitation
@@ -86,12 +87,12 @@ const InvitationCard = () => {
             </div>
           </Row>
           <Row
-            className="my-1 mt-2 pt-3"
+            className="d-flex justify-content-between align-items-center"
             style={{
               background: "rgba(127, 138, 154, 0.08)",
               border: "1px solid rgba(127, 138, 154, 0.4)",
               borderRadius: "4px",
-              minHeight: "112px",
+              maxHeight: "6.5rem",
             }}
           >
             {loadedData ? (
@@ -99,9 +100,9 @@ const InvitationCard = () => {
                 <Col xs={3}>
                   <img src="./assets/image/svg/TrainingIcon.svg" alt="" />
                 </Col>
-                <Col xs={8} style={{ marginLeft: "20px" }}>
+                <Col xs={8} >
                   {" "}
-                  <p style={{ fontSize: "14px", fontWeight: "500" }}>
+                  <p style={{ fontSize: "14px", fontWeight: "500", marginTop: "10px" }}>
                     {" "}
                     Training: Product Introduction
                   </p>
