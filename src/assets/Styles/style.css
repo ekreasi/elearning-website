@@ -29,8 +29,7 @@ body {
 
 .password-input {
   background: url("ic-login-password.svg") no-repeat 12px center,
-    url("${(props) => (props.showPassword ? "HidePassIcon.svg" : "ShowPassIcon.svg")}")
-      no-repeat right 12px center;
+  url("${(props) => (props.showPassword ? " HidePassIcon.svg" : " ShowPassIcon.svg")}") no-repeat right 12px center;
   padding-left: 45px;
   background-color: #f5f6f8;
 }
@@ -97,12 +96,13 @@ body {
   color: rgba(35, 31, 32, 0.5);
   text-align: center;
 }
+
 hr {
   margin: 0 !important;
 }
 
 .login {
-  padding: 2rem 5rem;
+  padding: 2rem;
   height: 100%;
 }
 
@@ -117,7 +117,8 @@ hr {
 
 .login-form {
   display: block;
-  width: 460px;
+  width: 100%;
+  max-width: 460px;
   height: 46px;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -125,6 +126,7 @@ hr {
   margin: 5px 0 16px 0;
   font-size: 16px;
 }
+
 .login-form:hover {
   border: 1.5px solid #e82827 !important;
 }
@@ -240,10 +242,12 @@ hr {
   .otp-container {
     flex-wrap: wrap;
   }
+
   .otp {
     height: 40px;
     max-width: 30px;
   }
+
   .setting-form {
     width: 100px;
     height: 30px;
@@ -467,4 +471,17 @@ li {
   padding: 5px;
   margin: 10px;
   width: 100px;
+}
+
+.login-form-group {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+}
+
+.btn-form-group {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }

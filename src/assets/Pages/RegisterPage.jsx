@@ -75,7 +75,7 @@ const RegisterPage = () => {
   return (
     <div className="home">
       <Row>
-        <Col xs={6} style={{ backgroundColor: "#E828271A", height: "100vh" }}>
+        <Col md={6} className="d-none d-md-block" style={{ backgroundColor: "#E828271A", height: "100vh" }}>
           <div className="justify-content-between h-100">
             <img
               src="logo-elearning 1.svg"
@@ -89,7 +89,7 @@ const RegisterPage = () => {
             />
           </div>
         </Col>
-        <Col xs={6} style={{ backgroundColor: "white", height: "96.8vh"}}>
+        <Col md={6} style={{ backgroundColor: "white", height: "96.8vh"}}>
           <div className="login">
             <div className="d-flex flex-column justify-content-between h-100">
               <div className="signContainer">
