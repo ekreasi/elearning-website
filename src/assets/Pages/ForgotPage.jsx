@@ -1,43 +1,3 @@
-// import { Container, Row, Col } from "react-bootstrap";
-// import Button from "../Components/Button/Button";
-// import { BUTTON_TYPES } from "../Data/button";
-// import { useNavigate } from "react-router-dom";
-// import Input from "../Components/Input/Input";
-// import { INPUT_TYPES } from "../Data/input";
-// import Navbar from "../Components/Navbar/Navbar";
-
-// const LoginPage = () => {
-//   const navigate = useNavigate();
-
-//   const handleConfirm = () => {
-//     navigate(`/forgetVerification`);
-//   };
-
-//   return (
-//     <Container fluid="md" className="content" id="verification">
-//       <Navbar to="login" header="Forgot Password" headerText="Sign in" />
-//       <p className="">Please enter your email or phone number</p>
-//       <Row>
-//         <Col>
-//           <Input
-//             type={INPUT_TYPES.PRIMARY}
-//             icon="@  "
-//             inputText="Email or Phone Number"
-//           />
-//           <div className="btn-container">
-//             <Button
-//               type={BUTTON_TYPES.GREEN}
-//               buttonText="SUBMIT"
-//               onClick={() => handleConfirm()}
-//             />
-//           </div>
-//         </Col>
-//       </Row>
-//     </Container>
-//   );
-// };
-
-// export default LoginPage;
 import { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -114,15 +74,15 @@ const RegisterPage = () => {
   return (
     <div className="home">
       <Row>
-      <Col xs={6} style={{ backgroundColor: "#E828271A", height: "100vh" }}>
+        <Col xs={6} style={{ backgroundColor: "#E828271A", height: "100vh" }}>
           <div className="justify-content-between h-100">
             <img
-              src="logo-elearning 1.svg"
+              src="./assets/image/svg/logo-elearning 1.svg"
               alt=""
               style={{ marginTop: "2rem", marginLeft: "6rem" }}
             />
             <img
-              src="img_forgot password 1.svg"
+              src="./assets/image/svg/img_forgot password 1.svg"
               alt=""
               className="mx-auto d-flex mt-3"
             />
@@ -181,17 +141,28 @@ const RegisterPage = () => {
             </div>
           </div>
         </Col> */}
-        
+
         <Col xs={6} style={{ backgroundColor: "white", height: "96.8vh" }}>
           <div className="login">
             <div className="d-flex flex-column justify-content-between h-100">
               <div className="signContainer">
-                <p style={{ display: "inline",fontSize: "14px", fontWeight: "400", }}>Don&apos;t have an account ? </p>
+                <p
+                  style={{
+                    display: "inline",
+                    fontSize: "14px",
+                    fontWeight: "400",
+                  }}
+                >
+                  Don&apos;t have an account ?{" "}
+                </p>
                 <button className="signBtn" onClick={handleSignUp}>
                   Sign Up
                 </button>
               </div>
-              <div className="" style={{ marginBottom: "196.5px", marginTop: "100px"}}>
+              <div
+                className=""
+                style={{ marginBottom: "196.5px", marginTop: "100px" }}
+              >
                 <h3 className="registerTxt">Forgot Password</h3>
                 <p className="signTxt mb-5">
                   Please input field below for reset the password
@@ -202,7 +173,7 @@ const RegisterPage = () => {
                     type="text"
                     placeholder="email or phone number"
                     style={{
-                      background: `url('akeong.svg') no-repeat 16px center`,
+                      background: `url('./assets/image/svg/akeong.svg') no-repeat 16px center`,
                       paddingLeft: "45px",
                       backgroundColor: "#F5F6F8",
                     }}

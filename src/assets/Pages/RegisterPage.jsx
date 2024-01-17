@@ -78,12 +78,12 @@ const RegisterPage = () => {
         <Col xs={6} style={{ backgroundColor: "#E828271A", height: "100vh" }}>
           <div className="justify-content-between h-100">
             <img
-              src="logo-elearning 1.svg"
+              src="./assets/image/svg/logo-elearning 1.svg"
               alt=""
               style={{ marginTop: "2rem", marginLeft: "6rem" }}
             />
             <img
-              src="img_sign up 3.svg"
+              src="./assets/image/svg/img_sign up 3.svg"
               alt=""
               className="mx-auto d-flex mt-3"
             />
@@ -117,7 +117,7 @@ const RegisterPage = () => {
                     type="text"
                     placeholder="Registration code"
                     style={{
-                      background: `url('ic-register-referral.svg') no-repeat 12px center`,
+                      background: `url('./assets/image/svg/ic-register-referral.svg') no-repeat 12px center`,
                       backgroundColor: "#F5F6F8",
                       paddingLeft: "45px",
                     }}
