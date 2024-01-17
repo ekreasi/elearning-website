@@ -59,7 +59,7 @@ const ScheduleCard = () => {
             >
               <div style={{ fontSize: "16px", display: "inline" }}>
                 <img
-                  src="ScheduleIcon.svg"
+                  src="./assets/image/svg/ScheduleIcon.svg"
                   alt=""
                   style={{ width: "20px", height: "20px", marginRight: "10px" }}
                 />
@@ -82,7 +82,7 @@ const ScheduleCard = () => {
                   borderRadius: "20px",
                 }}
               >
-                <img src="CalendarIcon.svg" alt="" style={{ margin: "7px " }} />
+                <img src="./assets/image/svg/CalendarIcon.svg" alt="" style={{ margin: "7px " }} />
                 Weekly
               </a>
             </div>

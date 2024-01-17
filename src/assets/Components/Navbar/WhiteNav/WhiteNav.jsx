@@ -70,7 +70,7 @@ function WhiteNav() {
         expand="lg"
         className="bg-custom white-navbar w-100"
         style={{
-          background: `url('Profile-bg-logo.svg') no-repeat`,
+          background: `url('./assets/image/svg/Profile-bg-logo.svg') no-repeat`,
           backgroundColor: "#fff",
           height: "62px",
         }}
@@ -78,12 +78,12 @@ function WhiteNav() {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="E-LogoMerah.svg"
+              src="./assets/image/svg/E-LogoMerah.svg"
               alt=""
               style={{ marginLeft: "15px", marginRight: "60px" }}
             />
             <img
-              src="JISLogoMerah.svg"
+              src="./assets/image/svg/JISLogoMerah.svg"
               alt=""
               style={{ marginRight: "50px" }}
             />
@@ -134,7 +134,7 @@ function WhiteNav() {
               <NavDropdown
                 title={
                   <span>
-                    Event <img src="DropdownIconHtm.svg" />
+                    Event <img src="./assets/image/svg/DropdownIconHtm.svg" />
                   </span>
                 }
                 id="basic-nav-dropdown "
@@ -150,7 +150,7 @@ function WhiteNav() {
                   onClick={(e) => goTraining(e)}
                 >
                   <img
-                    src="PinkTraining.svg"
+                    src="./assets/image/svg/PinkTraining.svg"
                     alt=""
                     style={{ marginRight: "5px" }}
                   />
@@ -158,7 +158,7 @@ function WhiteNav() {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2" onClick={(e) => goZoom(e)}>
                   <img
-                    src="PinkZoom.svg"
+                    src="./assets/image/svg/PinkZoom.svg"
                     alt=""
                     style={{ marginRight: "5px" }}
                   />
@@ -170,7 +170,7 @@ function WhiteNav() {
             <Nav.Link>
               <DropdownButton
                 id="dropdown-basic-button"
-                title={<img src="RedNotifIcon.svg" alt="" />}
+                title={<img src="./assets/image/svg/RedNotifIcon.svg" alt="" />}
                 className="white-notification-button"
                 onClick={() => {
                   setIsNotificationClicked(!isNotificationClicked);
@@ -194,7 +194,7 @@ function WhiteNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -220,7 +220,7 @@ function WhiteNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -246,7 +246,7 @@ function WhiteNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -285,10 +285,10 @@ function WhiteNav() {
               </DropdownButton>
             </Nav.Link>
             <Nav.Link>
-              <img src="RedProfileIcon.svg" alt="" onClick={goProfile} />
+              <img src="./assets/image/svg/RedProfileIcon.svg" alt="" onClick={goProfile} />
             </Nav.Link>
             <Nav.Link className="mx-2">
-              <img src="RedLine 9.svg" alt="" />
+              <img src="./assets/image/svg/RedLine 9.svg" alt="" />
             </Nav.Link>
             <Nav.Link>
               <div

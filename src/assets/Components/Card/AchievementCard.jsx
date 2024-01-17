@@ -55,7 +55,7 @@ const AchievementCard = () => {
             >
               <div style={{ fontSize: "16px", display: "inline" }}>
                 <img
-                  src="AchievmentIcon.svg"
+                  src="./assets/image/svg/AchievmentIcon.svg"
                   alt=""
                   style={{ width: "20px", height: "20px", marginRight: "10px" }}
                 />
@@ -84,7 +84,7 @@ const AchievementCard = () => {
             </Col>
             <Col xs={1}>
               {/* <img src="Verified.svg" alt="" className="iconWidth"/> */}
-              <img src="Unverified.svg" alt="" className="iconWidth" />
+              <img src="./assets/image/svg/Unverified.svg" alt="" className="iconWidth" />
             </Col>
           </Row>
           <Row className="my-1">
@@ -95,7 +95,7 @@ const AchievementCard = () => {
               <ProgressBar variant="danger" now={0} className="bar" />
             </Col>
             <Col xs={1}>
-              <img src="Unverified.svg" alt="" className="iconWidth" />
+              <img src="./assets/image/svg/Unverified.svg" alt="" className="iconWidth" />
             </Col>
           </Row>
           <Row className="my-1">
@@ -106,7 +106,7 @@ const AchievementCard = () => {
               <ProgressBar variant="danger" now={0} className="bar" />
             </Col>
             <Col xs={1}>
-              <img src="Unverified.svg" alt="" className="iconWidth" />
+              <img src="./assets/image/svg/Unverified.svg" alt="" className="iconWidth" />
             </Col>
           </Row>
         </Container>

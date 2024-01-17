@@ -3,6 +3,7 @@ import NewNav from "../Components/Navbar/RedNav/NewNav";
 import "./LearningPage.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function MyVerticallyCenteredModal(props) {
   const navigate = useNavigate();
@@ -258,6 +259,10 @@ const LearningPage = () => {
 
   return (
     <div style={{ backgroundColor: "#E5E5E5", height: "100vh" }}>
+      <Helmet>
+        <title>Learning | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <NewNav />
 
       <div className="learning-page ">

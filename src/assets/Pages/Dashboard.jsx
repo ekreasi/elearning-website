@@ -6,6 +6,7 @@ import NewNav from "../Components/Navbar/RedNav/NewNav";
 import AchievementCard from "../Components/Card/AchievementCard";
 import InvitationCard from "../Components/Card/InvitationCard";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -22,6 +23,10 @@ const Dashboard = () => {
         overflow: "visible",
       }}
     >
+      <Helmet>
+        <title>Dashboard | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
       <NewNav />
       <Container>
         <Row className="justify-content-between">
@@ -50,7 +55,7 @@ const Dashboard = () => {
         onClick={goChat}
       >
         <img
-          src="FloatingIcon.svg"
+          src="./assets/image/svg/FloatingIcon.svg"
           style={{ width: "24px", marginRight: "5px" }}
           alt=""
         />

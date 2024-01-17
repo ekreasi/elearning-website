@@ -60,7 +60,7 @@ const InvitationCard = () => {
             >
               <div style={{ fontSize: "16px", display: "inline" }}>
                 <img
-                  src="InvitationLogo.svg"
+                  src="./assets/image/svg/InvitationLogo.svg"
                   alt=""
                   style={{
                     width: "20px",
@@ -97,7 +97,7 @@ const InvitationCard = () => {
             {loadedData ? (
               <>
                 <Col xs={3}>
-                  <img src="TrainingIcon.svg" alt="" />
+                  <img src="./assets/image/svg/TrainingIcon.svg" alt="" />
                 </Col>
                 <Col xs={8} style={{ marginLeft: "20px" }}>
                   {" "}
@@ -108,7 +108,7 @@ const InvitationCard = () => {
                   <p style={{ fontSize: "14px", fontWeight: "600" }}>
                     Detail{" "}
                     <a href="">
-                      <img src="ArrowRight.svg" alt="" />
+                      <img src="./assets/image/svg/ArrowRight.svg" alt="" />
                     </a>
                   </p>
                 </Col>

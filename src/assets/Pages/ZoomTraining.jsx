@@ -1,16 +1,21 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import NewNav from "../Components/Navbar/RedNav/NewNav";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import("./ZoomTraining.css");
 
 const ZoomTraining = () => {
   const navigate = useNavigate();
   const goZoom = () => {
-    navigate("/zoom-webinar")
-  }
+    navigate("/zoom-webinar");
+  };
 
   return (
     <div style={{ background: "#E5E5E5", height: "100vh" }}>
+      <Helmet>
+        <title>Event | e-Learning</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <NewNav />
       <div className="zoom-training">
         <div className="zoom-training-header">
@@ -80,7 +85,9 @@ const ZoomTraining = () => {
                 xs={2}
                 className="p-0 d-flex align-items-center justify-content-center"
               >
-                <Button className="acc-training-btn" onClick={goZoom}>Join</Button>
+                <Button className="acc-training-btn" onClick={goZoom}>
+                  Join
+                </Button>
               </Col>
             </Row>
             <Row className="zoom-content-row">
@@ -142,7 +149,9 @@ const ZoomTraining = () => {
                 xs={2}
                 className="p-0 d-flex align-items-center justify-content-center"
               >
-                <Button className="acc-training-btn" onClick={goZoom}>Join</Button>
+                <Button className="acc-training-btn" onClick={goZoom}>
+                  Join
+                </Button>
               </Col>
             </Row>
           </Container>
