@@ -4,8 +4,12 @@
   border: none;
   height: 84vh;
   box-shadow: 0 4px 4px #c7c7c7;
-  overflow: hidden;
+  overflow: auto;
   border-radius: 8px;
+}
+
+.schedule-page::-webkit-scrollbar {
+  display: none;
 }
 
 .schedule-calendar {
@@ -13,7 +17,8 @@
   padding: 0px 59px !important;
   background: #fff;
   padding: 0;
-  width: 899px;
+  max-width: 899px;
+  width: 100%;
 }
 
 .calendar-modal .modal-dialog {
@@ -121,7 +126,7 @@
   margin-left: 14px;
   border-radius: 8px;
   padding: 0;
-  height: 84vh;
+  height: 83vh;
   overflow: auto;
 }
 

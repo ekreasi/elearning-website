@@ -268,8 +268,8 @@ const LearningPage = () => {
       <div className="learning-page ">
         <p className="learning-page-header">E-Learning</p>
         <div className="learning-page-content d-flex flex-column justify-content-center align-items-center">
-          <Row>
-            <Col xs={3} className="learning-module-card">
+          <Row className="gap-4 justify-content-center">
+            <Col xs={6} md={3} className="learning-module-card">
               <img src="./assets/image/svg/ReadyModuleIcon.svg" alt="" className="module-img" />
               <div className="learning-module-text-container my-auto">
                 <p className="learning-module-title">Module 1</p>
@@ -326,7 +326,7 @@ const LearningPage = () => {
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row className="gap-4 justify-content-center">
             <Col xs={3} className="learning-module-card">
               <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
               <div className="notready-module-text-container my-auto">
@@ -396,7 +396,7 @@ const LearningPage = () => {
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row className="gap-4 justify-content-center">
             <Col xs={3} className="learning-module-card">
               <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
               <div className="notready-module-text-container my-auto">

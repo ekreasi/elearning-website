@@ -147,9 +147,9 @@ const SelectedLibraryPage = () => {
               >
                 <Nav.Link eventKey="/home" href="#" className="material-icon">
                   {activeKey === "/home" ? (
-                    <img src="RedMaterialLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedMaterialLibraryIcon.svg" alt="" />
                   ) : (
-                    <img src="MaterialLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/MaterialLibraryIcon.svg" alt="" />
                   )}
                   Materi
                 </Nav.Link>
@@ -160,9 +160,9 @@ const SelectedLibraryPage = () => {
               >
                 <Nav.Link eventKey="image">
                   {activeKey === "image" ? (
-                    <img src="RedImageLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedImageLibraryIcon.svg" alt="" />
                   ) : (
-                    <img src="ImageLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/ImageLibraryIcon.svg" alt="" />
                   )}
                   Image
                 </Nav.Link>
@@ -173,9 +173,9 @@ const SelectedLibraryPage = () => {
               >
                 <Nav.Link eventKey="audio">
                   {activeKey === "audio" ? (
-                    <img src="RedAudioLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedAudioLibraryIcon.svg" alt="" />
                   ) : (
-                    <img src="AudioLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/AudioLibraryIcon.svg" alt="" />
                   )}
                   Audio
                 </Nav.Link>
@@ -186,9 +186,9 @@ const SelectedLibraryPage = () => {
               >
                 <Nav.Link eventKey="video">
                   {activeKey === "video" ? (
-                    <img src="RedVideoLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedVideoLibraryIcon.svg" alt="" />
                   ) : (
-                    <img src="VideoLibraryIcon.svg" alt="" />
+                    <img src="./assets/image/svg/VideoLibraryIcon.svg" alt="" />
                   )}
                   Video
                 </Nav.Link>
@@ -205,7 +205,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -230,8 +230,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -247,7 +247,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -272,8 +272,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -291,7 +291,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -316,8 +316,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -333,7 +333,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -358,8 +358,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -377,7 +377,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -402,8 +402,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -419,7 +419,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -444,8 +444,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -463,7 +463,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -488,8 +488,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -506,7 +506,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="LibraryPdfIcon.svg" alt="" />
+                  <img src="./assets/image/svg/LibraryPdfIcon.svg" alt="" />
                   <div className="content-txt">
                     <p
                       style={{
@@ -531,8 +531,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -562,7 +562,7 @@ const SelectedLibraryPage = () => {
                   <Card.Body>
                     <Card.Title>
                       <img
-                        src="Database.svg"
+                        src="./assets/image/svg/Database.svg"
                         style={{ width: "100%", height: "125.29px" }}
                       />
                     </Card.Title>
@@ -570,7 +570,7 @@ const SelectedLibraryPage = () => {
                     <div className="bookmark-card-link">
                       <Card.Link href="#">
                         <img
-                          src="UnsavedLibraryIcon.svg"
+                          src="./assets/image/svg/UnsavedLibraryIcon.svg"
                           alt=""
                           style={{ marginRight: "85px" }}
                         />
@@ -593,7 +593,7 @@ const SelectedLibraryPage = () => {
                   <Card.Body>
                     <Card.Title>
                       <img
-                        src="Periodic.svg"
+                        src="./assets/image/svg/Periodic.svg"
                         style={{ width: "100%", height: "125.29px" }}
                       />
                     </Card.Title>
@@ -601,7 +601,7 @@ const SelectedLibraryPage = () => {
                     <div className="bookmark-card-link">
                       <Card.Link href="#">
                         <img
-                          src="UnsavedLibraryIcon.svg"
+                          src="./assets/image/svg/UnsavedLibraryIcon.svg"
                           alt=""
                           style={{ marginRight: "85px" }}
                         />
@@ -624,7 +624,7 @@ const SelectedLibraryPage = () => {
                   <Card.Body>
                     <Card.Title>
                       <img
-                        src="IssueSupport.svg"
+                        src="./assets/image/svg/IssueSupport.svg"
                         style={{ width: "100%", height: "125.29px" }}
                       />
                     </Card.Title>
@@ -632,7 +632,7 @@ const SelectedLibraryPage = () => {
                     <div className="bookmark-card-link">
                       <Card.Link href="#">
                         <img
-                          src="UnsavedLibraryIcon.svg"
+                          src="./assets/image/svg/UnsavedLibraryIcon.svg"
                           alt=""
                           style={{ marginRight: "85px" }}
                         />
@@ -659,7 +659,7 @@ const SelectedLibraryPage = () => {
                   <Card.Body>
                     <Card.Title>
                       <img
-                        src="Percentages.svg"
+                        src="./assets/image/svg/Percentages.svg"
                         style={{ width: "100%", height: "125.29px" }}
                       />
                     </Card.Title>
@@ -669,7 +669,7 @@ const SelectedLibraryPage = () => {
                     <div className="bookmark-card-link">
                       <Card.Link href="#">
                         <img
-                          src="UnsavedLibraryIcon.svg"
+                          src="./assets/image/svg/UnsavedLibraryIcon.svg"
                           alt=""
                           style={{ marginRight: "85px" }}
                         />
@@ -692,7 +692,7 @@ const SelectedLibraryPage = () => {
                   <Card.Body>
                     <Card.Title>
                       <img
-                        src="DataDriven.svg"
+                        src="./assets/image/svg/DataDriven.svg"
                         style={{ width: "100%", height: "125.29px" }}
                       />
                     </Card.Title>
@@ -700,7 +700,7 @@ const SelectedLibraryPage = () => {
                     <div className="bookmark-card-link">
                       <Card.Link href="#">
                         <img
-                          src="UnsavedLibraryIcon.svg"
+                          src="./assets/image/svg/UnsavedLibraryIcon.svg"
                           alt=""
                           style={{ marginRight: "85px" }}
                         />
@@ -721,7 +721,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <div className="library-content-title">
                       <p className="library-inner-title">
@@ -766,7 +766,7 @@ const SelectedLibraryPage = () => {
                       >
                         10:15
                       </p> */}
-                      <audio src="./sound.mp3" ref={audioRef}></audio>
+                      <audio src="./assets/sound.mp3" ref={audioRef}></audio>
                       <input
                         type="range"
                         min="0"
@@ -776,8 +776,8 @@ const SelectedLibraryPage = () => {
                       />
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -789,13 +789,13 @@ const SelectedLibraryPage = () => {
                     <button onClick={handlePlayPause}>
                       {isPlaying ? (
                         <img
-                          src="BlackPauseIcon.svg"
+                          src="./assets/image/svg/BlackPauseIcon.svg"
                           alt=""
                           className="play-pause-button"
                         />
                       ) : (
                         <img
-                          src="RedPlayIcon.svg"
+                          src="./assets/image/svg/RedPlayIcon.svg"
                           alt=""
                           className="play-pause-button"
                         />
@@ -807,7 +807,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <p className="library-inner-title">
                       Teaching your students to learn and unlearn
@@ -845,8 +845,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -855,7 +855,7 @@ const SelectedLibraryPage = () => {
                       marginBottom: "0",
                     }}
                   >
-                    <img src="RedPlayIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedPlayIcon.svg" alt="" />
                   </p>
                 </Col>
               </Row>
@@ -864,7 +864,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <p className="library-inner-title">
                       Piloting PBL in the primary classroom
@@ -902,8 +902,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -912,14 +912,14 @@ const SelectedLibraryPage = () => {
                       marginBottom: "0",
                     }}
                   >
-                    <img src="RedPlayIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedPlayIcon.svg" alt="" />
                   </p>
                 </Col>
                 <Col
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <p className="library-inner-title">
                       Big ideas for little minds!
@@ -957,8 +957,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -967,7 +967,7 @@ const SelectedLibraryPage = () => {
                       marginBottom: "0",
                     }}
                   >
-                    <img src="RedPlayIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedPlayIcon.svg" alt="" />
                   </p>
                 </Col>
               </Row>
@@ -976,7 +976,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <p className="library-inner-title">
                       Piloting PBL in the primary classroom
@@ -1014,8 +1014,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -1024,14 +1024,14 @@ const SelectedLibraryPage = () => {
                       marginBottom: "0",
                     }}
                   >
-                    <img src="RedPlayIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedPlayIcon.svg" alt="" />
                   </p>
                 </Col>
                 <Col
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <p className="library-inner-title">
                       Big ideas for little minds!
@@ -1069,8 +1069,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -1079,7 +1079,7 @@ const SelectedLibraryPage = () => {
                       marginBottom: "0",
                     }}
                   >
-                    <img src="RedPlayIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedPlayIcon.svg" alt="" />
                   </p>
                 </Col>
               </Row>
@@ -1088,7 +1088,7 @@ const SelectedLibraryPage = () => {
                   xs={6}
                   className="left-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <p className="library-inner-title">
                       Piloting PBL in the primary classroom
@@ -1126,8 +1126,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -1136,14 +1136,14 @@ const SelectedLibraryPage = () => {
                       marginBottom: "0",
                     }}
                   >
-                    <img src="RedPlayIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedPlayIcon.svg" alt="" />
                   </p>
                 </Col>
                 <Col
                   xs={6}
                   className="right-selected-content d-flex justify-content-between align-items-center"
                 >
-                  <img src="MicrofonLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/MicrofonLibraryIcon.svg" alt="" />
                   <div className="content-txt">
                     <p className="library-inner-title">
                       Big ideas for little minds!
@@ -1181,8 +1181,8 @@ const SelectedLibraryPage = () => {
                       </p>
                     </div>
                   </div>
-                  <img src="UnsavedLibraryIcon.svg" alt="" />
-                  <img src="RedLine 9.svg" alt="" />
+                  <img src="./assets/image/svg/UnsavedLibraryIcon.svg" alt="" />
+                  <img src="./assets/image/svg/RedLine 9.svg" alt="" />
                   <p
                     style={{
                       fontWeight: "600",
@@ -1191,7 +1191,7 @@ const SelectedLibraryPage = () => {
                       marginBottom: "0",
                     }}
                   >
-                    <img src="RedPlayIcon.svg" alt="" />
+                    <img src="./assets/image/svg/RedPlayIcon.svg" alt="" />
                   </p>
                 </Col>
               </Row>
@@ -1206,17 +1206,17 @@ const SelectedLibraryPage = () => {
                     onClick={() => setVideoModalShow(true)}
                   >
                     <img
-                      src="./seaside.jpg"
+                      src="./assets/image/seaside.jpg"
                       alt=""
                       className="thumbnail-image"
                     />
                     <img
-                      src="./CloseVideoBtn.svg"
+                      src="./assets/image/svg/CloseVideoBtn.svg"
                       alt=""
                       className="play-lib-btn"
                     />
                     <img
-                      src="VideoBookmark.svg"
+                      src="./assets/image/svg/VideoBookmark.svg"
                       alt=""
                       className="lib-bookmark-video"
                     />
@@ -1230,17 +1230,17 @@ const SelectedLibraryPage = () => {
                     onClick={() => setVideoModalShow(true)}
                   >
                     <img
-                      src="./seaside.jpg"
+                      src="./assets/image/seaside.jpg"
                       alt=""
                       className="thumbnail-image"
                     />
                     <img
-                      src="./CloseVideoBtn.svg"
+                      src="./assets/image/svg/CloseVideoBtn.svg"
                       alt=""
                       className="play-lib-btn"
                     />
                     <img
-                      src="VideoBookmark.svg"
+                      src="./assets/image/svg/VideoBookmark.svg"
                       alt=""
                       className="lib-bookmark-video"
                     />
@@ -1254,17 +1254,17 @@ const SelectedLibraryPage = () => {
                     onClick={() => setVideoModalShow(true)}
                   >
                     <img
-                      src="./seaside.jpg"
+                      src="./assets/image/seaside.jpg"
                       alt=""
                       className="thumbnail-image"
                     />
                     <img
-                      src="./CloseVideoBtn.svg"
+                      src="./assets/image/svg/CloseVideoBtn.svg"
                       alt=""
                       className="play-lib-btn"
                     />
                     <img
-                      src="VideoBookmark.svg"
+                      src="./assets/image/svg/VideoBookmark.svg"
                       alt=""
                       className="lib-bookmark-video"
                     />
@@ -1278,17 +1278,17 @@ const SelectedLibraryPage = () => {
                     onClick={() => setVideoModalShow(true)}
                   >
                     <img
-                      src="./seaside.jpg"
+                      src="./assets/image/seaside.jpg"
                       alt=""
                       className="thumbnail-image"
                     />
                     <img
-                      src="./CloseVideoBtn.svg"
+                      src="./assets/image/svg/CloseVideoBtn.svg"
                       alt=""
                       className="play-lib-btn"
                     />
                     <img
-                      src="VideoBookmark.svg"
+                      src="./assets/image/svg/VideoBookmark.svg"
                       alt=""
                       className="lib-bookmark-video"
                     />

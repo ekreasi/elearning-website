@@ -93,6 +93,32 @@
 }
 
 
+.white-navbar .container button.navbar-toggler {
+  background-color: #fff;
+  outline: none;
+}
+
+.white-navbar .container button.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.white-navbar .container .navbar-collapse.show {
+  background-color: #feeaeb;
+  margin-top: 0.8rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.white-navbar .navbar-toggler.navbar-collapse a.nav-link{
+  padding: 8px 10px;
+}
+
+.white-navbar .notification-button .dropdown-toggle {
+  font-size: 14px;
+}
+
+
+
 /* .certificate-page nav.white-navbar {
   padding: 0;
 } */

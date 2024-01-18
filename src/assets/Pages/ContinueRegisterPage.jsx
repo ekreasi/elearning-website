@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Auth/AuthWrapper";
 import Swal from "sweetalert2";
@@ -21,6 +21,7 @@ const RegisterPage = () => {
   const [isPasswordContainNumber, setIsPasswordContainNumber] = useState(false);
   const [isPasswordHaveCapital, setIsPasswordHaveCapital] = useState(false);
   const [isPasswordHaveSpecial, setIsPasswordHaveSpecial] = useState(false);
+  const [loadingContinueRegis, setLoadingContinueRegis] = useState(false);
 
   const [buttonStyle, setButtonStyle] = useState({
     background: "rgba(232, 40, 39, 0.3)",
@@ -36,6 +37,7 @@ const RegisterPage = () => {
   }, [isAuthenticated, navigate]);
 
   const handleSubmit = async (e) => {
+    setLoadingContinueRegis(true);
     e.preventDefault();
 
     const newUserData = {
@@ -87,12 +89,14 @@ const RegisterPage = () => {
         isPasswordHaveCapital &&
         isPasswordHaveSpecial
       ) {
+        setLoadingContinueRegis(false);
         setButtonStyle({
           background: "rgba(232, 40, 39, 1)",
           boxShadow: "0px 8px 18px rgba(232, 40, 39, 1)",
           cursor: "pointer",
         });
       } else {
+        setLoadingContinueRegis(false);
         setButtonStyle({
           background: "rgba(232, 40, 39, 0.3)",
           boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.3)",
@@ -315,8 +319,13 @@ const RegisterPage = () => {
                     >
                       CANCEL
                     </button>
-                    <button className="loginBtn" style={buttonStyle}>
+                    <button className="loginBtn" disabled={loadingContinueRegis === true}
+                    style={{
+                      ...buttonStyle,
+                      
+                    }}>
                       REGISTER
+                      {loadingContinueRegis === true && <Spinner size="sm"/>}
                     </button>
                   </div>
                 </form>

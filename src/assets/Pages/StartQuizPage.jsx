@@ -20,7 +20,7 @@ const goQuiz = () => {
             style={{ background: "rgba(232, 40, 39, 0.1)" }}
             className="d-flex align-items-center"
           >
-            <img src="QuizImage.svg" alt="" style={{ marginLeft: "10rem " }} />
+            <img src="./assets/image/svg/QuizImage.svg" alt="" style={{ marginLeft: "10rem " }} />
           </Col>
           <Col
             xs={4}

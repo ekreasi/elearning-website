@@ -19,7 +19,7 @@
   cursor: pointer;
   transition: transform 0.5s;
   border-radius: 8px;
-  background: url("../ModuleBackground.svg") no-repeat center;
+  background: url("../assets/image/svg//ModuleBackground.svg") no-repeat center;
   background-size: cover;
 }
 

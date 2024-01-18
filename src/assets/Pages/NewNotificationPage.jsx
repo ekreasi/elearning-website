@@ -11,12 +11,12 @@ const NewNotificationPage = () => {
       </Helmet>
       <NewNav />
       <div className="full-notification-page ">
-        <div className="training-page-header">
+        <div className="training-page-header px-3 px-md-5">
           <div className="left-training-header">
-            <p className="left-training">Notification</p>
+            <p className="left-training ">Notification</p>
           </div>
         </div>
-        <div className="full-notification-item">
+        <div className="full-notification-item px-3 px-md-5">
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img
@@ -62,7 +62,7 @@ const NewNotificationPage = () => {
           </p>
           <hr />
         </div>
-        <div className="full-notification-item">
+        <div className="full-notification-item px-3 px-md-5">
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img
@@ -108,7 +108,7 @@ const NewNotificationPage = () => {
           </p>
           <hr />
         </div>
-        <div className="full-notification-item">
+        <div className="full-notification-item px-3 px-md-5">
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img
@@ -154,7 +154,7 @@ const NewNotificationPage = () => {
           </p>
           <hr />
         </div>
-        <div className="full-notification-item">
+        <div className="full-notification-item px-3 px-md-5">
           <div className="full-notification-item-title d-flex justify-content-between">
             <div className="left-full-item ">
               <img

@@ -3,14 +3,119 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../Auth/AuthWrapper";
-import { Dropdown, DropdownButton, NavDropdown } from "react-bootstrap";
+import {
+  Button,
+  Dropdown,
+  DropdownButton,
+  Modal,
+} from "react-bootstrap";
 import "./Navbar.css";
 import { useState } from "react";
+
+const NotificationModal = (props) => {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title
+          id="contained-modal-title-vcenter"
+          style={{
+            width: "100%",
+            borderRadius: "6px",
+            color: "#c12121",
+            fontWeight: "700",
+            fontSize: "16px",
+          }}
+        >
+          Notification
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <div className="small-dropdown-notif">
+          <div className="top-dropdown-event-item d-flex justify-content-between">
+            <div className="top-left-dropdown-item">
+              <img
+                src="./assets/image/svg/notification-event-icon.svg"
+                alt=""
+                style={{ marginRight: "5px" }}
+              />
+              <p style={{ display: "contents" }}>Event</p>
+            </div>
+            <p className="top-date-item">25 Oct</p>
+          </div>
+          <div className="bot-dropdown-event-item notification-small-desc">
+            <p className="notification-event-title">
+              Webinar: Active learning methodologies
+            </p>
+            <p className="notification-event-desc notification-small-desc">
+              Please join the training for achievement the level. Lorem ipsum
+              dolor sit amet consectetur ligula
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div className="small-dropdown-notif">
+          <div className="top-dropdown-event-item d-flex justify-content-between">
+            <div className="top-left-dropdown-item">
+              <img
+                src="./assets/image/svg/notification-event-icon.svg"
+                alt=""
+                style={{ marginRight: "5px" }}
+              />
+              <p style={{ display: "contents" }}>Event</p>
+            </div>
+            <p className="top-date-item">25 Oct</p>
+          </div>
+          <div className="bot-dropdown-event-item">
+            <p className="notification-event-title notification-small-desc">
+              Webinar: Active learning methodologies
+            </p>
+            <p className="notification-event-desc notification-small-desc">
+              Please join the training for achievement the level. Lorem ipsum
+              dolor sit amet consectetur ligula
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div className="small-dropdown-notif">
+          <div className="top-dropdown-event-item d-flex justify-content-between">
+            <div className="top-left-dropdown-item">
+              <img
+                src="./assets/image/svg/notification-event-icon.svg"
+                alt=""
+                style={{ marginRight: "5px" }}
+              />
+              <p style={{ display: "contents" }}>Event</p>
+            </div>
+            <p className="top-date-item">25 Oct</p>
+          </div>
+          <div className="bot-dropdown-event-item">
+            <p className="notification-event-title notification-small-desc">
+              Webinar: Active learning methodologies
+            </p>
+            <p className="notification-event-desc notification-small-desc">
+              Please join the training for achievement the level. Lorem ipsum
+              dolor sit amet consectetur ligula
+            </p>
+          </div>
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>View more</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+};
 
 function NewNav() {
   const { logout } = useAuth();
   const navigate = useNavigate();
   const [isNotificationClicked, setIsNotificationClicked] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   const goNotif = (e) => {
     e.preventDefault();
@@ -55,11 +160,19 @@ function NewNav() {
                 Managemen Waktu - Module 2
               </Nav.Link>
             </Nav>
+            <Nav.Link
+              onClick={() => setModalShow(true)}
+              className={`white-text d-sm-block d-lg-none ${
+                location.pathname === "/notification" ? "active" : ""
+              }`}
+            >
+              Notification
+            </Nav.Link>
             <Nav.Link>
               <DropdownButton
                 id="dropdown-basic-button"
-                title={<img src="../BelNotif.svg" alt="" />}
-                className="notification-button"
+                title={<img src="./assets/image/svg/BelNotif.svg" alt="" />}
+                className="notification-button d-none d-lg-block"
                 onClick={() => {
                   setIsNotificationClicked(!isNotificationClicked);
                 }}
@@ -82,7 +195,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -108,7 +221,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -134,7 +247,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="notification-event-icon.svg"
+                        src="./assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -172,13 +285,31 @@ function NewNav() {
                 </p>
               </DropdownButton>
             </Nav.Link>
-            <Nav.Link>
-              <img src="../SettingProfile.svg" alt="" onClick={goProfile} />
+            <Nav.Link className="d-none d-lg-block">
+              <img
+                src="./assets/image/svg/SettingProfile.svg"
+                alt=""
+                onClick={goProfile}
+              />
             </Nav.Link>
-            <Nav.Link className="mx-2">
-              <img src="../Line 9.svg" alt="" />
+            <Nav.Link className="d-md-block d-lg-none">
+              <p
+                onClick={goProfile}
+                style={{
+                  padding: "8px 10px",
+                  marginBottom: "0",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  color: "#fff",
+                }}
+              >
+                Profile
+              </p>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link className="mx-2 d-none d-lg-block">
+              <img src="./assets/image/svg/Line 9.svg" alt="" />
+            </Nav.Link>
+            <Nav.Link className="d-none d-lg-block">
               <div
                 style={{
                   width: "117px",
@@ -190,7 +321,7 @@ function NewNav() {
                 }}
               >
                 <img
-                  src="../IconKeluar.svg"
+                  src="./assets/image/svg/IconKeluar.svg"
                   alt=""
                   style={{
                     objectFit: "contain",
@@ -202,9 +333,24 @@ function NewNav() {
                 />
               </div>
             </Nav.Link>
+            <Nav.Link className="d-sm-block d-lg-none">
+              <div
+                style={{
+                  fontSize: "14px",
+                  marginLeft: "10px",
+                  fontWeight: "500",
+                  color: "white",
+                  paddingBottom: "17px",
+                }}
+                onClick={logout}
+              >
+                Sign out
+              </div>
+            </Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <NotificationModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 }

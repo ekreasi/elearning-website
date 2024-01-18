@@ -105,20 +105,20 @@ const MaterialPage = () => {
                   This learning includes:{" "}
                 </p>
                 <span style={{ fontSize: "14px" }}>
-                  <img src="../MaterialModulIcon.svg" alt="" />
+                  <img src="../assets/image/svg/MaterialModulIcon.svg" alt="" />
                   Material and video explanation
                 </span>
                 <span style={{ fontSize: "14px", marginLeft: "50px" }}>
-                  <img src="../QuizModulIcon.svg" alt="" />
+                  <img src="../assets/image/svg/QuizModulIcon.svg" alt="" />
                   Complete the quiz in the last chapter
                 </span>
                 <br />
                 <span style={{ fontSize: "14px" }}>
-                  <img src="../AccessModulIcon.svg" alt="" />
+                  <img src="../assets/image/svg/AccessModulIcon.svg" alt="" />
                   Access on mobile and website
                 </span>
                 <span style={{ fontSize: "14px", marginLeft: "53px" }}>
-                  <img src="../CertifModulIcon.svg" alt="" />
+                  <img src="../assets/image/svg/CertifModulIcon.svg" alt="" />
                   Certificate of completion for all chapters in the module
                 </span>
               </div>
@@ -156,12 +156,12 @@ const MaterialPage = () => {
                 {nextPage >= maxPage ? (
                   <>
                     <span onClick={handleQuiz}>Next</span>
-                    <img src="../NextModuleIcon.svg" alt="" />
+                    <img src="../assets/image/svg/NextModuleIcon.svg" alt="" />
                   </>
                 ) : (
                   <>
                     <span onClick={handleQuiz}>Next</span>
-                    <img src="../NextModuleIcon.svg" alt="" />
+                    <img src="../assets/image/svg/NextModuleIcon.svg" alt="" />
                   </>
                 )}
               </div>

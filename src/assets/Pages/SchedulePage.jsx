@@ -101,7 +101,7 @@ const SchedulePage = () => {
   const goZoom = () => navigate("/zoom-webinar");
 
   return (
-    <div style={{ height: "100vh", overflow: "hidden", background: "#eaeaea" }}>
+    <div style={{ height: "100vh", background: "#eaeaea" }}>
       <Helmet>
         <title>Schedule | e-Learning</title>
         <meta name="description" content="Helmet application" />
@@ -109,10 +109,10 @@ const SchedulePage = () => {
       <NewNav />
       <div className="schedule-page">
         <Row>
-          <Col xs={9} className="schedule-calendar">
+          <Col xs={9} className="schedule-calendar overflow-hidden">
             <Calendar onModalShow={handleModalShow} />
           </Col>
-          <Col xs={3} className="right-schedule-col">
+          <Col xs={3} className="right-schedule-col overflow-hidden">
             <div className="right-schedule-header">
               <button
                 onClick={() => toggleActiveButton("Event")}

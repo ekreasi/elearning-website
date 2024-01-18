@@ -15,7 +15,7 @@ const QuizFinishPage = () => {
 
       <div className="quiz-finish-page">
         <div className="finish-quiz-content d-flex flex-column justify-content-between align-items-center">
-          <img src="QuizSuccessImage.svg" alt="" />
+          <img src="./assets/image/svg/QuizSuccessImage.svg" alt="" />
           <div className="finish-success-desc text-center">
             <p className="amazing">Amazing!</p>
             <p className="successfully">
@@ -30,7 +30,7 @@ const QuizFinishPage = () => {
         </div>
         <hr />
         <span className="d-flex align-items-center justify-content-center certificate-text-bottom ">
-          <img src="CertifModulIcon.svg" alt="" className="mx-1 "/>
+          <img src="./assets/image/svg/CertifModulIcon.svg" alt="" className="mx-1 "/>
           Complete all the chapter in the module and get the certificate
         </span>
       </div>

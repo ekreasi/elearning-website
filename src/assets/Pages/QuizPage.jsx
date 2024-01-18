@@ -125,7 +125,7 @@ const QuizPage = () => {
           <hr />
         <Row className="quiz-question-row">
           <Col xs={5} className="">
-            <img src="QuizQuestionImage.svg" alt="" />
+            <img src="./assets/image/svg/QuizQuestionImage.svg" alt="" />
           </Col>
           <Col xs={7}>
             <div className="quiz-question-col">
@@ -184,13 +184,13 @@ const QuizPage = () => {
             className="d-flex align-items-center justify-content-center quiz-navigation-row"
           >
             <div className="back-quiz">
-              <img src="BackQuizIcon.svg" alt="" />
+              <img src="./assets/image/svg/BackQuizIcon.svg" alt="" />
               <span>Back</span>
             </div>
             <div className="quiz-page-count">Page 14/24</div>
             <div className="next-quiz" onClick={finishQuiz}>
               <span>Next</span>
-              <img src="NextModuleIcon.svg" alt="" />
+              <img src="./assets/image/svg/NextModuleIcon.svg" alt="" />
             </div>
           </Col>
         </Row>

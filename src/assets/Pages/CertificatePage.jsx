@@ -1,4 +1,4 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import WhiteNav from "../Components/Navbar/WhiteNav/WhiteNav";
 import "./CertificatePage.css";
 import { Helmet } from "react-helmet";
@@ -22,83 +22,82 @@ const CertificatePage = () => {
       <WhiteNav />
 
       <div className="cert-header">
-        <Row>
-          <Col xs={2} className="image-col">
-            <img
-              src="./assets/image/svg/CertificatePageIcon.svg"
-              alt=""
-              style={{
-                width: "110px",
-                height: "110px",
-                margin: "5px 10px 5px 20px",
-              }}
-            />
-          </Col>
-          <Col xs={10}>
-            <Row className="my-3">
-              <p className="cert-header-title">Certificate</p>
-              <p className="cert-header-desc">
-                You will get a certificate if you have completed all chapter in
-                the module. The link to obtain your certificate is provided when
-                show the button link “Download”.
-              </p>
-            </Row>
-          </Col>
-        </Row>
-        <Row style={{ margin: "26px auto 40px" }}>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievedIcon.svg" alt="" />
-            <div className="my-auto cert-card-container">
-              <p className="certificate-card-title">Pre Basic</p>
-              <a className="certificate-download">Download</a>
+        <Container>
+          <Row>
+            <div className="d-flex align-items-center">
+              <img
+                src="./assets/image/svg/CertificatePageIcon.svg"
+                alt=""
+                style={{
+                  width: "119px",
+                  height: "119px",
+                }}
+              />
+              <div className="d-flex justify-content-center flex-column">
+                <p className="cert-header-title mb-0">Certificate</p>
+                <p className="cert-header-desc mb-0">
+                  You will get a certificate if you have completed all chapter
+                  in the module. The link to obtain your certificate is provided
+                  when show the button link “Download”.
+                </p>
+              </div>
             </div>
-          </Col>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievedIcon.svg" alt="" />
-            <div className="my-auto cert-card-container">
-              <p className="certificate-card-title">Basic</p>
-              <a className="certificate-download">Download</a>
-            </div>
-          </Col>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
-            <div className="my-auto">
-              <p className="certificate-disabled-title">Beginner</p>
-            </div>
-          </Col>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
-            <div className="my-auto">
-              <p className="certificate-disabled-title">Elementary</p>
-            </div>
-          </Col>
-        </Row>
-        <Row style={{ margin: "36px auto 40px" }}>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
-            <div className="my-auto">
-              <p className="certificate-disabled-title">Intermediate</p>
-            </div>
-          </Col>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
-            <div className="my-auto">
-              <p className="certificate-disabled-title">Upper Intermediate</p>
-            </div>
-          </Col>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
-            <div className="my-auto">
-              <p className="certificate-disabled-title">Advance</p>
-            </div>
-          </Col>
-          <Col xs={3} className="d-flex">
-            <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
-            <div className="my-auto">
-              <p className="certificate-disabled-title">Proficiency</p>
-            </div>
-          </Col>
-        </Row>
+          </Row>
+          <Row style={{ margin: "26px auto 40px" }}>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievedIcon.svg" alt="" />
+              <div className="my-auto cert-card-container">
+                <p className="certificate-card-title">Pre Basic</p>
+                <a className="certificate-download">Download</a>
+              </div>
+            </Col>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievedIcon.svg" alt="" />
+              <div className="my-auto cert-card-container">
+                <p className="certificate-card-title">Basic</p>
+                <a className="certificate-download">Download</a>
+              </div>
+            </Col>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
+              <div className="my-auto">
+                <p className="certificate-disabled-title">Beginner</p>
+              </div>
+            </Col>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
+              <div className="my-auto">
+                <p className="certificate-disabled-title">Elementary</p>
+              </div>
+            </Col>
+          </Row>
+          <Row style={{ margin: "36px auto 40px" }}>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
+              <div className="my-auto">
+                <p className="certificate-disabled-title">Intermediate</p>
+              </div>
+            </Col>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
+              <div className="my-auto">
+                <p className="certificate-disabled-title">Upper Intermediate</p>
+              </div>
+            </Col>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
+              <div className="my-auto">
+                <p className="certificate-disabled-title">Advance</p>
+              </div>
+            </Col>
+            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+              <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
+              <div className="my-auto">
+                <p className="certificate-disabled-title">Proficiency</p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );

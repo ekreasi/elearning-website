@@ -56,8 +56,9 @@ const HomePage = () => {
 
       console.log("API Response", response);
 
+      const data = await response.json();
+
       if (response.ok) {
-        const data = await response.json();
         const token = data.data.access_token;
         const email = data.data.user.email;
         const username = data.data.user.name;
@@ -80,6 +81,8 @@ const HomePage = () => {
           console.log(localStorage);
           navigate("/pDashboard");
         }, 500);
+      } else if (data?.metaData?.code === 401) {
+        Swal.fire("Invalid username or password");
       } else {
         console.log("Username atau password salah");
       }
@@ -202,7 +205,12 @@ const HomePage = () => {
                       onClick={() => setShowPassword(!showPassword)}
                     >
                       {showPassword === true ? (
-                        <img src="/assets/image/svg/HidePassIcon.svg" alt="" width="28px" height="28px"/>
+                        <img
+                          src="/assets/image/svg/HidePassIcon.svg"
+                          alt=""
+                          width="28px"
+                          height="28px"
+                        />
                       ) : (
                         <img src="/assets/image/svg/ShowPassIcon.svg" alt="" />
                       )}

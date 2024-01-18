@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Auth/AuthWrapper";
 import Swal from "sweetalert2";
@@ -12,6 +12,7 @@ const RegisterPage = () => {
 
   const { isAuthenticated } = useAuth();
   const [referral, setRef] = useState("");
+  const [loadingRegis, setLoadingRegis] = useState(false);
 
   const [buttonStyle, setButtonStyle] = useState({
     background: "rgba(232, 40, 39, 0.3)",
@@ -27,6 +28,7 @@ const RegisterPage = () => {
   }, [isAuthenticated, navigate]);
 
   const handleConfirm = async (e) => {
+    setLoadingRegis(true);
     e.preventDefault();
 
     try {
@@ -45,7 +47,9 @@ const RegisterPage = () => {
       console.log(data);
 
       if (response.ok && data?.metaData?.code === 200) {
-        navigate("/continue");
+        setTimeout(() => {
+          navigate("/continue");
+        }, 500);
       } else {
         Swal.fire(data?.message || "Code not found !");
       }
@@ -57,12 +61,14 @@ const RegisterPage = () => {
   const checkForm = () => {
     setTimeout(() => {
       if (referral) {
+        setLoadingRegis(false);
         setButtonStyle({
           background: "rgba(232, 40, 39, 1)",
           boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.2)",
           cursor: "pointer",
         });
       } else {
+        setLoadingRegis(false);
         setButtonStyle({
           background: "rgba(232, 40, 39, 0.3)",
           boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.3)",
@@ -75,7 +81,11 @@ const RegisterPage = () => {
   return (
     <div className="home">
       <Row>
-        <Col md={6} className="d-none d-md-block" style={{ backgroundColor: "#E828271A", height: "100vh" }}>
+        <Col
+          md={6}
+          className="d-none d-md-block"
+          style={{ backgroundColor: "#E828271A", height: "100vh" }}
+        >
           <div className="justify-content-between h-100">
             <img
               src="./assets/image/svg/logo-elearning 1.svg"
@@ -89,7 +99,7 @@ const RegisterPage = () => {
             />
           </div>
         </Col>
-        <Col md={6} style={{ backgroundColor: "white", height: "96.8vh"}}>
+        <Col md={6} style={{ backgroundColor: "white", height: "96.8vh" }}>
           <div className="login">
             <div className="d-flex flex-column justify-content-between h-100">
               <div className="signContainer">
@@ -106,7 +116,7 @@ const RegisterPage = () => {
                   Sign In
                 </button>
               </div>
-              <div style={{ marginBottom: "196.5px", marginTop: "100px"}}>
+              <div style={{ marginBottom: "196.5px", marginTop: "100px" }}>
                 <h3 className="registerTxt">Registration New Account</h3>
                 <p className="signTxt mb-5">
                   Please submit the registration code
@@ -126,16 +136,25 @@ const RegisterPage = () => {
                     }}
                     onInput={checkForm}
                   />
-                  <button className="loginBtn" style={buttonStyle}>
+                  <button
+                    className="loginBtn"
+                    disabled={loadingRegis === true}
+                    style={{
+                      ...buttonStyle,
+                      display: "flex",
+                      gap: "0.5rem",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
                     Register
+                    {loadingRegis === true && <Spinner size="sm" />}
                   </button>
                 </form>
               </div>
             </div>
             <div className="d-flex">
-              <p
-                className="mx-auto homeCopy"
-              >
+              <p className="mx-auto homeCopy">
                 Copyright &copy; 2024 Indocyber Global Teknologi
               </p>
             </div>

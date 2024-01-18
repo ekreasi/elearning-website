@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Spinner } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../Auth/AuthWrapper";
 import Swal from "sweetalert2";
@@ -12,6 +12,7 @@ const RegisterPage = () => {
 
   const { isAuthenticated } = useAuth();
   const [email, setEmail] = useState("");
+  const [loadingForgot, setLoadingForgot] = useState(false);
   const [buttonStyle, setButtonStyle] = useState({
     background: "rgba(232, 40, 39, 0.3)",
     boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.3)",
@@ -26,6 +27,7 @@ const RegisterPage = () => {
   }, [isAuthenticated, navigate]);
 
   const handleConfirm = async (e) => {
+    setLoadingForgot(true)
     e.preventDefault();
 
     try {
@@ -55,13 +57,15 @@ const RegisterPage = () => {
 
   const checkForm = () => {
     setTimeout(() => {
-      if (referral) {
+      if (email) {
+        setLoadingForgot(false); 
         setButtonStyle({
           background: "rgba(232, 40, 39, 1)",
           boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.2)",
           cursor: "pointer",
         });
       } else {
+        setLoadingForgot(false); 
         setButtonStyle({
           background: "rgba(232, 40, 39, 0.3)",
           boxShadow: "0px 8px 18px rgba(232, 40, 39, 0.3)",
@@ -74,7 +78,11 @@ const RegisterPage = () => {
   return (
     <div className="home">
       <Row>
-        <Col md={6} className="d-none d-md-block" style={{ backgroundColor: "#E828271A", height: "100vh" }}>
+        <Col
+          md={6}
+          className="d-none d-md-block"
+          style={{ backgroundColor: "#E828271A", height: "100vh" }}
+        >
           <div className="justify-content-between h-100">
             <img
               src="./assets/image/svg/logo-elearning 1.svg"
@@ -142,18 +150,28 @@ const RegisterPage = () => {
           </div>
         </Col> */}
 
-
         <Col md={6} style={{ backgroundColor: "white", height: "96.8vh" }}>
           <div className="login">
             <div className="d-flex flex-column justify-content-between h-100">
               <div className="signContainer">
-                <p style={{ display: "inline", fontSize: "14px", fontWeight: "400", }}>Don&apos;t have an account ? </p>
+                <p
+                  style={{
+                    display: "inline",
+                    fontSize: "14px",
+                    fontWeight: "400",
+                  }}
+                >
+                  Don&apos;t have an account ?{" "}
+                </p>
                 <button className="signBtn" onClick={handleSignUp}>
                   Sign Up
                 </button>
               </div>
 
-              <div className="" style={{ marginBottom: "196.5px", marginTop: "100px" }}>
+              <div
+                className=""
+                style={{ marginBottom: "196.5px", marginTop: "100px" }}
+              >
                 <h3 className="registerTxt">Forgot Password</h3>
                 <p className="signTxt mb-5">
                   Please input field below for reset the password
@@ -169,7 +187,7 @@ const RegisterPage = () => {
                       backgroundColor: "#F5F6F8",
                     }}
                     onChange={(e) => {
-                      setRef(e.target.value);
+                      setEmail(e.target.value);
                     }}
                     onInput={checkForm}
                   />
@@ -178,8 +196,19 @@ const RegisterPage = () => {
                     Back to Login?
                   </Link>
 
-                  <button className="loginBtn" style={buttonStyle}>
+                  <button
+                    className="loginBtn"
+                    disabled={loadingForgot === true}
+                    style={{
+                      ...buttonStyle,
+                      display: "flex",
+                      gap: "0.5rem",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
                     Send
+                    {loadingForgot === true && <Spinner size="sm"/>}
                   </button>
                 </form>
               </div>
