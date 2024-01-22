@@ -487,3 +487,11 @@ li {
   right: 10px;
   cursor: pointer;
 }
+
+.z-top {
+  z-index: 999999;
+} 
+
+.learning-module-card {
+  width: 100% !important;
+}

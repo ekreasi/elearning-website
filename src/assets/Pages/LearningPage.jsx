@@ -48,9 +48,9 @@ function MyVerticallyCenteredModal(props) {
         style={{ padding: "0px 28px 24px" }}
         className="learning-page-row"
       >
-        <Row className="text-center">
+        <Row className="text-center g-3">
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center ">
@@ -66,7 +66,7 @@ function MyVerticallyCenteredModal(props) {
           </Col>
 
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -81,7 +81,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
             onClick={goStartChapter}
           >
@@ -96,10 +96,8 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <p className="mb-0 p-arrow">{`>`}</p>
           </Col>
-        </Row>
-        <Row>
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -111,7 +109,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -123,21 +121,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
-            className="d-flex justify-content-between align-items-center module-choices-card"
-          >
-            <div className="d-flex align-items-center">
-              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
-              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
-                Coaching
-              </p>
-            </div>
-            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -149,7 +133,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -161,21 +145,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
-            className="d-flex justify-content-between align-items-center module-choices-card"
-          >
-            <div className="d-flex align-items-center">
-              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
-              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
-                Coaching
-              </p>
-            </div>
-            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -187,7 +157,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -199,21 +169,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
-            className="d-flex justify-content-between align-items-center module-choices-card"
-          >
-            <div className="d-flex align-items-center">
-              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
-              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
-                Coaching
-              </p>
-            </div>
-            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -225,7 +181,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -237,7 +193,43 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-            xs={4}
+             xs={12} sm={6} lg={4} xl={3}
+            className="d-flex justify-content-between align-items-center module-choices-card"
+          >
+            <div className="d-flex align-items-center">
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
+              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
+                Coaching
+              </p>
+            </div>
+            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
+          </Col>
+          <Col
+             xs={12} sm={6} lg={4} xl={3}
+            className="d-flex justify-content-between align-items-center module-choices-card"
+          >
+            <div className="d-flex align-items-center">
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
+              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
+                Coaching
+              </p>
+            </div>
+            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
+          </Col>
+          <Col
+             xs={12} sm={6} lg={4} xl={3}
+            className="d-flex justify-content-between align-items-center module-choices-card"
+          >
+            <div className="d-flex align-items-center">
+              <img src="./assets/image/svg/TimeManagementIcon.svg" alt="" />
+              <p className="mb-0 p-title" style={{ marginLeft: "12px" }}>
+                Coaching
+              </p>
+            </div>
+            <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
+          </Col>
+          <Col
+             xs={12} sm={6} lg={4} xl={3}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -258,218 +250,242 @@ const LearningPage = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <div style={{ backgroundColor: "#E5E5E5", height: "100vh" }}>
+    <div style={{ backgroundColor: "#E5E5E5", minHeight: "100vh" }} className="pb-3">
       <Helmet>
         <title>Learning | e-Learning</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
       <NewNav />
 
-      <div className="learning-page ">
-        <p className="learning-page-header">E-Learning</p>
-        <div className="learning-page-content d-flex flex-column justify-content-center align-items-center">
-          <Row className="gap-4 justify-content-center">
-            <Col xs={6} md={3} className="learning-module-card">
-              <img src="./assets/image/svg/ReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="learning-module-text-container my-auto">
-                <p className="learning-module-title">Module 1</p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: "#35B572", cursor: "pointer" }}
-                  onClick={() => setModalShow(true)}
-                >{`Completed>`}</p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="./assets/image/svg/ReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="learning-module-text-container my-auto">
-                <p className="learning-module-title">Module 2</p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: "#E82827", cursor: "pointer" }}
-                  onClick={() => setModalShow(false)}
-                >{`Ready>`}</p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module 3
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module 4
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row className="gap-4 justify-content-center">
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row className="gap-4 justify-content-center">
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-            <Col xs={3} className="learning-module-card">
-              <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
-              <div className="notready-module-text-container my-auto">
-                <p
-                  className="learning-module-title"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Module #
-                </p>
-                <p
-                  className="learning-module-status"
-                  style={{ color: " #7F8A9A" }}
-                >
-                  Not Ready
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <MyVerticallyCenteredModal
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-          />
+      <div className="container mt-3">
+        <div className="card p-3 bg-white border-0">
+          <div className="card-header border-0 bg-white">
+            <p className="learning-page-header">E-Learning</p>
+          </div>
+          <div className="card-body">
+            <Row className="justify-content-center">
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="./assets/image/svg/ReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="learning-module-text-container my-auto">
+                    <p className="learning-module-title">Module 1</p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: "#35B572", cursor: "pointer" }}
+                      onClick={() => setModalShow(true)}
+                    >{`Completed>`}</p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="./assets/image/svg/ReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="learning-module-text-container my-auto">
+                    <p className="learning-module-title">Module 2</p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: "#E82827", cursor: "pointer" }}
+                      onClick={() => setModalShow(false)}
+                    >{`Ready>`}</p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module 3
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module 4
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} lg={4} xl={3}>
+                <div className="learning-module-card">
+                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <div className="notready-module-text-container my-auto">
+                    <p
+                      className="learning-module-title"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Module #
+                    </p>
+                    <p
+                      className="learning-module-status"
+                      style={{ color: " #7F8A9A" }}
+                    >
+                      Not Ready
+                    </p>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+            <MyVerticallyCenteredModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+            />
+          </div>
         </div>
       </div>
     </div>
