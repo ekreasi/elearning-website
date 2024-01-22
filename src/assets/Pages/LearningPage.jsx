@@ -258,7 +258,7 @@ const LearningPage = () => {
       <NewNav />
 
       <div className="container mt-3">
-        <div className="card p-3 bg-white border-0">
+        <div className="card p-3 bg-white border-0 shadow">
           <div className="card-header border-0 bg-white">
             <p className="learning-page-header">E-Learning</p>
           </div>

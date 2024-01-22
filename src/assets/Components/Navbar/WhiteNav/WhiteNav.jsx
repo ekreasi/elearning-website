@@ -189,7 +189,7 @@ function WhiteNav() {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justify-content-end">
+          <Navbar.Collapse className="justify-content-endd z-top">
             <Nav className="me-auto">
               <Nav.Link
                 onClick={(e) => goDashboard(e)}

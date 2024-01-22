@@ -90,11 +90,11 @@ const MaterialPage = () => {
   return (
     <div style={{ backgroundColor: "#E5E5E5", height: "100vh" }}>
       <ChapterNav />
-      <div className="material-page">
+      <div className="material-page pb-3">
         <Row>
           <Col>
             <div className="material-image">
-              <div className="learning-includes">
+              <div className="learning-includes py-4 px-3 px-md-5">
                 <p
                   style={{
                     fontWeight: "700",
@@ -104,33 +104,59 @@ const MaterialPage = () => {
                 >
                   This learning includes:{" "}
                 </p>
-                <span style={{ fontSize: "14px" }}>
-                  <img src="../assets/image/svg/MaterialModulIcon.svg" alt="" />
-                  Material and video explanation
-                </span>
-                <span style={{ fontSize: "14px", marginLeft: "50px" }}>
-                  <img src="../assets/image/svg/QuizModulIcon.svg" alt="" />
-                  Complete the quiz in the last chapter
-                </span>
-                <br />
-                <span style={{ fontSize: "14px" }}>
-                  <img src="../assets/image/svg/AccessModulIcon.svg" alt="" />
-                  Access on mobile and website
-                </span>
-                <span style={{ fontSize: "14px", marginLeft: "53px" }}>
-                  <img src="../assets/image/svg/CertifModulIcon.svg" alt="" />
-                  Certificate of completion for all chapters in the module
-                </span>
+
+                <div className="row g-3 g-md-2">
+                  <div className="col-md-6">
+                    <div className="d-flex gap-3 align-items-start">
+                      <img src="../assets/image/svg/MaterialModulIcon.svg" alt="" />
+                      <span style={{ fontSize: "14px" }}>
+                        Material and video explanation
+                      </span>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex gap-3 align-items-start">
+                      <img src="../assets/image/svg/QuizModulIcon.svg" alt="" />
+                      <span style={{ fontSize: "14px" }}>
+                        Complete the quiz in the last chapter
+                      </span>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex gap-3 align-items-start">
+                      <img src="../assets/image/svg/AccessModulIcon.svg" alt="" />
+                      <span style={{ fontSize: "14px" }}>
+                        Access on mobile and website
+                      </span>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex gap-3 align-items-start">
+                      <img src="../assets/image/svg/AccessModulIcon.svg" alt="" />
+                      <span style={{ fontSize: "14px" }}>
+                        Access on mobile and website
+                      </span>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex gap-3 align-items-start">
+                      <img src="../assets/image/svg/CertifModulIcon.svg" alt="" />
+                      <span style={{ fontSize: "14px" }}>
+                        Certificate of completion for all chapters in the module
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </Col>
         </Row>
-        <Row className="material-row align-items-center">
-          <Col xs={4}></Col>
-          <Col xs={4}>
-            <span className="d-flex align-items-center justify-content-center">
+        <Row className="align-items-center">
+          <Col md={4}></Col>
+          <Col md={4}>
+            <span className="d-flex align-items-center justify-content-between px-3 w-100">
               <div
-                className="prev-page"
+                className="prev-page d-flex gap-2 align-items-center"
                 onClick={prevPage >= 0 ? handlePrevious : handleCancel}
               >
                 {prevPage >= 1 ? (
@@ -151,8 +177,10 @@ const MaterialPage = () => {
                   </>
                 )}
               </div>
-              Page {nextPage}/{data.length}
-              <div className="next-page">
+              <div>
+                Page {nextPage}/{data.length}
+              </div>
+              <div className="next-page d-flex gap-2 align-items-center">
                 {nextPage >= maxPage ? (
                   <>
                     <span onClick={handleQuiz}>Next</span>
@@ -167,10 +195,12 @@ const MaterialPage = () => {
               </div>
             </span>
           </Col>
-          <Col xs={4} className="d-flex justify-content-end">
-            <button className="ml-auto chapter-list-btn d-flex text-center justify-content-center">
-              List of Chapter
-            </button>
+          <Col md={4}>
+            <div className="d-flex justify-content-center justify-content-md-end">
+              <button className="chapter-list-btn text-center">
+                List of Chapter
+              </button>
+            </div>
           </Col>
         </Row>
       </div>
