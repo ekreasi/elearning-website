@@ -29,7 +29,7 @@ const TrainingPage = () => {
       </Helmet>
       <NewNav />
       <div className="training-page">
-        <div className="training-page-header">
+        <div className="training-page-header d-flex flex-column flex-md-row">
           <div className="left-training-header">
             <p className="left-training-event">EVENT</p>
             <p className="left-training">Training</p>
@@ -65,26 +65,26 @@ const TrainingPage = () => {
           </div>
         </div>
         <div className="training-page-content">
-          <Container>
-            <Row className="training-item-row gap-3">
-              <Col xs={1}>
+          <Container className="training-page-container">
+            <Row className="training-item-row d-flex flex-column flex-md-row gap-3">
+              <Col xs={1} classNames="d-flex justify-content-center align-items-center">
                 <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
-              <Col xs={9}>
+              <Col xs={9} style={{ marginLeft: "0px" }}>
                 <Row className="training-page-title">
                   Training: Talent PT 2. This invitation has a long title. So
                   this title has reached the maximum character limit in two
                   lines.
                 </Row>
                 <Row className="mt-2">
-                  <span className="training-img-container">
+                  <span className="training-img-container d-sm-flex align-align-items-sm-center justify-content-sm-center d-lg-block">
                     <img
                       src="./assets/image/svg/TrainingDateIcon.svg"
                       alt=""
                       style={{ width: "24px", height: "24px" }}
                     />{" "}
                     23 Oct{" "}
-                    <img src="Line 112.svg" alt="" className="garis-abu" />
+                    <img src="./assets/image/svg/Line 112.svg" alt="" className="garis-abu" />
                     <img
                       src="./assets/image/svg/JamTrainingIcon.svg"
                       alt=""
@@ -105,7 +105,7 @@ const TrainingPage = () => {
                   </span>
                 </Row>
               </Col>
-              <Col xs={2} style={{ padding: "0", width: "13%" }}>
+              <Col xs={2} className="d-flex justify-content-center align-items-center" style={{ padding: "0", width: "13%" }}>
                 <Button
                   className="d-flex align-content-end acc-training-btn justify-content-center"
                   style={{ marginLeft: "auto" }}
@@ -114,18 +114,18 @@ const TrainingPage = () => {
                 </Button>
               </Col>
             </Row>
-            <Row className="training-item-row">
-              <Col xs={1}>
+            <Row className="training-item-row d-flex flex-column flex-md-row gap-3">
+              <Col xs={1} classNames="d-flex justify-content-center align-items-center">
                 <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
-              <Col xs={9} style={{ marginLeft: "20px" }}>
+              <Col xs={9} style={{ marginLeft: "0px" }}>
                 <Row className="training-page-title">
                   Training: Communicating Effectively with Vulnerable Children
                   and Young People
                 </Row>
                 <Row className="mt-2">
                   <span
-                    className="training-img-container"
+                    className="training-img-container d-sm-flex align-align-items-sm-center justify-content-sm-center d-lg-block"
                     style={{ paddingLeft: "0" }}
                   >
                     <img
@@ -159,7 +159,7 @@ const TrainingPage = () => {
                   </span>
                 </Row>
               </Col>
-              <Col xs={2} style={{ padding: "0", width: "13%" }}>
+              <Col xs={2} className="d-flex justify-content-center align-items-center" style={{ padding: "0", width: "13%" }}>
                 <Button
                   className="d-flex align-content-end acc-training-btn justify-content-center"
                   style={{ marginLeft: "auto" }}
@@ -169,17 +169,17 @@ const TrainingPage = () => {
                 </Button>
               </Col>
             </Row>
-            <Row className="training-item-row">
-              <Col xs={1}>
+            <Row className="training-item-row d-flex flex-column flex-md-row gap-3">
+              <Col xs={1} classNames="d-flex justify-content-center align-items-center">
                 <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
-              <Col xs={9} style={{ marginLeft: "20px" }}>
+              <Col xs={9} style={{ marginLeft: "0px" }}>
                 <Row className="training-page-title">
                   Training: Product Introduction
                 </Row>
                 <Row className="mt-2">
                   <span
-                    className="training-img-container"
+                    className="training-img-container d-sm-flex align-align-items-sm-center justify-content-sm-center d-lg-block"
                     style={{ paddingLeft: "0" }}
                   >
                     <img
@@ -213,7 +213,7 @@ const TrainingPage = () => {
                   </span>
                 </Row>
               </Col>
-              <Col xs={2} style={{ padding: "0", width: "13%" }}>
+              <Col xs={2} className="d-flex justify-content-center align-items-center" style={{ padding: "0", width: "13%" }}>
                 <div className="AcceptedTraining text-center">
                   <img
                     src="./assets/image/svg/TrainingAccIcon.svg"
@@ -224,17 +224,17 @@ const TrainingPage = () => {
                 </div>
               </Col>
             </Row>
-            <Row className="training-item-row">
-              <Col xs={1}>
+            <Row className="training-item-row d-flex flex-column flex-md-row gap-3">
+              <Col xs={1} classNames="d-flex justify-content-center align-items-center">
                 <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
-              <Col xs={9} style={{ marginLeft: "20px" }}>
+              <Col xs={9} style={{ marginLeft: "0px" }}>
                 <Row className="training-page-title">
                   Training: How to manage Your Time
                 </Row>
                 <Row className="mt-2">
                   <span
-                    className="training-img-container"
+                    className="training-img-container d-sm-flex align-align-items-sm-center justify-content-sm-center d-lg-block"
                     style={{ paddingLeft: "0" }}
                   >
                     <img
@@ -268,7 +268,7 @@ const TrainingPage = () => {
                   </span>
                 </Row>
               </Col>
-              <Col xs={2} style={{ padding: "0", width: "13%" }}>
+              <Col xs={2} className="d-flex justify-content-center align-items-left" style={{ padding: "0", width: "13%" }}>
                 <div className="AcceptedTraining text-center">
                   <img
                     src="./assets/image/svg/TrainingAccIcon.svg"

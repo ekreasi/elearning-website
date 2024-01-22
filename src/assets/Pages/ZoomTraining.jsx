@@ -24,9 +24,9 @@ const ZoomTraining = () => {
             <p className="left-training">Zoom</p>
           </div>
         </div>
-        <div className="zoom-training-content">
+        <div className="zoom-training-content px-3">
           <Container>
-            <Row className="zoom-content-row">
+            <Row className="zoom-content-row d-flex flex-column flex-md-row justify-content-center align-items-left">
               <Col xs={3} className="p-0" style={{ width: "230px" }}>
                 <img src="./assets/image/svg/ZoomContentRowImage.svg" alt="" />
               </Col>
@@ -90,7 +90,7 @@ const ZoomTraining = () => {
                 </Button>
               </Col>
             </Row>
-            <Row className="zoom-content-row">
+            <Row className="zoom-content-row d-flex flex-column flex-md-row justify-content-center align-items-left">
               <Col xs={3} className="p-0" style={{ width: "230px" }}>
                 <img src="./assets/image/svg/ZoomContentRowImage.svg" alt="" />
               </Col>
@@ -149,7 +149,7 @@ const ZoomTraining = () => {
                 xs={2}
                 className="p-0 d-flex align-items-center justify-content-center"
               >
-                <Button className="acc-training-btn" onClick={goZoom}>
+                <Button className="acc-training-btn d-flex justify-content-center" onClick={goZoom}>
                   Join
                 </Button>
               </Col>

@@ -54,7 +54,7 @@ const ProfileCard = () => {
             <Col xs={3}>
               <img
                 className="profile-image"
-                src=/*{idPhoto}*/"./assets/image/svg/dum.svg"
+                src={dataLoaded ? (idPhoto) : ("./assets/image/svg/dum.svg") }
                 alt=""
                 onError={replaceAltImg}
               />

@@ -16,7 +16,7 @@
 .training-page-header {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0 12px 67px;
+  padding: 28px 0 12px 30px;
   position: sticky;
   top: 0;
   background: #fff;
@@ -89,8 +89,9 @@
 }
 
 .training-page-history {
-  width: 95px;
-  height: 34px;
+  width: 100%;
+  max-height: 38px;
+  height: auto;
   background: #fff;
   border: 1px solid #e82827;
   border-radius: 8px;
@@ -143,7 +144,7 @@
   width: 100%;
   min-height: 119px;
   height: auto;
-  margin: 0 0 10px 20px;
+  margin: 0 0 10px 0px;
   align-items: center;
   border-radius: 6px;
 }
@@ -173,4 +174,8 @@
 
 .training-page .training-page-content .training-item-row .col-1 {
   padding: 0;
+}
+
+.training-page-container {
+  
 }

@@ -10,8 +10,8 @@
 }
 
 .zoom-training::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 .zoom-training-header {
   display: flex;
@@ -23,11 +23,11 @@
 }
 
 .zoom-content-row {
-    border: 1.5px solid #D4D8DD;
-    padding: 20px;
-    margin-left: 25px;
-    width: 1086px;
-    height: 246px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+  border: 1.5px solid #d4d8dd;
+  padding: 20px;
+  max-width: 1086px;
+  min-height: 246px;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
