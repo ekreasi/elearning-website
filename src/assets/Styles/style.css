@@ -495,3 +495,7 @@ li {
 .learning-module-card {
   width: 100% !important;
 }
+
+.nav-link {
+  text-wrap: nowrap;
+}

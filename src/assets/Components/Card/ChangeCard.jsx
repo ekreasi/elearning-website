@@ -130,7 +130,7 @@ const ChangeCard = () => {
   };
 
   return (
-    <div className="changeCard" style={{ marginTop: "56px" }}>
+    <div className="changeCard px-3" style={{ marginTop: "56px" }}>
       <Container>
         <Row className="changeRow">
           <Col xs={12} className="change-card-col">

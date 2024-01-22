@@ -177,9 +177,6 @@ const ProfileSetting = () => {
       style={{
         backgroundColor: "#FFFFFF",
         height: "100vh",
-        background: `url('./assets/image/svg/bg_red_1 1.svg') no-repeat `,
-        backgroundPosition: "center top 60px",
-        backgroundSize: "100% 156px",
       }}
     >
       <Helmet>
@@ -189,216 +186,231 @@ const ProfileSetting = () => {
       <WhiteNav />
 
       <div className="settCard">
-        <Row>
-          <Col lg={2} className="passwordChng ">
-            <div onClick={handlePhotoClick}>
-              <a href="." onClick={(e) => e.preventDefault()} className="position-relative">
-                <img
-                  src={dataLoaded ? (idPhoto) : ("./assets/image/svg/dum.svg")} 
-                  alt=""
-                  onError={replaceAltImg}
-                />
-                <img
-                  src="./assets/image/svg/CameraButtonIcon.svg"
-                  alt=""
-                  className="cam-small-icon d-none d-lg-block"
-                />
-              </a>
-              <input
-                type="file"
-                accept=""
-                ref={inputRef}
-                style={{ display: "none" }}
-                onChange={() => handlePhotoChange}
-              />
-            </div>
-          </Col>
-          <Col lg={8} className="settingInput my-auto">
-            <div className="d-flex justify-content-between">
-              <div>
-                <p
-                  style={{
-                    fontSize: "24px",
-                    fontWeight: "700",
-                    color: "#000",
-                    marginBotoom: "0",
-                  }}
-                >
-                  {name}
-                </p>
-              </div>
-              <button
-                className="change-btn shadow"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleChange();
-                }}
-              >
-                CHANGE PASSWORD
-              </button>
-            </div>
-          </Col>
-        </Row>
-        <form
-          action=""
-          onSubmit={handleUpdate}
-          className="my-5"
-          style={{ marginLeft: "100px" }}
-        >
-          <Row>
-            <Col xs={6} className="px-2 ">
-              <p className="profile-title">Profile</p>
-              <label htmlFor="name" className="label">
-                Nama
-              </label>
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="setting-form"
-                readOnly={!editNameBtn}
-                style={
-                  !editNameBtn
-                    ? { marginLeft: "160px", outline: "none" }
-                    : {
+        <div style={{
+          backgroundImage: `url('./assets/image/svg/bg_red_1 1.svg')`,
+        }}>
+          <div className="container p-3">
+            <Row>
+              <Col sm={2} className="passwordChng ">
+                <div onClick={handlePhotoClick}>
+                  <a href="." onClick={(e) => e.preventDefault()}>
+                    <div className="position-relative" style={{ width: 100 }}>
+                      <img
+                        src={dataLoaded ? (idPhoto) : ("./assets/image/svg/dum.svg")}
+                        alt=""
+                        onError={replaceAltImg}
+                      />
+                      <img
+                        src="./assets/image/svg/CameraButtonIcon.svg"
+                        alt=""
+                        className="cam-small-icon"
+                        style={{
+                          position: 'absolute',
+                          bottom: -10,
+                          right: -10
+                        }}
+                      />
+                    </div>
+                  </a>
+                  <input
+                    type="file"
+                    accept=""
+                    ref={inputRef}
+                    style={{ display: "none" }}
+                    onChange={() => handlePhotoChange}
+                  />
+                </div>
+              </Col>
+              <Col sm={8} className="my-auto">
+                <div className="d-flex flex-column flex-md-row justify-content-between">
+                  <div>
+                    <p
+                      className="text-white"
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        marginBotoom: "0",
+                      }}
+                    >
+                      {name}
+                    </p>
+                  </div>
+                  <button
+                    className="change-btn shadow"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleChange();
+                    }}
+                  >
+                    CHANGE PASSWORD
+                  </button>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+
+        <div className="container">
+          <form
+            action=""
+            onSubmit={handleUpdate}
+            className="my-5"
+          >
+            <Row>
+              <Col md={6} className="px-2 ">
+                <p className="profile-title">Profile</p>
+                <label htmlFor="name" className="label">
+                  Nama
+                </label>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="setting-form"
+                  readOnly={!editNameBtn}
+                  style={
+                    !editNameBtn
+                      ? { marginLeft: "160px", outline: "none" }
+                      : {
                         marginLeft: "160px",
                         backgroundColor: "#F5F6F8",
                         autoFocus: true,
                         outline: "none",
                       }
-                }
-              />
-              {!editNameBtn ? (
-                <a
-                  href="."
-                  onClick={(e) => {
-                    e.preventDefault();
-                    toggleEditName();
-                  }}
-                  style={{
-                    textDecoration: "none",
-                    color: "#E82827",
-                    fontWeight: "600",
-                    fontSize: "14px",
-                    marginLeft: "-10px",
-                  }}
-                >
-                  Edit
-                </a>
-              ) : null}
-              <br />
-              <label htmlFor="email" className="label">
-                Email / Nomor Telepon
-              </label>
-              <input
-                type="text"
-                placeholder={email}
-                readOnly={true}
-                className="setting-form"
-                style={{ marginLeft: "28px" }}
-              />
-              <br />
-              <label htmlFor="position" className="label">
-                Posisi
-              </label>
-              <input
-                type="text"
-                placeholder={position}
-                className="setting-form"
-                readOnly={true}
-                style={{ marginLeft: "165px" }}
-              />
-              <br />
-              <label htmlFor="bergabungSejak" className="label">
-                Bergabung Sejak
-              </label>
-              <input
-                type="text"
-                placeholder={bergabungSejak}
-                readOnly={true}
-                className="setting-form"
-                style={{ marginLeft: "75px" }}
-              />
-            </Col>
-            <Col xs={6}>
-              <p className="profile-title">Achievement</p>
-              <label htmlFor="poin" className="label">
-                Poin
-              </label>
-              <input
-                type="text"
-                placeholder={`${poin}`}
-                readOnly={true}
-                className="setting-form"
-                style={{ marginLeft: "155px" }}
-              />
-              <br />
-              <label htmlFor="totalBelajar" className="label">
-                Study Time
-              </label>
-              <input
-                type="text"
-                placeholder={totalBelajar}
-                readOnly={true}
-                className="setting-form"
-                style={{ marginLeft: "100px" }}
-              />
-              <br />
-              <label htmlFor="bergabungSejak" className="label">
-                Completed Module
-              </label>
-              <input
-                type="text"
-                placeholder="5"
-                readOnly={true}
-                className="setting-form"
-                style={{ marginLeft: "35px" }}
-              />
-              <br />
-              <label htmlFor="bergabungSejak" className="label">
-                Level
-              </label>
-              <input
-                type="text"
-                placeholder="Basic"
-                readOnly={true}
-                className="setting-form"
-                style={{ marginLeft: "150px" }}
-              />
-            </Col>
-          </Row>
-          {editNameBtn ? (
-            <Row className="d-flex justify-content-end" style={{}}>
-              <Col xs={6} className="my-3">
-                <div
-                  className="d-flex justify-content-end"
-                  style={{ marginRight: "56px" }}
-                >
-                  <button
-                    className="profile-save-btn profile-btn"
-                    type="button"
-                    onClick={handleCancel}
-                  >
-                    CANCEL
-                  </button>
-                  <button
-                    className="profile-cancel-btn profile-btn"
-                    type="submit"
-                    disabled={loadingUpdate === true}
+                  }
+                />
+                {!editNameBtn ? (
+                  <a
+                    href="."
+                    onClick={(e) => {
+                      e.preventDefault();
+                      toggleEditName();
+                    }}
                     style={{
-                      display: "flex",
-                      gap: "0.5rem",
-                      justifyContent: "center",
-                      alignItems: "center",
+                      textDecoration: "none",
+                      color: "#E82827",
+                      fontWeight: "600",
+                      fontSize: "14px",
+                      marginLeft: "-10px",
                     }}
                   >
-                    SAVE {loadingUpdate === true && <Spinner size="sm" />}
-                  </button>
-                </div>
+                    Edit
+                  </a>
+                ) : null}
+                <br />
+                <label htmlFor="email" className="label">
+                  Email / Nomor Telepon
+                </label>
+                <input
+                  type="text"
+                  placeholder={email}
+                  readOnly={true}
+                  className="setting-form"
+                  style={{ marginLeft: "28px" }}
+                />
+                <br />
+                <label htmlFor="position" className="label">
+                  Posisi
+                </label>
+                <input
+                  type="text"
+                  placeholder={position}
+                  className="setting-form"
+                  readOnly={true}
+                  style={{ marginLeft: "165px" }}
+                />
+                <br />
+                <label htmlFor="bergabungSejak" className="label">
+                  Bergabung Sejak
+                </label>
+                <input
+                  type="text"
+                  placeholder={bergabungSejak}
+                  readOnly={true}
+                  className="setting-form"
+                  style={{ marginLeft: "75px" }}
+                />
+              </Col>
+              <Col md={6}>
+                <p className="profile-title">Achievement</p>
+                <label htmlFor="poin" className="label">
+                  Poin
+                </label>
+                <input
+                  type="text"
+                  placeholder={`${poin}`}
+                  readOnly={true}
+                  className="setting-form"
+                  style={{ marginLeft: "155px" }}
+                />
+                <br />
+                <label htmlFor="totalBelajar" className="label">
+                  Study Time
+                </label>
+                <input
+                  type="text"
+                  placeholder={totalBelajar}
+                  readOnly={true}
+                  className="setting-form"
+                  style={{ marginLeft: "100px" }}
+                />
+                <br />
+                <label htmlFor="bergabungSejak" className="label">
+                  Completed Module
+                </label>
+                <input
+                  type="text"
+                  placeholder="5"
+                  readOnly={true}
+                  className="setting-form"
+                  style={{ marginLeft: "35px" }}
+                />
+                <br />
+                <label htmlFor="bergabungSejak" className="label">
+                  Level
+                </label>
+                <input
+                  type="text"
+                  placeholder="Basic"
+                  readOnly={true}
+                  className="setting-form"
+                  style={{ marginLeft: "150px" }}
+                />
               </Col>
             </Row>
-          ) : null}
-        </form>
+            {editNameBtn ? (
+              <Row className="d-flex justify-content-end" style={{}}>
+                <Col xs={6} className="my-3">
+                  <div
+                    className="d-flex justify-content-end"
+                    style={{ marginRight: "56px" }}
+                  >
+                    <button
+                      className="profile-save-btn profile-btn"
+                      type="button"
+                      onClick={handleCancel}
+                    >
+                      CANCEL
+                    </button>
+                    <button
+                      className="profile-cancel-btn profile-btn"
+                      type="submit"
+                      disabled={loadingUpdate === true}
+                      style={{
+                        display: "flex",
+                        gap: "0.5rem",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      SAVE {loadingUpdate === true && <Spinner size="sm" />}
+                    </button>
+                  </div>
+                </Col>
+              </Row>
+            ) : null}
+          </form>
+        </div>
       </div>
     </div>
   );

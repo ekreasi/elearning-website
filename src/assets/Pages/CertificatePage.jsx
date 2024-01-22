@@ -10,9 +10,6 @@ const CertificatePage = () => {
       style={{
         backgroundColor: "#FFF",
         height: "100vh",
-        background: `url('./assets/image/svg/bg_red_1 1.svg') no-repeat `,
-        backgroundPosition: "center top 60px",
-        backgroundSize: "100% 156px",
       }}
     >
       <Helmet>
@@ -22,27 +19,36 @@ const CertificatePage = () => {
       <WhiteNav />
 
       <div className="certificate-page-container">
-        <Container>
-          <Row className="cert-header">
-            <div className="d-flex align-items-center">
-              <img
-                src="./assets/image/svg/CertificatePageIcon.svg"
-                alt=""
-                style={{
-                  width: "119px",
-                  height: "119px",
-                }}
-              />
-              <div className="d-flex justify-content-center flex-column">
-                <p className="cert-header-title mb-0">Certificate</p>
-                <p className="cert-header-desc mb-0">
-                  You will get a certificate if you have completed all chapter
-                  in the module. The link to obtain your certificate is provided
-                  when show the button link “Download”.
-                </p>
+        <div>
+          <div style={{
+            backgroundImage: `url('./assets/image/svg/bg_red_1 1.svg')`,
+            height: 132
+          }} />
+
+          <Container>
+            <div className="cert-header">
+              <div className="d-flex align-items-center">
+                <img
+                  src="./assets/image/svg/CertificatePageIcon.svg"
+                  alt=""
+                  style={{
+                    width: "119px",
+                    height: "119px",
+                  }}
+                />
+                <div className="d-flex justify-content-center flex-column">
+                  <p className="cert-header-title mb-0">Certificate</p>
+                  <p className="cert-header-desc mb-0">
+                    You will get a certificate if you have completed all chapter
+                    in the module. The link to obtain your certificate is provided
+                    when show the button link “Download”.
+                  </p>
+                </div>
               </div>
             </div>
-          </Row>
+          </Container>
+        </div>
+        <Container>
           <Row>
             <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievedIcon.svg" alt="" />
