@@ -39,7 +39,7 @@ const NotificationModal = (props) => {
           <div className="top-dropdown-event-item d-flex justify-content-between">
             <div className="top-left-dropdown-item">
               <img
-                src="./assets/image/svg/notification-event-icon.svg"
+                src="../assets/image/svg/notification-event-icon.svg"
                 alt=""
                 style={{ marginRight: "5px" }}
               />
@@ -62,7 +62,7 @@ const NotificationModal = (props) => {
           <div className="top-dropdown-event-item d-flex justify-content-between">
             <div className="top-left-dropdown-item">
               <img
-                src="./assets/image/svg/notification-event-icon.svg"
+                src="../assets/image/svg/notification-event-icon.svg"
                 alt=""
                 style={{ marginRight: "5px" }}
               />
@@ -85,7 +85,7 @@ const NotificationModal = (props) => {
           <div className="top-dropdown-event-item d-flex justify-content-between">
             <div className="top-left-dropdown-item">
               <img
-                src="./assets/image/svg/notification-event-icon.svg"
+                src="../assets/image/svg/notification-event-icon.svg"
                 alt=""
                 style={{ marginRight: "5px" }}
               />
@@ -139,7 +139,7 @@ function NewNav() {
         expand="lg"
         className="bg-custom w-100"
         style={{
-          background: `url('../bg-logo.svg') no-repeat`,
+          background: `url('../assets/image/svg/bg-logo.svg') no-repeat`,
           backgroundColor: "#E82827",
           height: "62px",
         }}
@@ -147,15 +147,15 @@ function NewNav() {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="../E-LearningLogo.svg"
+              src="../assets/image/svg/E-LearningLogo.svg"
               alt=""
               style={{ marginLeft: "15px", marginRight: "60px" }}
             />
-            <img src="../JISLogo.svg" alt="" style={{ marginRight: "50px" }} />
+            <img src="../assets/image/svg/JISLogo.svg" alt="" style={{ marginRight: "50px" }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justify-content-end">
-            <Nav className="me-auto">
+          <Navbar.Collapse className="justify-content-end chapter-nav">
+            <Nav className="me-auto d-none d-md-block">
               <Nav.Link className="white-text ">
                 Managemen Waktu - Module 2
               </Nav.Link>
@@ -171,7 +171,7 @@ function NewNav() {
             <Nav.Link>
               <DropdownButton
                 id="dropdown-basic-button"
-                title={<img src="./assets/image/svg/BelNotif.svg" alt="" />}
+                title={<img src="../assets/image/svg/BelNotif.svg" alt="" />}
                 className="notification-button d-none d-lg-block"
                 onClick={() => {
                   setIsNotificationClicked(!isNotificationClicked);
@@ -195,7 +195,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="./assets/image/svg/notification-event-icon.svg"
+                        src="../assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -221,7 +221,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="./assets/image/svg/notification-event-icon.svg"
+                        src="../assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -247,7 +247,7 @@ function NewNav() {
                   <div className="top-dropdown-event-item d-flex justify-content-between">
                     <div className="top-left-dropdown-item">
                       <img
-                        src="./assets/image/svg/notification-event-icon.svg"
+                        src="../assets/image/svg/notification-event-icon.svg"
                         alt=""
                         style={{ marginRight: "5px" }}
                       />
@@ -287,7 +287,7 @@ function NewNav() {
             </Nav.Link>
             <Nav.Link className="d-none d-lg-block">
               <img
-                src="./assets/image/svg/SettingProfile.svg"
+                src="../assets/image/svg/SettingProfile.svg"
                 alt=""
                 onClick={goProfile}
               />
@@ -307,7 +307,7 @@ function NewNav() {
               </p>
             </Nav.Link>
             <Nav.Link className="mx-2 d-none d-lg-block">
-              <img src="./assets/image/svg/Line 9.svg" alt="" />
+              <img src="../assets/image/svg/Line 9.svg" alt="" />
             </Nav.Link>
             <Nav.Link className="d-none d-lg-block">
               <div
@@ -321,7 +321,7 @@ function NewNav() {
                 }}
               >
                 <img
-                  src="./assets/image/svg/IconKeluar.svg"
+                  src="../assets/image/svg/IconKeluar.svg"
                   alt=""
                   style={{
                     objectFit: "contain",

@@ -185,3 +185,16 @@
 .red-navbar .notification-button .dropdown-toggle {
   font-size: 14px;
 }
+
+.chapter-nav.navbar-collapse.show {
+  background-color: #e82827;
+  margin-top: 0.8rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  z-index: 9999;
+}
+
+.bg-custom .container button.navbar-toggler {
+  background-color: #fff;
+  outline: none;
+}
