@@ -37,14 +37,14 @@
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 .white-quiz-btn {
     color: #e82827;
     background-color: #fff;
     box-shadow: 0 8px 18px rgba(196, 196, 196, 0.3);
-    margin-right: 24px;
+    /* margin-right: 24px; */
 }
 
 .red-quiz-btn {

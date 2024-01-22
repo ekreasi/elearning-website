@@ -3,7 +3,7 @@
   border: none;
   border-radius: 8px;
   background: #fff;
-  height: 84vh;
+  min-height: 84vh;
   box-shadow: 0 4px 4px #c7c7c7;
   overflow: hidden;
 }
@@ -21,6 +21,7 @@
   border-radius: 8px;
   background: url("../assets/image/svg//ModuleBackground.svg") no-repeat center;
   background-size: cover;
+  position: relative;
 }
 
 .cancel-material {
@@ -34,14 +35,11 @@
 }
 
 .prev-page {
-  margin-right: 80px;
   cursor: pointer;
 }
 
 .next-page {
-  margin-left: 80px;
   cursor: pointer;
-
 }
 
 .chapter-list-btn {
@@ -58,12 +56,13 @@
 }
 
 .learning-includes {
-  width: 801px;
-  height: 160px;
+  max-width: 801px;
+  width: 100%;
+  min-height: 160px;
   background: rgba(255, 255, 255, 0.85);
-  padding: 27px 45px 27px 60px;
+  /* padding: 27px 45px 27px 60px; */
   border-radius: 0 10px 0 0;
   position: absolute;
-  bottom: 78px;
-  left: 47.7px;
+  bottom: 0;
+  left: 0;
 }
