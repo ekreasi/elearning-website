@@ -1,7 +1,7 @@
 .cert-header {
   max-width: 1088px;
   width: 100%;
-  height: 120px;
+  height: 140px;
   background: #fff;
   margin: 72px auto 36px;
   border-radius: 8px;
@@ -28,7 +28,6 @@
 }
 
 .cert-card-container {
-  margin-left: 18px;
 }
 
 .certificate-card-title {
@@ -50,9 +49,10 @@
   font-weight: 700;
   font-size: 16px;
   color: #b6b4b5;
-  margin-left: 18px;
+  word-break: break-all;
 }
 
 .certificate-column-card {
-  padding: 0;
+  padding: 0 12px; 
+  margin: 26px auto 10px;
 }

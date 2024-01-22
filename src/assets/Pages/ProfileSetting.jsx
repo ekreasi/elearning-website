@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Spinner } from "react-bootstrap";
 import WhiteNav from "../Components/Navbar/WhiteNav/WhiteNav";
 import { useNavigate } from "react-router-dom";
 import "../Components/Card/SettingCard.css";
 import { Helmet } from "react-helmet";
+// import { display } from "html2canvas/dist/types/css/property-descriptors/display";
 
 const ProfileSetting = () => {
   const navigate = useNavigate();
@@ -18,6 +19,8 @@ const ProfileSetting = () => {
   const [idPhoto, setIdPhoto] = useState("");
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [editNameBtn, setEditNameBtn] = useState(false);
+  const [dataLoaded, setDataLoaded] = useState(false);
+  const [loadingUpdate, setLoadingUpdate] = useState(false);
 
   const toggleEditName = () => {
     setEditNameBtn(!editNameBtn);
@@ -76,10 +79,13 @@ const ProfileSetting = () => {
         setTotalBelajar(data.data.totalSesiBelajar);
         setBergabungSejak(data.data.bergabungSejak);
         setIdPhoto(data.data.idPhoto);
+        setDataLoaded(true);
       } else {
+        setDataLoaded(false);
         console.error("API returned an error:", data.metaData.message);
       }
     } catch (err) {
+      setDataLoaded(false);
       console.error("Error fetching item", err);
     }
   };
@@ -99,6 +105,7 @@ const ProfileSetting = () => {
   };
 
   const handleUpdatePhoto = async (e, selectedPhoto) => {
+    setLoadingUpdate(true);
     e.preventDefault();
 
     const formData = new FormData();
@@ -120,12 +127,15 @@ const ProfileSetting = () => {
       } else {
         console.error("Error updating profile picture", response);
       }
+      setLoadingUpdate(false);
     } catch (err) {
+      setLoadingUpdate(false);
       console.error(err);
     }
   };
 
   const handleUpdate = async (e) => {
+    setLoadingUpdate(true);
     e.preventDefault();
     if (!token) {
       navigate("/login");
@@ -154,7 +164,9 @@ const ProfileSetting = () => {
       } else {
         console.error("Error updating profile: " + response);
       }
+      setLoadingUpdate(false);
     } catch (err) {
+      setLoadingUpdate(false);
       console.error(err);
     }
   };
@@ -178,13 +190,18 @@ const ProfileSetting = () => {
 
       <div className="settCard">
         <Row>
-          <Col xs={2} className="passwordChng">
+          <Col lg={2} className="passwordChng">
             <div onClick={handlePhotoClick}>
-              <a href=".">
+              <a href="." onClick={(e) => e.preventDefault()} className="position-relative">
                 <img
-                  src=/*{idPhoto}/>*/ "./assets/image/svg/dum.svg"
+                  src={dataLoaded ? (idPhoto) : ("./assets/image/svg/dum.svg")} 
                   alt=""
                   onError={replaceAltImg}
+                />
+                <img
+                  src="./assets/image/svg/CameraButtonIcon.svg"
+                  alt=""
+                  className="cam-small-icon"
                 />
               </a>
               <input
@@ -192,11 +209,11 @@ const ProfileSetting = () => {
                 accept=""
                 ref={inputRef}
                 style={{ display: "none" }}
-                onChange={handlePhotoChange}
+                onChange={() => handlePhotoChange}
               />
             </div>
           </Col>
-          <Col xs={8} className="settingInput my-auto">
+          <Col lg={8} className="settingInput my-auto">
             <div className="d-flex justify-content-between">
               <div>
                 <p
@@ -287,7 +304,6 @@ const ProfileSetting = () => {
               <input
                 type="text"
                 placeholder={position}
-                //onChange={(e) => setPosition(e.target.value)}
                 className="setting-form"
                 readOnly={true}
                 style={{ marginLeft: "165px" }}
@@ -368,8 +384,15 @@ const ProfileSetting = () => {
                   <button
                     className="profile-cancel-btn profile-btn"
                     type="submit"
+                    disabled={loadingUpdate === true}
+                    style={{
+                      display: "flex",
+                      gap: "0.5rem",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    SAVE
+                    SAVE {loadingUpdate === true && <Spinner size="sm" />}
                   </button>
                 </div>
               </Col>

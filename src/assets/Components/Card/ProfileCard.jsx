@@ -43,7 +43,7 @@ const ProfileCard = () => {
   }, []);
 
   const replaceAltImg = (e) => {
-    e.currentTarget.src = "./dum.svg";
+    e.currentTarget.src = "./assets/image/svg/dum.svg";
   };
 
   return (

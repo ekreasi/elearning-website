@@ -1,5 +1,5 @@
 import "./ChangeCard.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
@@ -20,6 +20,7 @@ const ChangeCard = () => {
   const [isPasswordContainNumber, setIsPasswordContainNumber] = useState(false);
   const [isPasswordHaveCapital, setIsPasswordHaveCapital] = useState(false);
   const [isPasswordHaveSpecial, setIsPasswordHaveSpecial] = useState(false);
+  const [loadingChange, setLoadingChange] = useState(false);
 
   const [buttonStyle, setButtonStyle] = useState({
     background: "rgba(232, 40, 39, 0.3)",
@@ -36,6 +37,7 @@ const ChangeCard = () => {
   const inputType = showPassword ? "text" : "password";
 
   const handleConfirm = async (e) => {
+    setLoadingChange(true);
     e.preventDefault();
 
     try {
@@ -58,8 +60,10 @@ const ChangeCard = () => {
       } else {
         Swal.fire(data?.message || "Code not found !");
       }
+      setLoadingChange(false);
     } catch (err) {
       console.error(err);
+      setLoadingChange(false);
     }
   };
 
@@ -138,7 +142,7 @@ const ChangeCard = () => {
                   type={inputType}
                   placeholder="Password"
                   style={{
-                    background: `url('ic-login-password.svg') no-repeat 12px center, url('ShowPassIcon.svg') no-repeat right 12px center`,
+                    background: `url('./assets/image/svg/ic-login-password.svg') no-repeat 12px center, url('./assets/image/svg/ShowPassIcon.svg') no-repeat right 12px center`,
                     paddingLeft: "45px",
                     cursor: "pointer",
                     backgroundColor: "#F5F6F8",
@@ -158,7 +162,7 @@ const ChangeCard = () => {
                   type={inputType}
                   placeholder="Confirm Password"
                   style={{
-                    background: `url('ConfirmPasswordIcon.svg') no-repeat 12px center, url('ShowPassIcon.svg') no-repeat right 12px center`,
+                    background: `url('./assets/image/svg/ConfirmPasswordIcon.svg') no-repeat 12px center, url('./assets/image/svg/ShowPassIcon.svg') no-repeat right 12px center`,
                     paddingLeft: "45px",
                     backgroundColor: "#F5F6F8",
                   }}
@@ -186,8 +190,8 @@ const ChangeCard = () => {
                       <img
                         src={
                           isPasswordLengthValid
-                            ? "ic-register-checklist-ijo.svg"
-                            : "ic-register-checklist.svg"
+                            ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                            : "./assets/image/svg/ic-register-checklist.svg"
                         }
                         alt=""
                         style={{ marginRight: "8px" }}
@@ -200,8 +204,8 @@ const ChangeCard = () => {
                       <img
                         src={
                           isPasswordContainNumber
-                            ? "ic-register-checklist-ijo.svg"
-                            : "ic-register-checklist.svg"
+                            ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                            : "./assets/image/svg/ic-register-checklist.svg"
                         }
                         style={{ marginRight: "8px" }}
                         alt=""
@@ -214,8 +218,8 @@ const ChangeCard = () => {
                       <img
                         src={
                           isPasswordHaveCapital
-                            ? "ic-register-checklist-ijo.svg"
-                            : "ic-register-checklist.svg"
+                            ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                            : "./assets/image/svg/ic-register-checklist.svg"
                         }
                         style={{ marginRight: "8px" }}
                         alt=""
@@ -228,8 +232,8 @@ const ChangeCard = () => {
                       <img
                         src={
                           isPasswordHaveSpecial
-                            ? "ic-register-checklist-ijo.svg"
-                            : "ic-register-checklist.svg"
+                            ? "./assets/image/svg/ic-register-checklist-ijo.svg"
+                            : "./assets/image/svg/ic-register-checklist.svg"
                         }
                         style={{ marginRight: "8px" }}
                         alt=""
@@ -243,6 +247,7 @@ const ChangeCard = () => {
                 <button
                   className="changeBtn"
                   onClick={handleCancel}
+                  disabled={loadingChange === true}
                   style={{
                     background: "#fff",
                     height: "46px",
@@ -251,12 +256,18 @@ const ChangeCard = () => {
                     marginRight: "8px",
                     marginLeft: "auto",
                     color: "#E82827",
+                    display: "flex",
+                    gap: "0.5rem",
+                    justifyContent: "center",
+                    alignItems: "center",
                   }}
                 >
                   Cancel
                 </button>
                 <button className="changeSubmitBtn" style={buttonStyle}>
-                  Submit
+                  Submit {
+                    loadingChange === true && <Spinner size="sm"/>
+                  }
                 </button>
               </div>
             </form>

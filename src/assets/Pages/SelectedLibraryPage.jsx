@@ -32,7 +32,7 @@ const LibraryVideoModal = (props) => {
       <Modal.Body>
         <p className="modal-body-title">Session 1</p>
         <video
-          src="vid1.mp4"
+          src="./assets/vid1.mp4"
           className="thumbnail-image"
           autoPlay
           controls

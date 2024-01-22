@@ -21,9 +21,9 @@ const CertificatePage = () => {
       </Helmet>
       <WhiteNav />
 
-      <div className="cert-header">
+      <div >
         <Container>
-          <Row>
+          <Row className="cert-header">
             <div className="d-flex align-items-center">
               <img
                 src="./assets/image/svg/CertificatePageIcon.svg"
@@ -43,54 +43,54 @@ const CertificatePage = () => {
               </div>
             </div>
           </Row>
-          <Row style={{ margin: "26px auto 40px" }}>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+          <Row>
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievedIcon.svg" alt="" />
               <div className="my-auto cert-card-container">
-                <p className="certificate-card-title">Pre Basic</p>
+                <p className="certificate-card-title ">Pre Basic</p>
                 <a className="certificate-download">Download</a>
               </div>
             </Col>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievedIcon.svg" alt="" />
               <div className="my-auto cert-card-container">
                 <p className="certificate-card-title">Basic</p>
                 <a className="certificate-download">Download</a>
               </div>
             </Col>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
               <div className="my-auto">
                 <p className="certificate-disabled-title">Beginner</p>
               </div>
             </Col>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
               <div className="my-auto">
                 <p className="certificate-disabled-title">Elementary</p>
               </div>
             </Col>
           </Row>
-          <Row style={{ margin: "36px auto 40px" }}>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+          <Row >
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
               <div className="my-auto">
                 <p className="certificate-disabled-title">Intermediate</p>
               </div>
             </Col>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
               <div className="my-auto">
                 <p className="certificate-disabled-title">Upper Intermediate</p>
               </div>
             </Col>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
               <div className="my-auto">
                 <p className="certificate-disabled-title">Advance</p>
               </div>
             </Col>
-            <Col xs={6} lg={3} className="d-flex certificate-column-card">
+            <Col xs={12} lg={3} className="d-flex certificate-column-card gap-3">
               <img src="./assets/image/svg/AchievementIcon.svg" alt="" />
               <div className="my-auto">
                 <p className="certificate-disabled-title">Proficiency</p>

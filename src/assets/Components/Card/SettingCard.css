@@ -86,3 +86,14 @@
   font-size: 16px;
   color: #e82827;
 }
+
+.cam-small-icon {
+  max-width: 45px;
+  max-height: 45px;
+  position: absolute;
+  margin: 0 !important;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
