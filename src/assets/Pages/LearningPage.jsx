@@ -50,7 +50,7 @@ function MyVerticallyCenteredModal(props) {
       >
         <Row className="text-center g-3">
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center ">
@@ -66,8 +66,8 @@ function MyVerticallyCenteredModal(props) {
           </Col>
 
           <Col
-             xs={12} sm={6} lg={4} xl={3}
-            className="d-flex justify-content-between align-items-center module-choices-card"
+             xs={12} sm={6} lg={4}
+            className="d-flex justify-content-between align-items-center module-choices-card "
           >
             <div className="d-flex align-items-center">
               <img src="./assets/image/svg/ColoredImprovement.svg" alt="" />
@@ -81,7 +81,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
             onClick={goStartChapter}
           >
@@ -97,7 +97,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow">{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -109,7 +109,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -121,7 +121,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -133,7 +133,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -145,7 +145,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -157,7 +157,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -169,7 +169,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -181,7 +181,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -193,7 +193,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -205,7 +205,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -217,7 +217,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -229,7 +229,7 @@ function MyVerticallyCenteredModal(props) {
             <p className="mb-0 p-arrow" onClick={goStartChapter}>{`>`}</p>
           </Col>
           <Col
-             xs={12} sm={6} lg={4} xl={3}
+             xs={12} sm={6} lg={4}
             className="d-flex justify-content-between align-items-center module-choices-card"
           >
             <div className="d-flex align-items-center">
@@ -250,7 +250,7 @@ const LearningPage = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <div style={{ backgroundColor: "#E5E5E5", minHeight: "100vh" }} className="pb-3">
+    <div style={{ backgroundColor: "#E5E5E5", minHeight: "100vh" }} className="">
       <Helmet>
         <title>Learning | e-Learning</title>
         <meta name="description" content="Helmet application" />

@@ -66,11 +66,11 @@ const TrainingPage = () => {
         </div>
         <div className="training-page-content">
           <Container>
-            <Row className="training-item-row">
+            <Row className="training-item-row gap-3">
               <Col xs={1}>
                 <img src="./assets/image/svg/Training-Main-Icon.svg" alt="" />
               </Col>
-              <Col xs={9} style={{ marginLeft: "20px" }}>
+              <Col xs={9}>
                 <Row className="training-page-title">
                   Training: Talent PT 2. This invitation has a long title. So
                   this title has reached the maximum character limit in two

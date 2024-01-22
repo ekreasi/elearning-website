@@ -190,7 +190,7 @@ const ProfileSetting = () => {
 
       <div className="settCard">
         <Row>
-          <Col lg={2} className="passwordChng">
+          <Col lg={2} className="passwordChng ">
             <div onClick={handlePhotoClick}>
               <a href="." onClick={(e) => e.preventDefault()} className="position-relative">
                 <img
@@ -201,7 +201,7 @@ const ProfileSetting = () => {
                 <img
                   src="./assets/image/svg/CameraButtonIcon.svg"
                   alt=""
-                  className="cam-small-icon"
+                  className="cam-small-icon d-none d-lg-block"
                 />
               </a>
               <input
@@ -220,7 +220,7 @@ const ProfileSetting = () => {
                   style={{
                     fontSize: "24px",
                     fontWeight: "700",
-                    color: "#fff",
+                    color: "#000",
                     marginBotoom: "0",
                   }}
                 >

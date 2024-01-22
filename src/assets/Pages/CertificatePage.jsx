@@ -10,7 +10,7 @@ const CertificatePage = () => {
       style={{
         backgroundColor: "#FFF",
         height: "100vh",
-        background: `url('bg_red_1 1.svg') no-repeat `,
+        background: `url('./assets/image/svg/bg_red_1 1.svg') no-repeat `,
         backgroundPosition: "center top 60px",
         backgroundSize: "100% 156px",
       }}
@@ -21,7 +21,7 @@ const CertificatePage = () => {
       </Helmet>
       <WhiteNav />
 
-      <div >
+      <div className="certificate-page-container">
         <Container>
           <Row className="cert-header">
             <div className="d-flex align-items-center">

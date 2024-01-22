@@ -1,8 +1,9 @@
 .cert-header {
   max-width: 1088px;
   width: 100%;
-  height: 140px;
+  height: auto;
   background: #fff;
+  padding-bottom: 5px;
   margin: 72px auto 36px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -55,4 +56,8 @@
 .certificate-column-card {
   padding: 0 12px; 
   margin: 26px auto 10px;
+}
+
+.certificate-page-container .container {
+  padding-bottom: 5px;
 }
