@@ -97,104 +97,111 @@ const QuizPage = () => {
     }
   };
 
-  const handleCancel = () => {};
+  const handleCancel = () => { };
 
   return (
-    <div style={{ background: "#E5E5E5", height: "100vh" }}>
+    <div style={{ background: "#E5E5E5", minHeight: "100vh" }}>
       <ChapterNav />
 
-      <div className="quiz-page">
-        <Row className="d-flex justify-content-between quiz-header-row align-items-center">
-          <Col xs={4} className="quiz-question-count">
-            Question 1/10
-          </Col>
-          <Col xs={4} className="d-flex justify-content-center quiz-time">
-            {seconds > 0 || minutes > 0 ? (
-              <p>
-                {minutes < 10 ? `0${minutes}` : minutes}:
-                {seconds < 10 ? `0${seconds}` : seconds}
-              </p>
-            ) : (
-              <p>00:00</p>
-            )}
-          </Col>
-          <Col xs={4} className="d-flex justify-content-end quiz-desc">
-            Assesment - Single Select
-          </Col>
-        </Row>
-          <hr />
-        <Row className="quiz-question-row">
-          <Col xs={5} className="">
-            <img src="./assets/image/svg/QuizQuestionImage.svg" alt="" />
-          </Col>
-          <Col xs={7}>
-            <div className="quiz-question-col">
-              <form action="#">
-                <p>{'Using a planner or making a "to-do" list every day'}</p>
-                <label htmlFor="a" className="quiz-choices">
-                  <input
-                    type="radio"
-                    id="a"
-                    name="a"
-                    value="A. Is a waste of paper"
-                    className="quiz-input"
-                  />
-                  A. Is a waste of paper
-                </label>
-                <br />
-                <label htmlFor="b" className="quiz-choices">
-                  <input
-                    type="radio"
-                    id="b"
-                    name="a"
-                    value="B. Help keep things “in sight, in mind"
-                    className="quiz-input"
-                  />
-                  B. Help keep things “in sight, in mind”
-                </label>
-                <br />
-                <label htmlFor="c" className="quiz-choices">
-                  <input
-                    type="radio"
-                    id="c"
-                    name="a"
-                    value="C. Take too long to fill out"
-                    className="quiz-input"
-                  />
-                  C. Take too long to fill out{" "}
-                </label>
-                <br />
-                <label htmlFor="d" className="quiz-choices">
-                  <input
-                    type="radio"
-                    id="d"
-                    name="a"
-                    value="D. Lazy to doing every day"
-                    className="quiz-input"
-                  />
-                  D. Lazy to doing every day
-                </label>
-              </form>
-            </div>
-          </Col>
-        </Row>
-        <Row className="mt-4">
-          <Col
-            xs={12}
-            className="d-flex align-items-center justify-content-center quiz-navigation-row"
-          >
-            <div className="back-quiz">
-              <img src="./assets/image/svg/BackQuizIcon.svg" alt="" />
-              <span>Back</span>
-            </div>
-            <div className="quiz-page-count">Page 14/24</div>
-            <div className="next-quiz" onClick={finishQuiz}>
-              <span>Next</span>
-              <img src="./assets/image/svg/NextModuleIcon.svg" alt="" />
-            </div>
-          </Col>
-        </Row>
+      <div className="container mt-3">
+        <div className="card p-3 bg-white border-0 shadow">
+          <div className="card-header border-0 bg-white">
+            <Row className="d-flex justify-content-between quiz-header-row align-items-center">
+              <Col md={4} className="quiz-question-count">
+                Question 1/10
+              </Col>
+              <Col md={4} className="d-flex justify-content-center quiz-time">
+                {seconds > 0 || minutes > 0 ? (
+                  <p>
+                    {minutes < 10 ? `0${minutes}` : minutes}:
+                    {seconds < 10 ? `0${seconds}` : seconds}
+                  </p>
+                ) : (
+                  <p>00:00</p>
+                )}
+              </Col>
+              <Col md={4} className="d-flex justify-content-end quiz-desc">
+                Assesment - Single Select
+              </Col>
+            </Row>
+          </div>
+          <div className="card-body">
+            <hr />
+            <Row className="quiz-question-row g-3">
+              <Col md={5} className="">
+                <img src="./assets/image/svg/QuizQuestionImage.svg" alt="" className="w-100" />
+              </Col>
+              <Col md={7}>
+                <div className="quiz-question-col">
+                  <form action="#">
+                    <p>{'Using a planner or making a "to-do" list every day'}</p>
+                    <label htmlFor="a" className="quiz-choices">
+                      <input
+                        type="radio"
+                        id="a"
+                        name="a"
+                        value="A. Is a waste of paper"
+                        className="quiz-input"
+                      />
+                      A. Is a waste of paper
+                    </label>
+                    <br />
+                    <label htmlFor="b" className="quiz-choices">
+                      <input
+                        type="radio"
+                        id="b"
+                        name="a"
+                        value="B. Help keep things “in sight, in mind"
+                        className="quiz-input"
+                      />
+                      B. Help keep things “in sight, in mind”
+                    </label>
+                    <br />
+                    <label htmlFor="c" className="quiz-choices">
+                      <input
+                        type="radio"
+                        id="c"
+                        name="a"
+                        value="C. Take too long to fill out"
+                        className="quiz-input"
+                      />
+                      C. Take too long to fill out{" "}
+                    </label>
+                    <br />
+                    <label htmlFor="d" className="quiz-choices">
+                      <input
+                        type="radio"
+                        id="d"
+                        name="a"
+                        value="D. Lazy to doing every day"
+                        className="quiz-input"
+                      />
+                      D. Lazy to doing every day
+                    </label>
+                  </form>
+                </div>
+              </Col>
+            </Row>
+            <Row className="mt-4">
+              <Col
+                xs={12}
+                className="d-flex align-items-center justify-content-center quiz-navigation-row"
+              >
+                <div className="back-quiz">
+                  <img src="./assets/image/svg/BackQuizIcon.svg" alt="" />
+                  <span>Back</span>
+                </div>
+                <div className="quiz-page-count">Page 14/24</div>
+                <div className="next-quiz" onClick={finishQuiz}>
+                  <span>Next</span>
+                  <img src="./assets/image/svg/NextModuleIcon.svg" alt="" />
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
       </div>
+
     </div>
   );
 };

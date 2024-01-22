@@ -16,14 +16,14 @@ const goMaterial = () => {
       <div className="start-learning-page">
         <Row style={{ height: "84vh" }}>
           <Col
-            xs={8}
+            md={8}
             style={{ background: "rgba(232, 40, 39, 0.1)" }}
-            className="d-flex align-items-center"
+            className="d-flex align-items-center justify-content-center"
           >
-            <img src="./assets/image/svg/QuizImage.svg" alt="" style={{ marginLeft: "10rem " }} />
+            <img src="./assets/image/svg/QuizImage.svg" alt="" />
           </Col>
           <Col
-            xs={4}
+            md={4}
             className="d-flex flex-column justify-content-center align-items-center"
           >
             <p style={{ fontSize: "18px" }}>Ready to start this chapter?</p>
