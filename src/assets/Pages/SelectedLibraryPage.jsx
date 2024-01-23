@@ -14,7 +14,7 @@ const LibraryImageModal = (props) => {
     >
       <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
-        <img src="BigImageImage.svg" alt="" style={{ width: "100%" }} />
+        <img src="./assets/image/svg/BigImageImage.svg" alt="" style={{ width: "100%" }} />
       </Modal.Body>
     </Modal>
   );
