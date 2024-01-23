@@ -22,6 +22,12 @@
   background: #fff;
 }
 
+.zoom-image {
+  max-width: 200px;
+  width: 100%;
+}
+
+
 .zoom-content-row {
   border: 1.5px solid #d4d8dd;
   padding: 20px;
@@ -30,4 +36,8 @@
   width: auto;
   margin-bottom: 20px;
   border-radius: 8px;
+}
+
+.zoom-training-title {
+  max-width: 615px;
 }

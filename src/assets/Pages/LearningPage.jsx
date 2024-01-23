@@ -292,7 +292,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -311,7 +311,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -330,7 +330,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -349,7 +349,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -368,7 +368,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -387,7 +387,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -406,7 +406,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -425,7 +425,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -444,7 +444,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"
@@ -463,7 +463,7 @@ const LearningPage = () => {
               </Col>
               <Col xs={12} sm={6} lg={4} xl={3}>
                 <div className="learning-module-card">
-                  <img src="NotReadyModuleIcon.svg" alt="" className="module-img" />
+                  <img src="./assets/image/svg/NotReadyModuleIcon.svg" alt="" className="module-img" />
                   <div className="notready-module-text-container my-auto">
                     <p
                       className="learning-module-title"

@@ -15,7 +15,8 @@
 }
 
 #library-page-dropdown {
-  width: 135px;
+  min-width: 135px;
+  width: 100%;
   height: 36px;
   display: inline;
 }
@@ -88,10 +89,6 @@
   color: #231f20;
 }
 
-.library-name-col {
-  width: 650px;
-  margin-right: 90px;
-}
 
 .library-filter-col {
   width: 156px;
@@ -120,7 +117,7 @@
 .library-grey {
   font-weight: 400;
   font-size: 14px;
-  color: #7f8a9a;
+  color: #7f8a9a !important;
 }
 
 .library-page-content {
@@ -134,10 +131,6 @@
 
 .library-page-content:hover .library-name {
   text-decoration: underline;
-}
-
-.library-page-pagination {
-  margin-top: 40px;   
 }
 
 .library-page-pagination .pagination {
@@ -169,7 +162,7 @@
   cursor: pointer;
 }
 
-.library-page-pagination .page-item .page-link{
+.library-page-pagination .page-item .page-link {
   margin: 5px;
   border-radius: 4px;
 }
@@ -187,4 +180,10 @@
   height: 90px;
   padding: 10px 20px 20px;
   margin-top: 10px;
+}
+
+.libCard {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }

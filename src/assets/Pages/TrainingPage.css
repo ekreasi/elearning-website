@@ -41,6 +41,7 @@
   color: #7f8a9a;
   text-align: center;
   margin: 10px 0;
+  white-space: nowrap;
 }
 
 #training-page-dropdown {
@@ -98,7 +99,6 @@
   color: #e82827;
   font-weight: 600;
   font-size: 12px;
-  margin-right: 68px;
 }
 
 .training-page-button .dropdown-menu.show {
@@ -162,8 +162,13 @@
 }
 
 .training-page-title {
+  max-width: 730px;
+}
+
+.training-page-title p{
   font-weight: 600;
   font-size: 16px;
+  margin-bottom: 8;
 }
 
 .training-img-container {
